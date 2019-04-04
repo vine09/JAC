@@ -1,0 +1,16 @@
+--SN:
+--Date and Time:2015-1-15 19:57
+--Tester:Slot1
+--OperatorID:
+--CycleTime:10
+--TestResult:
+测试项目	测试名称	测量值	下限值	上限值	测试结果
+        	        	      	      	      	        
+
+[测试名称]	[TestItem ITEM]	[通道]      	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+气缸推进  	DOAction       	CylinderCtrl	1         	        	        	      	        	Done  	0.013000  	      	          	1
+打开电源  	DOAction       	B+          	1         	        	        	      	        	Done  	0.022000  	      	          	1
+ACC置高   	DOAction       	ACC         	1         	        	        	      	        	Done  	0.022000  	      	ACC IO    	1
+延时      	Delay          	            	10        	        	        	      	        	Done  	10.018000 	      	CAN       	1
+
+通信信息:

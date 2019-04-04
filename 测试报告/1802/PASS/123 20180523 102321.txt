@@ -1,0 +1,25 @@
+--SN:123
+--Date and Time:2018-5-23 10:23
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:6
+--TestResult:
+Pass
+[测试名称]    	[TestItem ITEM]	[通道]        	[设置参数]	[下限值]                      	[上限值]                      	[单位]	[测量值]                      	[结果]	[测试时间]	[备注]	[测试项目]	 
+延时          	Delay          	              	3         	                              	                              	      	                              	Done  	3.007000  	      	          	1
+退出自动化测试	CMD            	退出自动化测试	1000      	                              	                              	Hex   	                              	PASS  	1.251000  	      	Reset     	1
+启动自动化测试	CMD            	启动自动化测试	1000      	OK                            	OK                            	String	OK                            	PASS  	0.539000  	      	通信      	1
+查询4G固件版本	CMD            	查询4G固件版本	1000      	LLA0040_0016_0.0.4_L0428__M005	LLA0040_0016_0.0.4_L0428__M005	ASCII 	LLA0040_0016_0.0.4_L0428__M005	PASS  	0.328000  	      	通信      	1
+退出自动化测试	CMD            	退出自动化测试	1000      	                              	                              	Hex   	                              	PASS  	1.240000  	      	Reset     	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:
+发送启动自动化测试:746573746D6F6465283129
+反馈:pd rep ok,  S=0x0308 used   time=190 ms
+testmode(1)
+create auto test task
+
+发送查询4G固件版本:0F004D004DF0
+反馈:0F804D1F014C4C41303034305F303031365F302E302E345F4C303432385F5F4D303035F5F0
+发送退出自动化测试:0F00020002F0
+反馈:7E7E7E7E7E7E7E7E7E7E7E6D6F64656D5F776966695F7374617465203D20313021212121210D0A3D3D3D3D3D3D3D6D6F64656D5F4750535F7374617465203D20373D3D3D3D3D3D3D3D3D0D0A

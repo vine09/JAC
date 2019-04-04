@@ -1,0 +1,78 @@
+--SN:014
+--Date and Time:2015-1-27 18:32
+--Tester:Slot1
+--OperatorID:
+--CycleTime:28
+--TestResult:
+≤‚ ‘œÓƒø	≤‚ ‘√˚≥∆      	≤‚¡ø÷µ 	œ¬œﬁ÷µ	…œœﬁ÷µ	≤‚ ‘Ω·π˚
+µÁ—πºÏ≤‚	BATVCC_CTL ‰≥ˆ	Äî	0x00  	0x00  	FAIL    
+        	              	       	      	      	        
+
+[≤‚ ‘√˚≥∆]         	[TestItem ITEM]	[Õ®µ¿]              	[…Ë÷√≤Œ ˝]  	[œ¬œﬁ÷µ]	[…œœﬁ÷µ]	[µ•Œª]	[≤‚¡ø÷µ]	[Ω·π˚]	[≤‚ ‘ ±º‰]	[±∏◊¢]	[≤‚ ‘œÓƒø]	 
+¥Úø™µÁ‘¥           	DOAction       	B+                  	1           	        	        	      	        	Done  	0.014000  	      	          	1
+ACC÷√∏ﬂ            	DOAction       	ACC                 	1           	        	        	      	        	Done  	0.023000  	      	ACC IO    	1
+ÕÀ≥ˆ◊‘∂ØªØ≤‚ ‘     	CMD            	ÕÀ≥ˆ◊‘∂ØªØ≤‚ ‘      	1000        	        	0x01    	Hex   	0x      	PASS  	1.054000  	      	Õ®–≈      	1
+—” ±               	Delay          	                    	5           	        	        	      	        	Done  	5.024000  	      	CAN       	1
+≤‚¡øµÁ¡˜           	MeaCurrent     	Current             	Differential	0.1     	0.5     	A     	0.24719 	PASS  	1.230000  	      	µÁ¡˜      	1
+—” ±               	Delay          	                    	10          	        	        	      	        	Done  	10.011000 	      	CAN       	1
+∆Ù∂Ø◊‘∂ØªØ≤‚ ‘     	CMD            	∆Ù∂Ø◊‘∂ØªØ≤‚ ‘      	1000        	OK      	OK      	String	OK      	PASS  	0.160000  	      	Õ®–≈      	1
+≤È—ØBAT_DETµÁ—π    	CMD            	≤È—ØBAT_DET◊¥Ã¨     	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.159000  	      	µÁ—πºÏ≤‚  	1
+CHARGE_CTL ‰≥ˆ     	CMD            	CHARGE_CTL ‰≥ˆ∏ﬂµÁ∆Ω	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.973000  	      	Õ®–≈      	1
+≤‚¡øµÁ¡˜           	MeaCurrent     	Current             	Differential	0.2     	0.4     	A     	0.28902 	PASS  	1.240000  	      	µÁ¡˜      	1
+≤È—ØBAT7.2V_DETµÁ—π	CMD            	≤È—ØBAT7.2V_DETµÁ—π 	1000        	1       	1.636   	V     	1.501000	PASS  	0.124000  	      	µÁ—πºÏ≤‚  	1
+CHARGE_CTL ‰≥ˆ     	CMD            	CHARGE_CTL ‰≥ˆµÕµÁ∆Ω	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	1.031000  	      	Õ®–≈      	1
+BATVCC_CTL ‰≥ˆ     	CMD            	BATVCC_CTL ‰≥ˆµÕµÁ∆Ω	1000        	0x00    	0x00    	Hex   	Äî 	FAIL  	0.961000  	      	µÁ—πºÏ≤‚  	1
+≤È—ØBAT7.2V_DETµÁ—π	CMD            	≤È—ØBAT7.2V_DETµÁ—π 	1000        	1       	1.636   	V     	1.495000	PASS  	0.360000  	      	µÁ—πºÏ≤‚  	1
+≤‚¡øµÁ¡˜           	MeaCurrent     	Current             	Differential	0.1     	0.2     	A     	0.19417 	PASS  	1.250000  	      	µÁ¡˜      	1
+≤È—ØMEID           	USBCMD         	≤È—ØMEID            	1000        	OK      	OK      	String	PASS    	PASS  	0.709000  	      	3Gƒ£øÈ    	1
+…Ë÷√RTRECF         	USBCMD         	…Ë÷√RTRECF          	1000        	OK      	OK      	String	PASS    	PASS  	0.748000  	      	3Gƒ£øÈ    	1
+…Ë÷√ESN            	USBCMD         	…Ë÷√ESN             	1000        	OK      	OK      	String	PASS    	PASS  	0.532000  	      	3Gƒ£øÈ    	1
+≤È—ØESN            	USBCMD         	≤È—ØESN             	1000        	OK      	OK      	String	PASS    	PASS  	1.099000  	      	3Gƒ£øÈ    	1
+…Ë÷√AKEY           	USBCMD         	…Ë÷√AKEY            	1000        	OK      	OK      	String	PASS    	PASS  	0.539000  	      	3Gƒ£øÈ    	1
+
+Õ®–≈–≈œ¢:∑¢ÀÕÕÀ≥ˆ◊‘∂ØªØ≤‚ ‘:0F00020002F0
+∑¥¿°:636D64206C696E6520726561647921200D0A636D643E54475338302C543132370D0A467720636F6D70696C653A4A616E20323720323031352031343A32363A34370D0A414343204F4E0D0A
+∑¢ÀÕ∆Ù∂Ø◊‘∂ØªØ≤‚ ‘:746573746D6F64652831290D
+∑¥¿°:testmode(1)
+	0, 0x00000000
+cmd>
+∑¢ÀÕ≤È—ØBAT_DET◊¥Ã¨:0F00160016F0
+∑¥¿°:0F8016010197F0
+∑¢ÀÕCHARGE_CTL ‰≥ˆ∏ﬂµÁ∆Ω:0F0017010117F0
+∑¥¿°:0F8017010196F0
+∑¢ÀÕ≤È—ØBAT7.2V_DETµÁ—π:0F00140014F0
+∑¥¿°:0F80140205DD93F0
+∑¢ÀÕCHARGE_CTL ‰≥ˆµÕµÁ∆Ω:0F0017010016F0
+∑¥¿°:0F8017010196F0
+Äî∑¢ÀÕ≤È—ØBAT7.2V_DETµÁ—π:0F00140014F0
+∑¥¿°:0F80140205D793F0
+∑¢ÀÕ ≤È—ØMEID:AT+SMEID?
+∑¥¿°:
++SMEID: A1000021A67071
+
+OK
+
+∑¢ÀÕ …Ë÷√RTRECF:AT+RTRECF=1
+∑¥¿°:
++RTRECF: SUCCESS
+
+OK
+
+∑¢ÀÕ …Ë÷√ESN:AT+ESN=80AFB5B1
+∑¥¿°:
+OK
+
+∑¢ÀÕ ≤È—ØESN:AT+ESN?
+∑¥¿°:
++CIPSEND: 0,66,66
+
+
+
++ESN: 80AFB5B1
+
+OK
+
+∑¢ÀÕ …Ë÷√AKEY:AT+AKEY=710E2CA6533F8CE7
+∑¥¿°:
+OK
+

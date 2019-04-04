@@ -1,0 +1,122 @@
+--SN:0203443f41511800045
+--Date and Time:2015-1-29 12:32
+--Tester:Slot2
+--OperatorID:
+--CycleTime:71
+--TestResult:
+测试项目	测试名称	测量值                                          	下限值	上限值	测试结果
+通信    	重启    	0xFEFEC5778A14100C900000C00000000000408008048240	0x    	0x00  	FAIL    
+        	        	                                                	      	      	        
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]  	[下限值]	[上限值]	[单位]	[测量值]                                        	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源           	DOAction       	B+                  	1           	        	        	      	                                                	Done  	0.015000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1           	        	        	      	                                                	Done  	0.022000  	      	ACC IO    	1
+退出自动化测试     	CMD            	退出自动化测试      	1000        	        	0x01    	Hex   	0x                                              	PASS  	1.476000  	      	通信      	1
+延时               	Delay          	                    	5           	        	        	      	                                                	Done  	5.022000  	      	CAN       	1
+测量电流           	MeaCurrent     	Current             	Differential	0.1     	0.5     	A     	0.25803                                         	PASS  	1.239000  	      	电流      	1
+延时               	Delay          	                    	10          	        	        	      	                                                	Done  	10.011000 	      	CAN       	1
+启动自动化测试     	CMD            	启动自动化测试      	1000        	OK      	OK      	String	OK                                              	PASS  	3.192000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000        	0x01    	0x01    	Hex   	0x01                                            	PASS  	0.785000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000        	0x01    	0x01    	Hex   	0x01                                            	PASS  	1.386000  	      	通信      	1
+测量电流           	MeaCurrent     	Current             	Differential	0.2     	0.4     	A     	0.30356                                         	PASS  	1.244000  	      	电流      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	1       	1.636   	V     	1.311000                                        	PASS  	0.760000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出低电平	1000        	0x01    	0x01    	Hex   	0x01                                            	PASS  	1.390000  	      	通信      	1
+测量电流           	MeaCurrent     	Current             	Differential	0.1     	0.2     	A     	0.17405                                         	PASS  	1.241000  	      	电流      	1
+查询MEID           	USBCMD         	查询MEID            	1000        	OK      	OK      	String	PASS                                            	PASS  	0.702000  	      	3G模块    	1
+设置RTRECF         	USBCMD         	设置RTRECF          	1000        	OK      	OK      	String	PASS                                            	PASS  	0.720000  	      	3G模块    	1
+设置ESN            	USBCMD         	设置ESN             	1000        	OK      	OK      	String	PASS                                            	PASS  	0.521000  	      	3G模块    	1
+查询ESN            	USBCMD         	查询ESN             	1000        	OK      	OK      	String	PASS                                            	PASS  	0.704000  	      	3G模块    	1
+设置AKEY           	USBCMD         	设置AKEY            	1000        	OK      	OK      	String	PASS                                            	PASS  	0.488000  	      	3G模块    	1
+设置IMSI1          	USBCMD         	设置IMSI1           	1000        	OK      	OK      	String	PASS                                            	PASS  	0.486000  	      	3G模块    	1
+设置IMSI2          	USBCMD         	设置IMSI2           	1000        	OK      	OK      	String	PASS                                            	PASS  	0.489000  	      	3G模块    	1
+设置IMSI3          	USBCMD         	设置IMSI3           	1000        	OK      	OK      	String	PASS                                            	PASS  	0.500000  	      	3G模块    	1
+设置EVDO账号       	USBCMD         	设置EVDO账号        	1000        	OK      	OK      	String	PASS                                            	PASS  	0.703000  	      	3G模块    	1
+设置EVDO密码       	USBCMD         	设置EVDO密码        	1000        	OK      	OK      	String	PASS                                            	PASS  	0.721000  	      	3G模块    	1
+BATVCC_CTL输出     	CMD            	BATVCC_CTL输出高电平	1000        	0x01    	0x01    	Hex   	0x01                                            	PASS  	1.288000  	      	通信      	1
+关闭电源           	DOAction       	B+                  	0           	        	        	      	                                                	Done  	0.015000  	      	          	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	1       	1.636   	V     	1.269000                                        	PASS  	0.962000  	      	电压检测  	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000        	0x02    	0x02    	Hex   	0x02                                            	PASS  	0.975000  	      	电压检测  	1
+BATVCC_CTL输出     	CMD            	BATVCC_CTL输出低电平	1000        	0x      	0x00    	String	0x                                              	PASS  	1.482000  	      	电压检测  	1
+重启               	CMD            	重启                	1000        	0x      	0x00    	Hex   	0xFEFEC5778A14100C900000C00000000000408008048240	FAIL  	1.477000  	      	通信      	1
+打开电源           	DOAction       	B+                  	1           	        	        	      	                                                	Done  	0.015000  	      	          	1
+延时               	Delay          	                    	30          	        	        	      	                                                	Done  	30.013000 	      	CAN       	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:414343204F4E0D0A0F00020002F0
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+Unknown token
+cmd>
+发送启动自动化测试:746573746D6F64652831290D
+反馈:login ok
+testmode(1)
+	0, 0x00000000
+cmd>
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010197F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010196F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F801402051F93F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010196F0
+发送 查询MEID:AT+SMEID?
+反馈:
++SMEID: A1000021A67071
+
+OK
+
+发送 设置RTRECF:AT+RTRECF=1
+反馈:
++RTRECF: SUCCESS
+
+OK
+
+发送 设置ESN:AT+ESN=80AFB5B1
+反馈:
+OK
+
+发送 查询ESN:AT+ESN?
+反馈:
++ESN: 80AFB5B1
+
+OK
+
+发送 设置AKEY:AT+AKEY=710E2CA6533F8CE7
+反馈:
+OK
+
+发送 设置IMSI1:AT+NAMCFG=0,1,460
+反馈:
+OK
+
+发送 设置IMSI2:AT+NAMCFG=0,2,03
+反馈:
+OK
+
+发送 设置IMSI3:AT+NAMCFG=0,3,6161978626
+反馈:
+OK
+
+发送 设置EVDO账号:AT+CNVW=1194,0,"19343630303336313631393738363236406D7963646D612E636E"
+反馈:
++CNVW: 1
+
+OK
+
+发送 设置EVDO密码:AT+CNVW=1192,0,"1031443036463845353046303743423533"
+反馈:
++CNVW: 1
+
+OK
+
+发送BATVCC_CTL输出高电平:0F0015010115F0
+反馈:0F8015010194F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140204F592F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010297F0
+发送BATVCC_CTL输出低电平:0F0015010014F0
+反馈:
+发送重启:0F00220022F0
+反馈:

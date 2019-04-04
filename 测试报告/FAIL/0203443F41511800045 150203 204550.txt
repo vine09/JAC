@@ -1,0 +1,60 @@
+--SN:0203443F41511800045
+--Date and Time:2015-2-3 20:45
+--Tester:Slot1
+--OperatorID:
+--CycleTime:39
+--TestResult:
+测试项目	测试名称           	测量值       	下限值	上限值	测试结果
+电压检测	查询BAT_DET电压    	0.00000      	11    	12.5  	FAIL    
+电流    	测量电流           	0.16974      	.2    	.4    	FAIL    
+电压检测	查询BAT7.2V_DET电压	4294967.29500	1     	1.636 	FAIL    
+通信    	CHARGE_CTL输出     	0x00         	0x01  	0x01  	FAIL    
+        	                   	             	      	      	        
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]  	[下限值]	[上限值]	[单位]	[测量值]     	[结果]	[测试时间]	[备注]	[测试项目]	 
+气缸推进           	DOAction       	CylinderCtrl        	1           	        	        	      	             	Done  	0.010000  	      	          	1
+打开电源           	DOAction       	B+                  	1           	        	        	      	             	Done  	0.009000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1           	        	        	      	             	Done  	0.003000  	      	ACC_IO    	1
+退出自动化测试     	CMD            	退出自动化测试      	1000        	        	0x01    	Hex   	             	PASS  	1.030000  	      	通信      	1
+延时               	Delay          	                    	5           	        	        	      	             	Done  	5.050000  	      	CAN       	1
+测量电流           	MeaCurrent     	Current             	Differential	.1      	.5      	A     	0.16152      	PASS  	1.439000  	      	电流      	1
+延时               	Delay          	                    	10          	        	        	      	             	Done  	10.001000 	      	CAN       	1
+启动自动化测试     	CMD            	启动自动化测试      	1000        	OK      	OK      	String	OK           	PASS  	0.129000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000        	11      	12.5    	V     	0.00000      	FAIL  	3.181000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000        	0x01    	0x01    	Hex   	0x01         	PASS  	1.031000  	      	通信      	1
+测量电流           	MeaCurrent     	Current             	Differential	.2      	.4      	A     	0.16974      	FAIL  	3.842000  	      	电流      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	1       	1.636   	V     	4294967.29500	FAIL  	3.087000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出低电平	1000        	0x01    	0x01    	Hex   	0x00         	FAIL  	7.218000  	      	通信      	1
+测量电流           	MeaCurrent     	Current             	Differential	.1      	.2      	A     	0.18796      	PASS  	1.215000  	      	电流      	1
+查询MEID           	USBCMD         	查询MEID            	1000        	OK      	OK      	String	PASS         	PASS  	0.758000  	      	3G模块    	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:0080
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F00160016F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F00160016F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F0017010117F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F00140014F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F00140014636D642073697A65206F7665722C6D61782033300D0AF0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F0017010016F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F0017010016F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F0017010016F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F0017010016F0
+发送 查询MEID:AT+SMEID?
+反馈:
++SMEID: A1000021A6A267
+
+OK
+

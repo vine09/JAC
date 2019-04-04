@@ -1,0 +1,78 @@
+--SN:0203443f41511800045
+--Date and Time:2015-1-29 15:08
+--Tester:Slot1
+--OperatorID:
+--CycleTime:36
+--TestResult:
+测试项目	测试名称           	测量值  	下限值	上限值	测试结果
+电流    	测量电流           	0.19662 	0.2   	0.4   	FAIL    
+电压检测	查询BAT7.2V_DET电压	0.219000	1     	1.636 	FAIL    
+3G模块  	设置ESN            	        	OK    	OK    	FAIL    
+        	                   	        	      	      	        
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]  	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源           	DOAction       	B+                  	1           	        	        	      	        	Done  	0.015000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1           	        	        	      	        	Done  	0.022000  	      	ACC IO    	1
+退出自动化测试     	CMD            	退出自动化测试      	1000        	        	0x01    	Hex   	0x      	PASS  	1.046000  	      	通信      	1
+延时               	Delay          	                    	5           	        	        	      	        	Done  	5.023000  	      	CAN       	1
+测量电流           	MeaCurrent     	Current             	Differential	0.1     	0.5     	A     	0.17769 	PASS  	1.227000  	      	电流      	1
+延时               	Delay          	                    	10          	        	        	      	        	Done  	10.001000 	      	CAN       	1
+启动自动化测试     	CMD            	启动自动化测试      	1000        	OK      	OK      	String	OK      	PASS  	0.226000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.119000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	1.024000  	      	通信      	1
+测量电流           	MeaCurrent     	Current             	Differential	0.2     	0.4     	A     	0.19662 	FAIL  	3.688000  	      	电流      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	1       	1.636   	V     	0.219000	FAIL  	1.760000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出低电平	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.945000  	      	通信      	1
+测量电流           	MeaCurrent     	Current             	Differential	0.1     	0.2     	A     	0.18761 	PASS  	1.245000  	      	电流      	1
+查询MEID           	USBCMD         	查询MEID            	1000        	OK      	OK      	String	PASS    	PASS  	0.708000  	      	3G模块    	1
+设置RTRECF         	USBCMD         	设置RTRECF          	1000        	OK      	OK      	String	PASS    	PASS  	0.722000  	      	3G模块    	1
+设置ESN            	USBCMD         	设置ESN             	1000        	OK      	OK      	String	        	FAIL  	8.061000  	      	3G模块    	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:636D64206C696E6520726561647921200D0A636D643E54475338302C543131300D0A467720636F6D70696C653A4A616E20313620323031352031303A33313A32380D0A
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010197F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010196F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140200DE96F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140200DB96F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010196F0
+发送 查询MEID:AT+SMEID?
+反馈:
++SMEID: A1000021A5EB8E
+
+OK
+
+发送 设置RTRECF:AT+RTRECF=1
+反馈:
++RTRECF: SUCCESS
+
+OK
+
+发送 设置ESN:AT+ESN=
+反馈:
+ERROR
+
+发送 设置ESN:AT+ESN=
+反馈:
+ERROR
+
+发送 设置ESN:AT+ESN=
+反馈:
+ERROR
+
++CIPSEND: 0,66,66
+
+
+
+发送 设置ESN:AT+ESN=
+反馈:
+ERROR
+

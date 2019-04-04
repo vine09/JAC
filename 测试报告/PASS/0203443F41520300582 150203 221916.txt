@@ -1,0 +1,39 @@
+--SN:0203443F41520300582
+--Date and Time:2015-2-3 22:19
+--Tester:Slot1
+--OperatorID:
+--CycleTime:39
+--TestResult:
+Pass
+[测试名称]    	[TestItem ITEM]	[通道]        	[设置参数]      	[下限值]        	[上限值]        	[单位]	[测量值]        	[结果]	[测试时间]	[备注]	[测试项目]	 
+气缸推进      	DOAction       	CylinderCtrl  	1               	                	                	      	                	Done  	0.008000  	      	          	1
+打开电源      	DOAction       	B+            	1               	                	                	      	                	Done  	0.001000  	      	          	1
+ACC置高       	DOAction       	ACC           	1               	                	                	      	                	Done  	0.002000  	      	ACC_IO    	1
+退出自动化测试	CMD            	退出自动化测试	1000            	                	0x01            	Hex   	                	PASS  	1.006000  	      	通信      	1
+延时          	Delay          	              	5               	                	                	      	                	Done  	5.010000  	      	CAN       	1
+延时          	Delay          	              	30              	                	                	      	                	Done  	30.014000 	      	CAN       	1
+启动自动化测试	CMD            	启动自动化测试	1000            	OK              	OK              	String	OK              	PASS  	0.209000  	      	通信      	1
+CAN           	CANTransmit    	00000182      	000007d100000000	                	                	      	PASS            	PASS  	0.042000  	      	CAN       	1
+CAN通信测试   	CMD            	CAN通信接收   	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	0.411000  	      	CAN       	1
+CAN           	CANTransmit    	00000182      	000007d000000000	                	                	      	PASS            	PASS  	0.046000  	      	CAN       	1
+CAN通信测试   	CMD            	CAN通信接收   	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.409000  	      	CAN       	1
+CAN通信测试   	CMD-CAN        	CAN通信发送   	1000            	55040404040404FF	55040404040404FF	Hex   	55040404040404FF	PASS  	0.526000  	      	CAN       	1
+退出自动化测试	CMD            	退出自动化测试	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.409000  	      	通信      	1
+ACC置低       	DOAction       	ACC           	0               	                	                	      	                	Done  	0.003000  	      	ACC_IO    	1
+关闭电源      	DOAction       	B+            	0               	                	                	      	                	Done  	0.003000  	      	          	1
+气缸退出      	DOAction       	CylinderCtrl  	0               	                	                	      	                	Done  	0.003000  	      	          	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:636D64206C696E6520726561647921200D0A636D643E
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+CAN发送:ID:00000182DATA:000007d100000000发送CAN通信接收:0F00200020F0
+反馈:0F80200102A7F0
+CAN发送:ID:00000182DATA:000007d000000000发送CAN通信接收:0F00200020F0
+反馈:0F80200101A7F0
+发送CAN通信发送:0F00210021F0
+反馈:0F80210101A6F0
+发送退出自动化测试:0F00020002F0
+反馈:0F8002010185F0

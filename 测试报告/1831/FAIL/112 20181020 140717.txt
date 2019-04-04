@@ -1,0 +1,699 @@
+--SN:112
+--Date and Time:2018-10-20 14:07
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:245
+--TestResult:
+测试项目	测试名称          	测量值          	下限值                 	上限值                 	测试结果	    
+版本信息	查询4G固件版本    	LLA4101.1.0_M006	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	FAIL    	    
+版本信息	查询MCU软件版本   	V2.0            	TB1805V1.00            	TB1805V1.00            	FAIL    	    
+版本信息	查询OPEN软件版本  	V2.0            	TB1805V1.00            	TB1805V1.00            	FAIL    	    
+CAN     	CAN               	0000000000000000	55555555AAAAAAAA       	55555555AAAAAAAA       	FAIL    	    
+3G模块  	读模块信号强度    	11.00000        	13                     	30                     	FAIL    	    
+电压检测	检测备电电压      	5.20000         	0.01                   	0.5                    	FAIL    	    
+电压检测	检测备电电压      	4.80000         	2                      	3.6                    	FAIL    	    
+电压检测	检测备电电压      	5.20000         	2                      	3.6                    	FAIL    	    
+        	检测B+电源电压    	4.90000         	11                     	13                     	FAIL    	    
+生产信息	WIFI网络DOS测试   	FAIL            	PASS                   	PASS                   	FAIL    	    
+生产信息	查询平台登录状态  	                	01                     	01                     	FAIL    	    
+生产信息	查询ACC           	IO状态          	                       	01                     	01      	FAIL
+        	退出自动化测试    	                	01                     	01                     	FAIL    	    
+        	杀死自动化测试进程	FAIL            	PASS                   	PASS                   	FAIL    	    
+        	                  	                	                       	                       	        	    
+
+[测试名称]        	[TestItem ITEM]	[通道]            	[设置参数]      	[下限值]               	[上限值]               	[单位] 	[测量值]        	[结果]	[测试时间]	[备注]         	[测试项目]	 
+打开电源          	DOAction       	B+                	1               	                       	                       	       	                	Done  	0.093000  	               	          	1
+ACC置高           	DOAction       	ACC               	1               	                       	                       	       	                	Done  	0.034000  	               	          	1
+延时              	Delay          	                  	15              	                       	                       	       	                	Done  	15.020000 	               	          	1
+延时              	Delay          	                  	10              	                       	                       	       	                	Done  	10.037000 	               	          	1
+启动自动化测试进程	StartProcess   	100               	5;100           	PASS                   	PASS                   	String 	PASS            	PASS  	3.807000  	               	通信      	1
+启动自动化测试    	CMD_CF         	启动自动化测试    	2000            	01                     	01                     	String 	01              	PASS  	0.495000  	               	通信      	1
+延时              	Delay          	                  	5               	                       	                       	       	                	Done  	5.023000  	               	          	1
+查询4G固件版本    	CMD_CF         	查询4G固件版本    	2000            	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	Hex    	LLA4101.1.0_M006	FAIL  	3.138000  	               	版本信息  	1
+查询MCU软件版本   	CMD_CF         	查询MCU软件版本   	2000            	TB1805V1.00            	TB1805V1.00            	V      	V2.0            	FAIL  	2.825000  	               	版本信息  	1
+查询OPEN软件版本  	CMD_CF         	读OPEN软件版本    	2000            	TB1805V1.00            	TB1805V1.00            	Hex    	V2.0            	FAIL  	2.924000  	               	版本信息  	1
+CheckSN           	CheckSN        	                  	                	                       	                       	Hex    	PASS            	PASS  	2.299000  	               	          	1
+写入主机条码      	CMD_CF         	写入主机条码      	2000            	01                     	01                     	Hex    	01              	PASS  	0.541000  	               	生产信息  	1
+读出CCID          	CMD_CF         	读出CCID          	2000            	PASS                   	PASS                   	Hex    	PASS            	PASS  	0.391000  	               	生产信息  	1
+CCID与SN入库      	WDataToDB      	CCIDTODB          	                	OK                     	OK                     	String 	OK              	PASS  	0.374000  	               	信息入库  	1
+延时              	Delay          	                  	1               	                       	                       	       	                	Done  	1.025000  	               	          	1
+写入硬件版本      	CMD_CF         	写入硬件版本      	2000            	01                     	01                     	String 	01              	PASS  	0.493000  	               	生产信息  	1
+写入生产日期      	CMD_CF         	写入生产日期      	2000            	01                     	01                     	String 	01              	PASS  	0.489000  	               	生产信息  	1
+写入供应商代码    	CMD_CF         	写入供应商代码    	2000            	01                     	01                     	String 	01              	PASS  	0.489000  	               	生产信息  	1
+写入零部件号      	CMD_CF         	写入零部件号      	2000            	01                     	01                     	String 	01              	PASS  	0.490000  	               	生产信息  	1
+写入WIFI名称      	CMD_CF         	写入WIFI名称      	2000            	01                     	01                     	       	01              	PASS  	1.190000  	               	生产信息  	1
+写入WIFI密码      	CMD_CF         	写入WIFI密码      	2000            	01                     	01                     	       	01              	PASS  	0.986000  	               	生产信息  	1
+延时              	Delay          	                  	8               	                       	                       	       	                	Done  	8.024000  	               	          	1
+读条码并比较      	CMD_CF         	读出主机条码      	2000            	PASS                   	PASS                   	String 	PASS            	PASS  	0.409000  	               	生产信息  	1
+读硬件版本并比较  	CMD_CF         	读出硬件版本      	2000            	PASS                   	PASS                   	String 	PASS            	PASS  	0.498000  	               	生产信息  	1
+读生产日期并比较  	CMD_CF         	读出生产日期      	2000            	PASS                   	PASS                   	String 	PASS            	PASS  	0.411000  	               	生产信息  	1
+读供应商代码并比较	CMD_CF         	读出供应商代码    	2000            	PASS                   	PASS                   	Hex    	PASS            	PASS  	0.401000  	               	生产信息  	1
+读零部件号并比较  	CMD_CF         	读出零部件号      	2000            	PASS                   	PASS                   	       	PASS            	PASS  	0.390000  	               	生产信息  	1
+读WIFI名称并比较  	CMD_CF         	读出WIFI名称      	2000            	PASS                   	PASS                   	       	PASS            	PASS  	0.491000  	               	生产信息  	1
+读WIFI密码并比较  	CMD_CF         	读出WIFI密码      	2000            	PASS                   	PASS                   	Hex    	PASS            	PASS  	0.395000  	               	生产信息  	1
+读WIFI的MAC地址   	CMD_CF         	读出WIFI MAC地址  	2000            	12                     	12                     	       	12.00000        	PASS  	0.490000  	存到Reserved3中	生产信息  	1
+比较MAC地址       	WDataToDB      	取MAC地址         	1000            	PASS                   	PASS                   	Hex    	PASS            	PASS  	0.048000  	               	生产信息  	1
+延时              	Delay          	                  	3               	                       	                       	       	                	Done  	3.026000  	               	          	1
+WIFI/BT模块自检   	CMD_CF         	WIFI模块自检      	2000            	01                     	01                     	Hex    	01              	PASS  	0.390000  	               	通信      	1
+CAN               	CANTest        	00000666;00000667 	0011223344556677	55555555AAAAAAAA       	55555555AAAAAAAA       	String 	0000000000000000	FAIL  	6.109000  	               	CAN       	1
+GPS定位查询       	CMD_CF         	GPS定位查询       	2000            	01                     	01                     	Hex    	01              	PASS  	0.503000  	               	GPS       	1
+读模块信号强度    	CMD_CF         	上网模块信号强度  	2000            	13                     	30                     	Hex    	11.00000        	FAIL  	2.835000  	               	3G模块    	1
+外部FLASH测试     	CMD_CF         	外部Flash测试     	2000            	01                     	01                     	Hex    	01              	PASS  	0.391000  	               	          	1
+CHARGE_CTL置低    	CMD_CF         	CHARGE_CTL置低    	2000            	01                     	01                     	Hex    	01              	PASS  	0.490000  	               	          	1
+BATVCC_CTL置低    	CMD_CF         	切断备电供电      	2000            	01                     	01                     	String 	01              	PASS  	0.489000  	               	          	1
+延时              	Delay          	0                 	2               	                       	                       	       	                	Done  	2.026000  	               	          	1
+检测备电电压      	CMD_CF         	检测备电电压      	2000            	0.01                   	0.5                    	String 	5.20000         	FAIL  	5.266000  	               	电压检测  	1
+CHARGE_CTL置低    	CMD_CF         	CHARGE_CTL置低    	2000            	01                     	01                     	Hex    	01              	PASS  	0.490000  	               	          	1
+BATVCC_CTL置高    	CMD_CF         	恢复备电供电      	2000            	01                     	01                     	String 	01              	PASS  	0.490000  	               	          	1
+延时              	Delay          	0                 	3               	                       	                       	       	                	Done  	3.024000  	               	          	1
+检测备电电压      	CMD_CF         	检测备电电压      	2000            	2                      	3.6                    	String 	4.80000         	FAIL  	5.265000  	               	电压检测  	1
+CHARGE_CTL置高    	CMD_CF         	CHARGE_CTL置高    	2000            	01                     	01                     	Hex    	01              	PASS  	0.499000  	               	          	1
+延时              	Delay          	0                 	3               	                       	                       	       	                	Done  	3.024000  	               	          	1
+检测备电电压      	CMD_CF         	检测备电电压      	2000            	2                      	3.6                    	String 	5.20000         	FAIL  	5.371000  	               	电压检测  	1
+检测B+电源电压    	CMD_CF         	检测B+电源电压    	2000            	11                     	13                     	String 	4.90000         	FAIL  	5.378000  	               	          	1
+WIFI网络DOS测试   	WIFI_DOS       	2;6               	1;5             	PASS                   	PASS                   	String 	FAIL            	FAIL  	97.030000 	               	生产信息  	1
+查询平台登录状态  	CMD_CF         	查询平台登录状态  	2000            	01                     	01                     	String 	                	FAIL  	10.709000 	               	生产信息  	1
+查询ACC IO状态    	CMD_CF         	查询ACC IO状态    	2000            	01                     	01                     	Hex    	                	FAIL  	10.700000 	               	生产信息  	1
+ACC置低           	DOAction       	ACC               	0               	PASS                   	PASS                   	String 	                	Done  	0.027000  	               	          	1
+ACC置高           	DOAction       	ACC               	1               	                       	                       	       	                	Done  	0.026000  	               	          	1
+延时              	Delay          	                  	1               	                       	                       	       	                	Done  	1.026000  	               	          	1
+退出自动化测试    	CMD_CF         	退出自动化测试    	15              	01                     	01                     	       	                	FAIL  	0.679000  	               	          	1
+杀死自动化测试进程	QuitProcess    	杀死自动化测试进程	1000            	PASS                   	PASS                   	String 	FAIL            	FAIL  	12.207000 	               	          	1
+ACC置低           	DOAction       	ACC               	0               	                       	                       	       	                	Done  	0.026000  	               	          	1
+关闭电源          	DOAction       	B+                	0               	                       	                       	       	                	Done  	0.026000  	               	          	1
+
+通信信息:启动自动化测试进程：PASS
+COM70: 退出进程
+反馈：killall
+Password: 
+COM70
+退出系统：
+反馈：
+
+COM70
+输入用户名：root
+反馈：root
+
+COM70
+输入密码：quectel123
+反馈：
+root@mdm9607:~# 
+COM70
+启动进程：
+反馈：/vendor/app/local_data
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01LLA4101.1.0_M006
+
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01LLA4101.1.0_M006
+
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test$IdType:8051$ValType:01$Value:01V2.0
+
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test$IdType:8051$ValType:01$Value:01V2.0
+
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01V2.0
+
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01V2.0
+
+发送写入主机条码:auto_test$IdType:0033$ValType:01$Value:112
+反馈:auto_test$IdType:8033$ValType:01$Value:01
+
+发送读出CCID:auto_test$IdType:0037$ValType:01$Value:
+反馈:auto_test$IdType:8037$ValType:01$Value:01898602C9991890290701
+
+CCID与SN入库: OK
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:8040$ValType:01$Value:01
+
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20181020
+反馈:auto_test$IdType:8035$ValType:01$Value:01
+
+发送写入供应商代码:auto_test$IdType:0054$ValType:01$Value:Seg1152
+反馈:auto_test$IdType:8054$ValType:01$Value:01
+
+发送写入零部件号:auto_test$IdType:0056$ValType:01$Value:LV0.1
+反馈:auto_test$IdType:8056$ValType:01$Value:01
+
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:jac_s4_1020140403
+反馈:auto_test$IdType:803a$ValType:01$Value:01
+
+发送写入WIFI密码:auto_test$IdType:003b$ValType:01$Value:12345678
+反馈:auto_test$IdType:803b$ValType:01$Value:01
+
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test$IdType:8034$ValType:01$Value:01112
+
+发送读出硬件版本:auto_test$IdType:0041$ValType:01$Value:
+反馈:auto_test$IdType:8041$ValType:01$Value:01V0.2
+
+发送读出生产日期:auto_test$IdType:0036$ValType:01$Value:
+反馈:auto_test$IdType:8036$ValType:01$Value:0120181020
+
+
+发送读出供应商代码:auto_test$IdType:0055$ValType:01$Value:
+反馈:auto_test$IdType:8055$ValType:01$Value:01Seg1152
+
+发送读出零部件号:auto_test$IdType:0057$ValType:01$Value:
+反馈:auto_test$IdType:8057$ValType:01$Value:01LV0.1
+
+发送读出WIFI名称:auto_test$IdType:003c$ValType:01$Value:
+反馈:auto_test$IdType:803c$ValType:01$Value:01jac_s4_1020140403
+
+发送读出WIFI密码:auto_test$IdType:003d$ValType:01$Value:
+反馈:auto_test$IdType:803d$ValType:01$Value:0112345678
+
+发送读出WIFI MAC地址:auto_test$IdType:0058$ValType:01$Value:
+反馈:auto_test$IdType:8058$ValType:01$Value:0160d7e390484e
+
+比较MAC地址: PASS
+发送WIFI模块自检:auto_test$IdType:000f$ValType:01$Value:
+反馈:auto_test$IdType:800f$ValType:01$Value:01
+
+CAN发送:ID:00000666;00000667DATA:0011223344556677
+CAN发送:ID:00000666;00000667DATA:0011223344556677
+CAN发送:ID:00000666;00000667DATA:0011223344556677
+发送GPS定位查询:auto_test$IdType:0008$ValType:01$Value:
+反馈:auto_test$IdType:8008$ValType:01$Value:01
+
+发送上网模块信号强度:auto_test$IdType:000d$ValType:01$Value:
+反馈:auto_test$IdType:800d$ValType:01$Value:0111
+
+发送上网模块信号强度:auto_test$IdType:000d$ValType:01$Value:
+反馈:auto_test$IdType:800d$ValType:01$Value:0111
+
+发送外部Flash测试:auto_test$IdType:0011$ValType:01$Value:
+反馈:auto_test$IdType:8011$ValType:01$Value:01
+
+发送CHARGE_CTL置低:auto_test$IdType:0017$ValType:01$Value:00
+反馈:auto_test$IdType:8017$ValType:01$Value:01
+
+发送切断备电供电:auto_test$IdType:0015$ValType:01$Value:00
+反馈:auto_test$IdType:8015$ValType:01$Value:01
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:010.2
+
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:014.8
+
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:014.8
+
+
+发送CHARGE_CTL置低:auto_test$IdType:0017$ValType:01$Value:00
+反馈:auto_test$IdType:8017$ValType:01$Value:01
+
+发送恢复备电供电:auto_test$IdType:0015$ValType:01$Value:01
+反馈:auto_test$IdType:8015$ValType:01$Value:01
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:010.1
+
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:010.1
+
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:010.1
+
+
+发送CHARGE_CTL置高:auto_test$IdType:0017$ValType:01$Value:01
+反馈:auto_test$IdType:8017$ValType:01$Value:01
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:010.2
+
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:010.2
+
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:014.8
+
+
+发送检测B+电源电压:auto_test$IdType:005c$ValType:01$Value:
+反馈:auto_test$IdType:805c$ValType:01$Value:0112.3
+
+
+发送检测B+电源电压:auto_test$IdType:005c$ValType:01$Value:
+反馈:auto_test$IdType:805c$ValType:01$Value:0112.3
+
+
+发送检测B+电源电压:auto_test$IdType:005c$ValType:01$Value:
+反馈:auto_test$IdType:805c$ValType:01$Value:0112.3
+
+
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+WIFI名:jac_s4_1020140403
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1020140403
+原文本内容：
+
+新文本内容：
+
+添加配置情况说明输出：
+
+WIFI连接情况说明输出：
+
+ping网络结果输出：
+单循环Ping次数：
+单循环Ping时间：配置文件不存在
+断开网络连接结果输出：断开WIFI：jac_s4_1020140403连接说明：
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+无线自动配置服务(wlansvc)没有运行。
+发送查询平台登录状态:auto_test$IdType:005d$ValType:01$Value:
+反馈:auto_test$IdType:005d$ValType:01$Value:
+Password: 
+发送查询平台登录状态:auto_test$IdType:005d$ValType:01$Value:
+反馈:auto_test
+发送查询平台登录状态:auto_test$IdType:005d$ValType:01$Value:
+反馈:auto_test$IdType:005d$ValType:01$Value:
+Password: 
+发送查询ACC IO状态:auto_test$IdType:0005$ValType:01$Value:
+反馈:auto_test
+发送查询ACC IO状态:auto_test$IdType:0005$ValType:01$Value:
+反馈:auto_test$IdType:0005$ValType:01$Value:
+Password: 
+发送查询ACC IO状态:auto_test$IdType:0005$ValType:01$Value:
+反馈:auto_test
+发送退出自动化测试:auto_test$IdType:0002$ValType:01$Value:
+反馈:auto_test$IdType:0002$ValType:01$Value:
+Password: 
+发送退出自动化测试:auto_test$IdType:0002$ValType:01$Value:
+反馈:auto_test

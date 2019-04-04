@@ -1,0 +1,2010 @@
+2019-3-7 8:52:57
+StepName:
+DAQmx Reset Device.vi:4740025<append>
+错误-50152发生于 DAQmx Reset Device.vi:4740025
+
+可能原因
+
+发生硬件错误。无法按指定方式完成该操作。
+
+2019-3-7 8:50:16
+StepName:
+DAQmx Reset Device.vi:4740025<append>
+错误-50152发生于 DAQmx Reset Device.vi:4740025
+
+可能原因
+
+发生硬件错误。无法按指定方式完成该操作。
+
+2019-3-6 15:43:07
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<8>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<8>
+
+2019-3-6 15:42:59
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<3>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<3>
+
+2019-3-6 15:42:53
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<0>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<0>
+
+2018-12-12 11:37:56
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-12-12 11:37:46
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-10-29 18:49:02
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<5>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<5>
+
+2018-10-29 18:48:43
+StepName:
+DAQmx Create Channel (AI-Voltage-Basic).vi:1780001<append>
+<B>任务名称: </B>_unnamedTask<4>
+错误-229771发生于 DAQmx Create Channel (AI-Voltage-Basic).vi:1780001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<4>
+
+2018-10-29 17:19:46
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<1>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<1>
+
+2018-10-29 17:18:33
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<0>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<0>
+
+2018-10-24 11:18:50
+StepName:
+DAQmx Create Channel (AI-Voltage-Basic).vi:1780001<append>
+<B>任务名称: </B>_unnamedTask<8>
+错误-229771发生于 DAQmx Create Channel (AI-Voltage-Basic).vi:1780001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<8>
+
+2018-10-24 11:15:46
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<5>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<5>
+
+2018-10-24 11:15:34
+StepName:
+DAQmx Create Channel (AI-Voltage-Basic).vi:1780001<append>
+<B>任务名称: </B>_unnamedTask<4>
+错误-229771发生于 DAQmx Create Channel (AI-Voltage-Basic).vi:1780001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<4>
+
+2018-10-24 11:11:06
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<1>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<1>
+
+2018-10-24 11:10:34
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<0>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<0>
+
+2018-10-24 10:57:16
+StepName:
+DAQmx Is Task Done.vi:4470001->AOGen.vi->T-Box Testsystem.vi中的属性节点 DAQmx Task (arg 1) <append>
+<B>任务名称: </B>_unnamedTask<A7>
+错误-88709发生于 DAQmx Is Task Done.vi:4470001->AOGen.vi->T-Box Testsystem.vi中的属性节点 DAQmx Task (arg 1)
+
+可能原因
+
+由于任务已中止或者设备已从系统中删除，将无法执行指定操作。根据应用程序要求处理该情况，如有可能并再试一次。
+
+任务名称: _unnamedTask<A7>
+
+2018-10-24 0:02:26
+StepName:
+Settings get error.
+Can't find "Speaker".
+错误5000发生于 Settings get error.
+Can't find "Speaker".
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-10-23 23:18:20
+StepName:
+VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-10-23 17:34:32
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi:1550015->CommunicationTool-Ver1.vi:4280014->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807194发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi:1550015->CommunicationTool-Ver1.vi:4280014->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF00A6) 给定会话的连接已丢失。
+
+2018-10-23 17:32:08
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi:1550015->CommunicationTool-Ver1.vi:4280014->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807194发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi:1550015->CommunicationTool-Ver1.vi:4280014->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF00A6) 给定会话的连接已丢失。
+
+2018-10-23 11:24:14
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi:1550014->CommunicationTool-Ver1.vi:4280013->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi:1550014->CommunicationTool-Ver1.vi:4280013->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-10-23 11:22:27
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi:1550014->CommunicationTool-Ver1.vi:4280013->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi:1550014->CommunicationTool-Ver1.vi:4280013->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-10-23 11:05:28
+StepName:
+VISA Configure Serial Port (Instr).vi->SerialPortInit.vi:1550014->CommunicationTool-Ver1.vi:4280013->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SerialPortInit.vi:1550014->CommunicationTool-Ver1.vi:4280013->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-10-23 10:39:20
+StepName:
+Settings get error.
+Can't find "Speak".
+错误5000发生于 Settings get error.
+Can't find "Speak".
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-10-23 10:37:39
+StepName:
+Settings get error.
+Can't find "Speaker".
+错误5000发生于 Settings get error.
+Can't find "Speaker".
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-10-23 10:31:32
+StepName:
+DAQmx Reset Device.vi:4740025<append>
+错误-224903发生于 DAQmx Reset Device.vi:4740025
+
+可能原因
+
+Internal Software Error occurred in Static_Digital software. Please contact National Instruments Support.
+
+2018-10-23 10:30:52
+StepName:
+DAQmx Reset Device.vi:4740007<append>
+错误-224903发生于 DAQmx Reset Device.vi:4740007
+
+可能原因
+
+Internal Software Error occurred in Static_Digital software. Please contact National Instruments Support.
+
+2018-10-23 10:24:35
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<1>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<1>
+
+2018-10-23 10:24:26
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<0>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<0>
+
+2018-10-22 20:42:59
+StepName:
+启动测试回环Speaker名称不存在
+错误5000发生于 启动测试回环Speaker名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-10-20 15:23:34
+StepName:
+CommunicationTool-Ver1.vi:4280010->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA写入
+错误-1073807343发生于 CommunicationTool-Ver1.vi:4280010->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA写入
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-10-20 14:51:40
+StepName:
+Settings get error.
+Can't find "MIC".
+错误5000发生于 Settings get error.
+Can't find "MIC".
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-10-18 14:59:02
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<1>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<1>
+
+2018-10-18 13:58:34
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<0>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<0>
+
+2018-10-18 13:57:09
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<0>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<0>
+
+2018-10-18 13:51:53
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<2>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<2>
+
+2018-10-18 13:38:49
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<1>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<1>
+
+2018-10-18 12:28:33
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<0>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<0>
+
+2018-10-18 12:25:04
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<0>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<0>
+
+2018-10-17 15:25:04
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<3>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<3>
+
+2018-10-17 15:06:41
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<2>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<2>
+
+2018-10-17 15:03:09
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<1>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<1>
+
+2018-10-17 15:02:13
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870001<append>
+<B>任务名称: </B>_unnamedTask<0>
+错误-229771发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870001
+
+可能原因
+
+Internal Software Error occurred in MIG software. Please contact National Instruments Support.
+
+任务名称: _unnamedTask<0>
+
+2018-10-10 11:54:55
+StepName:
+VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-10-10 11:54:18
+StepName:
+VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-29 11:27:34
+StepName:
+Settings get error.
+Can't find "MIC".
+错误5000发生于 Settings get error.
+Can't find "MIC".
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-26 10:43:32
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807298发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF003E) 由于I/O错误，将无法执行相应操作。
+
+2018-9-26 8:41:59
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-26 8:41:32
+StepName:
+VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-25 16:40:19
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-25 16:38:25
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807252发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006C) 传输时发生超出限度错误。在下一个字符到达之前，未从硬件读取该字符。
+
+2018-9-25 16:37:15
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-25 11:15:58
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-25 10:19:47
+StepName:
+Slot1 Cann't find the "SRSTest" item.
+错误5000发生于 Slot1 Cann't find the "SRSTest" item.
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-25 9:38:14
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-22 17:43:33
+StepName:
+CHARGE_CTL输出低电平
+名称不存在
+错误5000发生于 CHARGE_CTL输出低电平
+名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-22 17:38:38
+StepName:
+CHARGE_CTL输出低电平
+名称不存在
+错误5000发生于 CHARGE_CTL输出低电平
+名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-22 17:34:04
+StepName:
+CHARGE_CTL输出低电平
+名称不存在
+错误5000发生于 CHARGE_CTL输出低电平
+名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-22 17:32:31
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-22 17:29:05
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-22 17:28:59
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-22 17:28:46
+StepName:
+VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-22 17:16:01
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-22 17:13:03
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-22 17:09:26
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-22 17:08:22
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-22 17:08:11
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-22 17:04:17
+StepName:
+CHARGE_CTL输出低电平
+名称不存在
+错误5000发生于 CHARGE_CTL输出低电平
+名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-22 16:59:56
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807252发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006C) 传输时发生超出限度错误。在下一个字符到达之前，未从硬件读取该字符。
+
+2018-9-22 16:57:36
+StepName:
+CHARGE_CTL输出低电平
+名称不存在
+错误5000发生于 CHARGE_CTL输出低电平
+名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-22 16:53:53
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-22 16:42:18
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输过程中发生成帧错误。
+
+2018-9-22 16:41:09
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输过程中发生成帧错误。
+
+2018-9-22 16:40:24
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807252发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006C) 传输时发生超出限度错误。在下一个字符到达之前，未从硬件读取该字符。
+
+2018-9-22 16:39:58
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输过程中发生成帧错误。
+
+2018-9-22 16:37:53
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输过程中发生成帧错误。
+
+2018-9-22 11:56:14
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-22 11:13:16
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-21 21:34:34
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807252发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006C) 传输时发生超出限度错误。在下一个字符到达之前，未从硬件读取该字符。
+
+2018-9-21 21:34:10
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807252发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006C) 传输时发生超出限度错误。在下一个字符到达之前，未从硬件读取该字符。
+
+2018-9-21 21:25:56
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi:480004->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi:480004->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-21 21:23:52
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807252发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006C) 传输时发生超出限度错误。在下一个字符到达之前，未从硬件读取该字符。
+
+2018-9-21 21:21:56
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807252发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006C) 传输时发生超出限度错误。在下一个字符到达之前，未从硬件读取该字符。
+
+2018-9-21 21:20:48
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输过程中发生成帧错误。
+
+2018-9-21 21:19:02
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-21 20:43:24
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输过程中发生成帧错误。
+
+2018-9-21 10:41:30
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-21 10:40:59
+StepName:
+VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-21 8:39:41
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807252发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006C) 传输时发生超出限度错误。在下一个字符到达之前，未从硬件读取该字符。
+
+2018-9-20 16:20:44
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-19 21:26:09
+StepName:
+VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-19 15:58:29
+StepName:
+杀死自动化测试进程名称不存在
+错误5000发生于 杀死自动化测试进程名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 15:49:10
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 15:49:05
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 15:48:49
+StepName:
+VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-19 15:48:23
+StepName:
+VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->serial port init.vi:6080009->CommunicationTool.vi:3540008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-9-19 15:47:08
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 15:47:00
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 15:44:25
+StepName:
+外部FLASH测试名称不存在
+错误5000发生于 外部FLASH测试名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 15:38:48
+StepName:
+读出供用商代码名称不存在
+错误5000发生于 读出供用商代码名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 15:27:43
+StepName:
+写硬件版本名称不存在
+错误5000发生于 写硬件版本名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 15:08:31
+StepName:
+读出条码名称不存在
+错误5000发生于 读出条码名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 14:16:54
+StepName:
+读出条码名称不存在
+错误5000发生于 读出条码名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 14:12:43
+StepName:
+Slot1 Cann't find the "FileReceived" item.
+错误5000发生于 Slot1 Cann't find the "FileReceived" item.
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 13:47:37
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输过程中发生成帧错误。
+
+2018-9-19 12:28:28
+StepName:
+写入TUID名称不存在
+错误5000发生于 写入TUID名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 12:26:47
+StepName:
+写入条码名称不存在
+错误5000发生于 写入条码名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-9-19 12:25:18
+StepName:
+StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 StartProcess.vi->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输过程中发生成帧错误。
+
+2018-9-19 9:37:49
+StepName:
+查询OPEN软件版本名称不存在
+错误5000发生于 查询OPEN软件版本名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018/6/20 17:51:19
+StepName:
+VISA Configure Serial Port (Instr).vi->serial port init.vi:6080010->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->serial port init.vi:6080010->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018/6/20 17:09:36
+StepName:
+VISA Configure Serial Port (Instr).vi->serial port init.vi:6080010->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->serial port init.vi:6080010->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源合法但VISA当前无法对其进行访问。
+
+2018/6/20 17:09:23
+StepName:
+VISA Configure Serial Port (Instr).vi->serial port init.vi:6080010->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->serial port init.vi:6080010->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源合法但VISA当前无法对其进行访问。
+
+2018/6/20 16:47:50
+StepName:
+VISA Configure Serial Port (Instr).vi->serial port init.vi:6080010->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->serial port init.vi:6080010->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在设备或资源。
+
+2018-5-23 11:53:24
+StepName:
+Slot1 Cann't find the "" item.
+错误5000发生于 Slot1 Cann't find the "" item.
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-5-23 11:52:17
+StepName:
+Slot1 Cann't find the "" item.
+错误5000发生于 Slot1 Cann't find the "" item.
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-5-23 11:51:41
+StepName:
+Slot1 Cann't find the "" item.
+错误5000发生于 Slot1 Cann't find the "" item.
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2018-5-23 11:51:19
+StepName:
+Slot1 Cann't find the "" item.
+错误5000发生于 Slot1 Cann't find the "" item.
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2017-2-24 16:32:10
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2017-2-24 16:31:04
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2016-12-15 13:45:57
+StepName:
+DAQmx Reset Device.vi:4740017<append>
+错误-50152发生于 DAQmx Reset Device.vi:4740017
+
+可能原因
+
+NI Platform Services:  发生硬件错误。无法按指定方式完成该操作。
+
+2016-12-15 13:45:35
+StepName:
+DAQmx Reset Device.vi:4740017<append>
+错误-50152发生于 DAQmx Reset Device.vi:4740017
+
+可能原因
+
+NI Platform Services:  发生硬件错误。无法按指定方式完成该操作。
+
+2016-12-15 13:45:28
+StepName:
+DAQmx Reset Device.vi:4740017<append>
+错误-50152发生于 DAQmx Reset Device.vi:4740017
+
+可能原因
+
+NI Platform Services:  发生硬件错误。无法按指定方式完成该操作。
+
+2016-12-15 13:44:47
+StepName:
+DAQmx Reset Device.vi:4740017<append>
+错误-50152发生于 DAQmx Reset Device.vi:4740017
+
+可能原因
+
+NI Platform Services:  发生硬件错误。无法按指定方式完成该操作。
+
+2016-12-15 13:44:44
+StepName:
+DAQmx Reset Device.vi:4740017<append>
+错误-50152发生于 DAQmx Reset Device.vi:4740017
+
+可能原因
+
+NI Platform Services:  发生硬件错误。无法按指定方式完成该操作。
+
+2016-12-15 13:44:32
+StepName:
+DAQmx Reset Device.vi:4740017<append>
+错误-50152发生于 DAQmx Reset Device.vi:4740017
+
+可能原因
+
+NI Platform Services:  发生硬件错误。无法按指定方式完成该操作。
+
+2016-12-15 13:44:22
+StepName:
+DAQmx Reset Device.vi:4740017<append>
+错误-50152发生于 DAQmx Reset Device.vi:4740017
+
+可能原因
+
+NI Platform Services:  发生硬件错误。无法按指定方式完成该操作。
+
+2016-12-15 13:41:44
+StepName:
+DAQmx Reset Device.vi:4740017<append>
+错误-50152发生于 DAQmx Reset Device.vi:4740017
+
+可能原因
+
+NI Platform Services:  发生硬件错误。无法按指定方式完成该操作。
+
+2016-12-15 13:41:34
+StepName:
+DAQmx Reset Device.vi:4740017<append>
+错误-224903发生于 DAQmx Reset Device.vi:4740017
+
+可能原因
+
+Internal Software Error occurred in Static_Digital software. Please contact National Instruments Support.
+
+2016-12-15 10:13:08
+StepName:
+Meacurrent.vi->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 Meacurrent.vi->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输时发生帧错误。
+
+2016-12-15 10:12:59
+StepName:
+Meacurrent.vi->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 Meacurrent.vi->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输时发生帧错误。
+
+2016-12-15 9:50:49
+StepName:
+Meacurrent.vi->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 Meacurrent.vi->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输时发生帧错误。
+
+2016-12-14 20:17:45
+StepName:
+Meacurrent.vi->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 Meacurrent.vi->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输时发生帧错误。
+
+2016-12-14 18:49:16
+StepName:
+Slot2 Cann't find the "quiescentCurrent" item.
+错误5000发生于 Slot2 Cann't find the "quiescentCurrent" item.
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2016-10-11 12:29:15
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870002<append>
+<B>指定的设备: </B>Dev1
+<B>建议设备: </B>PCI-6509, PCI-6229
+
+<B>任务名称: </B>_unnamedTask<0>
+错误-200220发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870002
+
+可能原因
+
+设备标识符无效。
+
+指定的设备: Dev1
+建议设备: PCI-6509, PCI-6229
+
+任务名称: _unnamedTask<0>
+
+2016-9-21 11:30:39
+StepName:
+CCID.xls文件不存在!
+错误5000发生于 CCID.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2016-9-20 19:55:54
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870002<append>
+<B>指定的设备: </B>Dev1
+<B>建议设备: </B>PCI-6509, PCI-6229
+
+<B>任务名称: </B>_unnamedTask<0>
+错误-200220发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870002
+
+可能原因
+
+设备标识符无效。
+
+指定的设备: Dev1
+建议设备: PCI-6509, PCI-6229
+
+任务名称: _unnamedTask<0>
+
+2016-9-20 14:34:16
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870002<append>
+<B>指定的设备: </B>Dev1
+<B>建议设备: </B>PCI-6509, PCI-6229
+
+<B>任务名称: </B>_unnamedTask<0>
+错误-200220发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870002
+
+可能原因
+
+设备标识符无效。
+
+指定的设备: Dev1
+建议设备: PCI-6509, PCI-6229
+
+任务名称: _unnamedTask<0>
+
+2016/9/14 星期三 9:05:08
+StepName:
+VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2016/9/8 星期四 12:11:14
+StepName:
+VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2016/9/8 星期四 11:59:10
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870002<append>
+<B>指定的设备: </B>Dev1
+<B>建议设备: </B>PCI-6509, PCI-6229
+
+<B>任务名称: </B>_unnamedTask<2>
+错误-200220发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870002
+
+可能原因
+
+设备标识符无效。
+
+指定的设备: Dev1
+建议设备: PCI-6509, PCI-6229
+
+任务名称: _unnamedTask<2>
+
+2016/9/8 星期四 11:35:55
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870002<append>
+<B>指定的设备: </B>Dev1
+<B>建议设备: </B>PCI-6509, PCI-6229
+
+<B>任务名称: </B>_unnamedTask<1>
+错误-200220发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870002
+
+可能原因
+
+设备标识符无效。
+
+指定的设备: Dev1
+建议设备: PCI-6509, PCI-6229
+
+任务名称: _unnamedTask<1>
+
+2016/9/8 星期四 11:34:15
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870002<append>
+<B>指定的设备: </B>Dev1
+<B>建议设备: </B>PCI-6509, PCI-6229
+
+<B>任务名称: </B>_unnamedTask<0>
+错误-200220发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870002
+
+可能原因
+
+设备标识符无效。
+
+指定的设备: Dev1
+建议设备: PCI-6509, PCI-6229
+
+任务名称: _unnamedTask<0>
+
+2016/9/5 星期一 9:04:20
+StepName:
+DAQmx Create Channel (AO-Voltage-Basic).vi:1870002<append>
+<B>指定的设备: </B>Dev1
+<B>建议设备: </B>PCI-6509, PCI-6229
+
+<B>任务名称: </B>_unnamedTask<0>
+错误-200220发生于 DAQmx Create Channel (AO-Voltage-Basic).vi:1870002
+
+可能原因
+
+设备标识符无效。
+
+指定的设备: Dev1
+建议设备: PCI-6509, PCI-6229
+
+任务名称: _unnamedTask<0>
+
+2016-5-30 15:37:05
+StepName:
+VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2016-5-27 8:35:11
+StepName:
+Settings get error.
+Can't find "CHARGE_WAKE".
+错误5000发生于 Settings get error.
+Can't find "CHARGE_WAKE".
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2016-5-26 16:26:53
+StepName:
+Settings get error.
+Can't find "CHARGE_WAKE".
+错误5000发生于 Settings get error.
+Can't find "CHARGE_WAKE".
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2016-5-26 16:24:45
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2016-5-26 16:09:31
+StepName:
+Settings get error.
+Can't find "CHARGE_WAKE".
+错误5000发生于 Settings get error.
+Can't find "CHARGE_WAKE".
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2016-5-26 16:08:51
+StepName:
+电信五码.xls文件不存在!
+错误5000发生于 电信五码.xls文件不存在!
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2016-5-20 17:41:16
+StepName:
+查询CCID名称不存在
+错误5000发生于 查询CCID名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2016-5-20 15:26:15
+StepName:
+DAQmx Is Task Done.vi:4470001->AOGen.vi->T-Box Testsystem.vi中的属性节点 DAQmx Task (arg 1) <append>
+<B>任务名称: </B>_unnamedTask<150>
+错误-88709发生于 DAQmx Is Task Done.vi:4470001->AOGen.vi->T-Box Testsystem.vi中的属性节点 DAQmx Task (arg 1)
+
+可能原因
+
+由于任务已中止或者设备已从系统中删除，将无法执行指定操作。根据应用程序要求处理该情况，如有可能并再试一次。
+
+任务名称: _unnamedTask<150>
+
+2016-5-20 10:50:17
+StepName:
+Settings get error.
+Can't find "CHARGE_WAKE".
+错误5000发生于 Settings get error.
+Can't find "CHARGE_WAKE".
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2016-5-20 10:39:07
+StepName:
+VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2016-5-18 16:55:19
+StepName:
+NI_LVConfig.lvlib:Get File Path.vi->NI_LVConfig.lvlib:Close Config Data.vi->ReadInstrumentsAddress.vi->T-Box Testsystem.vi中的获取队列状态
+错误1发生于 NI_LVConfig.lvlib:Get File Path.vi->NI_LVConfig.lvlib:Close Config Data.vi->ReadInstrumentsAddress.vi->T-Box Testsystem.vi中的获取队列状态
+
+可能原因
+
+LabVIEW:  输入参数无效。例如，输入路径可能包含操作系统不允许用于路径的字符（例如，?或@）。
+=========================
+NI-488:  该命令要求GPIB控制器为主控控制器。
+
+2016-5-18 16:52:36
+StepName:
+NI_LVConfig.lvlib:Get File Path.vi->NI_LVConfig.lvlib:Close Config Data.vi->ReadInstrumentsAddress.vi->T-Box Testsystem.vi中的获取队列状态
+错误1发生于 NI_LVConfig.lvlib:Get File Path.vi->NI_LVConfig.lvlib:Close Config Data.vi->ReadInstrumentsAddress.vi->T-Box Testsystem.vi中的获取队列状态
+
+可能原因
+
+LabVIEW:  输入参数无效。例如，输入路径可能包含操作系统不允许用于路径的字符（例如，?或@）。
+=========================
+NI-488:  该命令要求GPIB控制器为主控控制器。
+
+2015-12-4 14:11:40
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140006->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误1发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140006->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+LabVIEW:  输入参数无效。例如，输入路径可能包含操作系统不允许用于路径的字符（例如，?或@）。
+=========================
+NI-488:  该命令要求GPIB控制器为主控控制器。
+
+2015-5-14 15:33:41
+StepName:
+VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-5-13 17:53:57
+StepName:
+DAQmx Is Task Done.vi:4470001->AOGen.vi->T-Box Testsystem.vi中的属性节点 DAQmx Task (arg 1) <append>
+<B>任务名称: </B>_unnamedTask<C8>
+错误-88709发生于 DAQmx Is Task Done.vi:4470001->AOGen.vi->T-Box Testsystem.vi中的属性节点 DAQmx Task (arg 1)
+
+可能原因
+
+由于任务已中止或者设备已从系统中删除，将无法执行指定操作。根据应用程序要求处理该情况，如有可能并再试一次。
+
+任务名称: _unnamedTask<C8>
+
+2015-5-13 17:41:19
+StepName:
+DAQmx Is Task Done.vi:4470001->AOGen.vi->T-Box Testsystem.vi中的属性节点 DAQmx Task (arg 1) <append>
+<B>任务名称: </B>_unnamedTask<7E>
+错误-88709发生于 DAQmx Is Task Done.vi:4470001->AOGen.vi->T-Box Testsystem.vi中的属性节点 DAQmx Task (arg 1)
+
+可能原因
+
+由于任务已中止或者设备已从系统中删除，将无法执行指定操作。根据应用程序要求处理该情况，如有可能并再试一次。
+
+任务名称: _unnamedTask<7E>
+
+2015-2-9 11:58:03
+StepName:
+SIMCOMCommunicationTool.vi:7140008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+错误-1073807253发生于 SIMCOMCommunicationTool.vi:7140008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA读取
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输时发生帧错误。
+
+2015-2-9 11:43:01
+StepName:
+SIMCOMCommunicationTool.vi:7140008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA写入
+错误-1073807253发生于 SIMCOMCommunicationTool.vi:7140008->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的VISA写入
+
+可能原因
+
+VISA:  (Hex 0xBFFF006B) 传输时发生帧错误。
+
+2015-2-9 9:18:34
+StepName:
+VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540007->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540007->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-2-9 9:17:10
+StepName:
+VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540009->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-2-3 22:00:02
+StepName:
+SIMCOMCommunicationTool.vi:7140006->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的VISA写入
+错误-1073807360发生于 SIMCOMCommunicationTool.vi:7140006->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的VISA写入
+
+可能原因
+
+VISA:  (Hex 0xBFFF0000) 未知系统错误（其它错误）。
+
+2015-2-3 21:53:57
+StepName:
+自动检测串口失败
+错误1440发生于 自动检测串口失败
+
+可能原因
+
+LabVIEW:  文件名与预期名称不匹配。
+
+2015-2-3 19:26:03
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140006->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140006->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-2-3 19:20:28
+StepName:
+NI_LVConfig.lvlib:Get File Path.vi->NI_LVConfig.lvlib:Close Config Data.vi->ReadInstrumentsAddress.vi->T-Box Testsystem.vi中的获取队列状态
+错误1发生于 NI_LVConfig.lvlib:Get File Path.vi->NI_LVConfig.lvlib:Close Config Data.vi->ReadInstrumentsAddress.vi->T-Box Testsystem.vi中的获取队列状态
+
+可能原因
+
+LabVIEW:  输入参数无效。例如，输入路径可能包含操作系统不允许用于路径的字符（例如，?或@）。
+
+2015-2-3 19:19:52
+StepName:
+NI_LVConfig.lvlib:Get File Path.vi->NI_LVConfig.lvlib:Close Config Data.vi->ReadInstrumentsAddress.vi->T-Box Testsystem.vi中的获取队列状态
+错误1发生于 NI_LVConfig.lvlib:Get File Path.vi->NI_LVConfig.lvlib:Close Config Data.vi->ReadInstrumentsAddress.vi->T-Box Testsystem.vi中的获取队列状态
+
+可能原因
+
+LabVIEW:  输入参数无效。例如，输入路径可能包含操作系统不允许用于路径的字符（例如，?或@）。
+
+2015-2-3 13:50:34
+StepName:
+SIMCOMCommunicationTool.vi:7140006->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的VISA写入
+错误-1073807360发生于 SIMCOMCommunicationTool.vi:7140006->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的VISA写入
+
+可能原因
+
+VISA:  (Hex 0xBFFF0000) 未知系统错误（其它错误）。
+
+2015-2-3 13:45:48
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140006->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140006->TestSequenceSubVI.vi:4310002->SequenceVI.vi:6750001->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-1-30 12:56:41
+StepName:
+VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2015-1-19 16:19:54
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-1-19 09:21:00
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-1-17 17:07:55
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2015-1-17 16:34:14
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2015-1-17 15:04:50
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2015-1-17 14:58:51
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2015-1-17 14:47:00
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2015-1-17 14:27:14
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-1-17 14:09:00
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-1-17 8:50:09
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-1-16 15:36:45
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2015-1-16 15:30:34
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2015-1-16 14:58:07
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2015-1-16 14:29:43
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2015-1-16 11:14:44
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-1-15 21:03:37
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-1-15 16:25:07
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-1-15 11:04:37
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-1-15 10:42:34
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807343发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0011) 位置信息不足或系统中不存在该设备或资源。
+
+2015-1-15 10:07:35
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误1发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+LabVIEW:  输入参数无效。例如，输入路径可能包含操作系统不允许用于路径的字符（例如，?或@）。
+=========================
+NI-488:  该命令要求GPIB控制器为主控控制器。
+
+2014-12-20 11:42:05
+StepName:
+VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误1发生于 VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+LabVIEW:  输入参数无效。例如，输入路径可能包含操作系统不允许用于路径的字符（例如，?或@）。
+=========================
+NI-488:  该命令要求GPIB控制器为主控控制器。
+
+2014-12-20 11:39:17
+StepName:
+VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误1发生于 VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+LabVIEW:  输入参数无效。例如，输入路径可能包含操作系统不允许用于路径的字符（例如，?或@）。
+=========================
+NI-488:  该命令要求GPIB控制器为主控控制器。
+
+2014-12-20 11:31:40
+StepName:
+VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误1发生于 VISA Configure Serial Port (Instr).vi->CommunicationTool.vi:3540001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+LabVIEW:  输入参数无效。例如，输入路径可能包含操作系统不允许用于路径的字符（例如，?或@）。
+=========================
+NI-488:  该命令要求GPIB控制器为主控控制器。
+
+2014-12-19 8:47:15
+StepName:
+GPS定位时间名称不存在
+错误5000发生于 GPS定位时间名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2014-12-19 8:43:39
+StepName:
+音频回环测试名称不存在
+错误5000发生于 音频回环测试名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2014-12-18 17:37:40
+StepName:
+外部flash测试名称不存在
+错误5000发生于 外部flash测试名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2014-12-18 16:43:05
+StepName:
+3G通信自检名称不存在
+错误5000发生于 3G通信自检名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2014-12-18 16:39:55
+StepName:
+ACC状态查询名称不存在
+错误5000发生于 ACC状态查询名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+
+2014-12-18 16:28:27
+StepName:
+VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+错误-1073807246发生于 VISA Configure Serial Port (Instr).vi->SIMCOMCommunicationTool.vi:7140001->TestSequenceSubVI.vi:4310003->SequenceVI.vi:6750002->T-Box Testsystem.vi中的属性节点 (arg 1)
+
+可能原因
+
+VISA:  (Hex 0xBFFF0072) 资源有效，但VISA当前无法访问该资源。
+
+2014-12-18 16:26:29
+StepName:
+查询BAT_DET电压名称不存在
+错误5000发生于 查询BAT_DET电压名称不存在
+
+该错误代码未定义。出现未定义错误可能有多种原因。例如，代码说明不存在，或者连线输入的数值并非对应于错误输入的错误代码。
+
+此外，出现未定义错误代码的原因还可能是该错误与操作系统或ActiveX之类的第三方对象相关。对于这类第三方错误，可通过对错误代码(5000)或其十六进制表示(0x00001388)进行Web搜索得到错误说明。
+

@@ -1,0 +1,61 @@
+--SN:0000000000000000001
+--Date and Time:2015-12-4 12:28
+--Tester:Slot1
+--OperatorID:
+--CycleTime:42
+--TestResult:
+测试项目	测试名称 	测量值                 	下限值	上限值	测试结果               	  	    	                       	  	    	    
+版本    	查询版本 	TGS80_H243@09:26:50-Jul	14    	2015  	TGS80_H240@16:55:36-Jun	10	2015	TGS80_H240@16:55:36-Jun	10	2015	FAIL
+电流    	测量电流 	0.17938                	0.2   	0.4   	FAIL                   	  	    	                       	  	    	    
+查询MEID	CheckMEID	FAIL                   	      	      	FAIL                   	  	    	                       	  	    	    
+        	         	                       	      	      	                       	  	    	                       	  	    	    
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]  	[下限值]                       	[上限值]                       	[单位]	[测量值]                       	[结果]	[测试时间]	[备注]	[测试项目]	 
+气缸推进           	DOAction       	CylinderCtrl        	1           	                               	                               	      	                               	Done  	0.009000  	      	          	1
+打开电源           	DOAction       	B+                  	1           	                               	                               	      	                               	Done  	0.003000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1           	                               	                               	      	                               	Done  	0.011000  	      	ACC_IO    	1
+退出自动化测试     	CMD            	退出自动化测试      	1000        	                               	0x01                           	Hex   	0x01                           	PASS  	0.523000  	      	通信      	1
+延时               	Delay          	                    	15          	                               	                               	      	                               	Done  	15.000000 	      	          	1
+查询版本           	CMD            	查询版本            	1000        	TGS80_H240@16:55:36-Jun 10 2015	TGS80_H240@16:55:36-Jun 10 2015	String	TGS80_H243@09:26:50-Jul 14 2015	FAIL  	2.683000  	      	版本      	1
+启动自动化测试     	CMD            	启动自动化测试      	1000        	OK                             	OK                             	String	OK                             	PASS  	0.118000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000        	11.5                           	12.5                           	V     	12.42200                       	PASS  	0.124000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000        	0x01                           	0x01                           	Hex   	0x01                           	PASS  	1.019000  	      	通信      	1
+测量电流           	MeaCurrent     	Current             	Differential	0.2                            	0.4                            	A     	0.17938                        	FAIL  	12.564000 	      	电流      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	1                              	1.636                          	V     	1.47600                        	PASS  	0.323000  	      	电压检测  	1
+等待启动           	FindSIMCOMETH  	                    	30          	                               	                               	      	PASS                           	PASS  	4.963000  	      	3G模块    	1
+查询MEID           	USBCMD         	查询MEID            	1000        	OK                             	OK                             	String	PASS                           	PASS  	0.883000  	      	3G模块    	1
+CheckMEID          	CheckMEID      	                    	            	                               	                               	      	FAIL                           	FAIL  	0.015000  	      	查询MEID  	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:0F8002010183F0
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H243@09:26:50-Jul 14 2015
+	1, 0x00000001
+cmd>
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H243@09:26:50-Jul 14 2015
+	1, 0x00000001
+cmd>
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H243@09:26:50-Jul 14 2015
+	1, 0x00000001
+cmd>
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F801602044E90F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010196F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205C493F0
+发送 查询MEID:AT+SMEID?
+反馈:
++SMEID: A1000021ABDDE6
+
+OK
+

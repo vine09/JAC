@@ -1,0 +1,33 @@
+--SN:001
+--Date and Time:2018-9-21 21:26
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:26
+--TestResult:
+测试项目	测试名称          	测量值          	下限值          	上限值          	测试结果
+CAN     	CAN               	0000000000000000	55555555AAAAAAAA	55555555AAAAAAAA	FAIL    
+电压检测	杀死自动化测试进程	FAIL            	PASS            	PASS            	FAIL    
+        	                  	                	                	                	        
+
+[测试名称]        	[TestItem ITEM]	[通道]            	[设置参数]      	[下限值]        	[上限值]        	[单位] 	[测量值]        	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction       	B+                	1               	                	                	       	                	Done  	0.002000  	      	          	1
+ACC置高           	DOAction       	ACC               	1               	                	                	       	                	Done  	0.016000  	      	ACC_IO    	1
+启动自动化测试进程	StartProcess   	启动自动化测试进程	5;100           	PASS            	PASS            	String 	PASS            	PASS  	3.697000  	      	通信      	1
+启动自动化测试    	CMD_CF         	启动自动化测试    	1000            	01              	01              	String 	01              	PASS  	0.340000  	      	通信      	1
+CAN               	CANTest        	00000666;00000667 	0011223344556677	55555555AAAAAAAA	55555555AAAAAAAA	String 	0000000000000000	FAIL  	9.303000  	      	CAN       	1
+退出自动化测试    	CMD_CF         	退出自动化测试    	15              	01              	01              	       	01              	PASS  	0.350000  	      	          	1
+杀死自动化测试进程	QuitProcess    	杀死自动化测试进程	1000            	PASS            	PASS            	String 	FAIL            	FAIL  	12.324000 	      	电压检测  	1
+ACC置低           	DOAction       	ACC               	0               	                	                	       	                	Done  	0.025000  	      	ACC_IO    	1
+关闭电源          	DOAction       	B+                	0               	                	                	       	                	Done  	0.018000  	      	          	1
+
+通信信息:启动自动化测试进程：PASS
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+CAN发送:ID:00000666;00000667DATA:0011223344556677
+CAN发送:ID:00000666;00000667DATA:0011223344556677
+CAN发送:ID:00000666;00000667DATA:0011223344556677
+CAN发送:ID:00000666;00000667DATA:0011223344556677
+CAN发送:ID:00000666;00000667DATA:0011223344556677
+发送退出自动化测试:auto_test$IdType:0002$ValType:01$Value:
+反馈:

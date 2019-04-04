@@ -1,0 +1,133 @@
+--SN:0203443f41521000737
+--Date and Time:2015-3-23 15:27
+--Tester:Slot1
+--OperatorID:
+--CycleTime:82
+--TestResult:
+测试项目	测试名称   	测量值                    	下限值	上限值	测试结果               		 	    	                       		 	    	    
+版本    	查询版本   	TGS80_H206.01@14:32:40-Mar	23    	2015  	TGS80_H203_18:09:56-Feb		9	2015	TGS80_H203_18:09:56-Feb		9	2015	FAIL
+CSH检测 	CSH状态查询	0x02                      	0x01  	0x01  	FAIL                   		 	    	                       		 	    	    
+CAN     	CAN        	FAIL                      	      	      	FAIL                   		 	    	                       		 	    	    
+        	           	                          	      	      	                       		 	    	                       		 	    	    
+
+[测试名称]          	[TestItem ITEM]	[通道]               	[设置参数]      	[下限值]                       	[上限值]                       	[单位]	[测量值]                          	[结果]	[测试时间]	[备注]	[测试项目]  	 
+气缸推进            	DOAction       	CylinderCtrl         	1               	                               	                               	      	                                  	Done  	0.015000  	      	            	1
+打开电源            	DOAction       	B+                   	1               	                               	                               	      	                                  	Done  	0.028000  	      	            	1
+ACC置高             	DOAction       	ACC                  	1               	                               	                               	      	                                  	Done  	0.025000  	      	ACC_IO      	1
+退出自动化测试      	CMD            	退出自动化测试       	1000            	                               	0x01                           	Hex   	0x01                              	PASS  	0.419000  	      	通信        	1
+延时                	Delay          	                     	5               	                               	                               	      	                                  	Done  	5.008000  	      	            	1
+延时                	Delay          	                     	10              	                               	                               	      	                                  	Done  	10.024000 	      	            	1
+查询版本            	CMD            	查询版本             	1000            	TGS80_H203_18:09:56-Feb  9 2015	TGS80_H203_18:09:56-Feb  9 2015	String	TGS80_H206.01@14:32:40-Mar 23 2015	FAIL  	2.585000  	      	版本        	1
+启动自动化测试      	CMD            	启动自动化测试       	1000            	OK                             	OK                             	String	OK                                	PASS  	0.122000  	      	通信        	1
+查询BAT_DET电压     	CMD            	查询BAT_DET状态      	1000            	11                             	12.5                           	V     	11.12100                          	PASS  	1.958000  	      	电压检测    	1
+CHARGE_CTL输出      	CMD            	CHARGE_CTL输出高电平 	1000            	0x01                           	0x01                           	Hex   	0x01                              	PASS  	3.076000  	      	通信        	1
+测量电流            	MeaCurrent     	Current              	Differential    	0.2                            	0.4                            	A     	0.25959                           	PASS  	1.226000  	      	电流        	1
+查询BAT7.2V_DET电压 	CMD            	查询BAT7.2V_DET电压  	1000            	1                              	1.636                          	V     	1.49800                           	PASS  	0.321000  	      	电压检测    	1
+CHARGE_CTL输出      	CMD            	CHARGE_CTL输出低电平 	1000            	0x01                           	0x01                           	Hex   	0x01                              	PASS  	0.928000  	      	通信        	1
+测量电流            	MeaCurrent     	Current              	Differential    	0.1                            	0.25                           	A     	0.14555                           	PASS  	1.227000  	      	电流        	1
+等待启动            	FindSIMCOMETH  	                     	30              	                               	                               	      	PASS                              	PASS  	0.514000  	      	3G模块      	1
+查询MEID            	USBCMD         	查询MEID             	1000            	OK                             	OK                             	String	PASS                              	PASS  	0.751000  	      	3G模块      	1
+BATVCC_CTL输出      	CMD            	BATVCC_CTL输出高电平 	1000            	0x01                           	0x01                           	Hex   	0x01                              	PASS  	0.929000  	      	通信        	1
+关闭电源            	DOAction       	B+                   	0               	                               	                               	      	                                  	Done  	0.016000  	      	            	1
+查询BAT7.2V_DET电压 	CMD            	查询BAT7.2V_DET电压  	1000            	1                              	1.636                          	V     	1.47500                           	PASS  	0.424000  	      	电压检测    	1
+查询BAT_DET电压     	CMD            	查询BAT_DET状态      	1000            	5                              	8.4                            	V     	7.15000                           	PASS  	0.441000  	      	电压检测    	1
+BATVCC_CTL输出      	CMD            	BATVCC_CTL输出低电平 	1000            	                               	0x00                           	String	                                  	PASS  	1.030000  	      	电压检测    	1
+重启                	CMD            	重启                 	1000            	                               	0x00                           	Hex   	                                  	PASS  	1.032000  	      	通信        	1
+打开电源            	DOAction       	B+                   	1               	                               	                               	      	                                  	Done  	0.044000  	      	            	1
+延时                	Delay          	                     	30              	                               	                               	      	                                  	Done  	30.015000 	      	            	1
+启动自动化测试      	CMD            	启动自动化测试       	1000            	OK                             	OK                             	String	OK                                	PASS  	0.223000  	      	通信        	1
+ACC置低             	DOAction       	ACC                  	0               	                               	                               	      	                                  	Done  	0.014000  	      	ACC_IO      	1
+延时                	Delay          	                     	1               	                               	                               	      	                                  	Done  	1.012000  	      	            	1
+ACC状态查询         	CMD            	查询ACC状态          	1000            	0x01                           	0x01                           	Hex   	0x01                              	PASS  	0.421000  	      	ACC_IO      	1
+ACC置高             	DOAction       	ACC                  	1               	                               	                               	      	                                  	Done  	0.015000  	      	ACC_IO      	1
+延时                	Delay          	                     	1               	                               	                               	      	                                  	Done  	1.027000  	      	            	1
+ACC状态查询         	CMD            	查询ACC状态          	1000            	0x02                           	0x02                           	Hex   	0x02                              	PASS  	0.342000  	      	ACC_IO      	1
+CSH有效             	DOAction       	CSH                  	1               	                               	                               	      	                                  	Done  	0.013000  	      	CSH检测     	1
+CSH状态查询         	CMD            	查询CSH状态          	1000            	0x01                           	0x01                           	Hex   	0x02                              	FAIL  	14.082000 	      	CSH检测     	1
+CSH无效             	DOAction       	CSH                  	0               	                               	                               	      	                                  	Done  	0.013000  	      	CSH检测     	1
+CSH状态查询         	CMD            	查询CSH状态          	1000            	0x02                           	0x02                           	Hex   	0x02                              	PASS  	0.424000  	      	CSH检测     	1
+加速度传感器返回数据	CMD            	加速度传感器返回数据1	1000            	85                             	110                            	度    	90.00000                          	PASS  	0.548000  	      	加速度传感器	1
+CAN                 	CANTransmit    	00000182             	000007d100000000	                               	                               	      	FAIL                              	FAIL  	1.117000  	      	CAN         	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:0F8002010185F0
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H206.01@14:32:40-Mar 23 2015
+	1, 0x00000001
+cmd>
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H206.01@14:32:40-Mar 23 2015
+	1, 0x00000001
+cmd>
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H206.01@14:32:40-Mar 23 2015
+	1, 0x00000001
+cmd>
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F80160203DD91F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F80160203F391F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010191F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205DA95F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010191F0
+发送 查询MEID:AT+SMEID?
+反馈:
++SMEID: A1000021A67062
+
+OK
+
+发送BATVCC_CTL输出高电平:0F0015010115F0
+反馈:0F8015010193F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205C395F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F801602028A90F0
+发送BATVCC_CTL输出低电平:0F0015010014F0
+反馈:
+发送重启:0F00220022F0
+反馈:
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010182F0
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010282F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送加速度传感器返回数据1:0F0007010006F0
+反馈:0F8007015A81F0
+CAN发送:ID:00000182DATA:000007d100000000

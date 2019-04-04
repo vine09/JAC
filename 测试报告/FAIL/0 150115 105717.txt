@@ -1,0 +1,41 @@
+--SN:0
+--Date and Time:2015-1-15 10:57
+--Tester:Slot1
+--OperatorID:
+--CycleTime:24
+--TestResult:
+测试项目	测试名称           	测量值	下限值	上限值	测试结果
+电压检测	查询BAT_DET电压    	0x    	0x01  	0x01  	FAIL    
+通信    	CHARGE_CTL输出     	0x    	0x01  	0x01  	FAIL    
+电压检测	查询BAT7.2V_DET电压	0x    	0x01  	0x01  	FAIL    
+通信    	CHARGE_CTL输出     	0x    	0x01  	0x01  	FAIL    
+        	                   	      	      	      	        
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源           	DOAction       	B+                  	1         	        	        	      	        	Done  	0.014000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1         	        	        	      	        	Done  	0.023000  	      	ACC IO    	1
+延时               	Delay          	                    	10        	        	        	      	        	Done  	10.021000 	      	CAN       	1
+启动自动化测试     	CMD            	启动自动化测试      	1000      	OK      	OK      	String	OK      	PASS  	1.036000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000      	0x01    	0x01    	Hex   	0x      	FAIL  	3.095000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000      	0x01    	0x01    	Hex   	0x      	FAIL  	3.100000  	      	通信      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000      	0x01    	0x01    	Hex   	0x      	FAIL  	3.099000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出低电平	1000      	0x01    	0x01    	Hex   	0x      	FAIL  	3.120000  	      	通信      	1
+
+通信信息:发送启动自动化测试:746573746D6F64652831290D
+反馈:
+发送查询BAT_DET状态:0F00160016F0
+反馈:
+发送查询BAT_DET状态:0F00160016F0
+反馈:
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:

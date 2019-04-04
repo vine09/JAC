@@ -1,0 +1,26 @@
+--SN:76844016023948395fc140123
+--Date and Time:2016-5-26 17:00
+--Tester:Slot1
+--OperatorID:
+--CycleTime:10
+--TestResult:
+²βΚΤΟξΔΏ	²βΚΤΓϋ³Ζ      	²βΑΏΦµ                                                              	ΟΒΟήΦµ                    	ΙΟΟήΦµ	²βΚΤ½αΉϋ     	  	    	                          		             	  	    	    
+Ν¨ΠΕ    	ΝΛ³φΧΤ¶―»―²βΚΤ	0xB5B1BEFFE2EFEFFCF6B2BEB8B28D8AF2EFEFFCFDFEE7BEBEBE8D8AFEFFF7BCFAFD	                          	0x01  	FAIL         	  	    	                          		             	  	    	    
+°ζ±Ύ    	²ιΡ―°ζ±Ύ      	                                                                    	TB1516_APPV2.07__BOOTV2.02	      	@14:39:32-May	20	2016	TB1516_APPV2.07__BOOTV2.02		@14:39:32-May	20	2016	FAIL
+        	              	                                                                    	                          	      	             	  	    	                          		             	  	    	    
+
+[²βΚΤΓϋ³Ζ]    	[TestItem ITEM]	[Ν¨µΐ]        	[ΙθΦΓ²ΞΚύ]	[ΟΒΟήΦµ]                                         	[ΙΟΟήΦµ]                                         	[µ¥Ξ»]	[²βΑΏΦµ]                                                            	[½αΉϋ]	[²βΚΤΚ±Όδ]	[±ΈΧΆ]	[²βΚΤΟξΔΏ]	 
+΄ςΏªµηΤ΄      	DOAction       	B+            	1         	                                                 	                                                 	      	                                                                    	Done  	0.008000  	      	          	1
+ACCΦΓΈί       	DOAction       	ACC           	1         	                                                 	                                                 	      	                                                                    	Done  	0.019000  	      	ACC_IO    	1
+ΝΛ³φΧΤ¶―»―²βΚΤ	CMD            	ΝΛ³φΧΤ¶―»―²βΚΤ	1000      	                                                 	0x01                                             	Hex   	0xB5B1BEFFE2EFEFFCF6B2BEB8B28D8AF2EFEFFCFDFEE7BEBEBE8D8AFEFFF7BCFAFD	FAIL  	1.064000  	      	Ν¨ΠΕ      	1
+ΡΣΚ±          	Delay          	              	3         	                                                 	                                                 	      	                                                                    	Done  	3.022000  	      	          	1
+²ιΡ―°ζ±Ύ      	CMD            	²ιΡ―°ζ±Ύ      	1000      	TB1516_APPV2.07__BOOTV2.02  @14:39:32-May 20 2016	TB1516_APPV2.07__BOOTV2.02  @14:39:32-May 20 2016	String	                                                                    	FAIL  	5.278000  	      	°ζ±Ύ      	1
+
+Ν¨ΠΕΠΕΟΆ:·ΆΛΝΝΛ³φΧΤ¶―»―²βΚΤ:0F00020002F0
+·΄ΐ΅:F4E2B9B5B1BEFFE2EFEFFCF6B2BEB8B28D8AF2EFEFFCFDFEE7BEBEBE8D8AFEFFF7BCFAFDEDF0B0FCEFA0F1F8F8AEBEBE8D8A8D8AF3FFFAE5B0F3FCEBBDB9BAB0B0B0B8B8B0B0BCFCE9F3FBB0F2F1FCF5BDB1B8B8B0BCFBFDFBF4F9F3FFF3B0F8F5F2B0EFFBA0F4F9F3EBBDB9BAB0B0B0B88F8AF3FDF4A0FCF9FEE5B0FAF5E1F4F9B1A08D8AF1F0F0B0FBFEE1F2FCBCF6F5FAFBE9FFFEBEF4E2B9BDB1B6FFE1F8F0F6BABEB0B6FFFFE2EFEFFCF6B2BEB8B2A0B0E0B9B7BABBB8BAB5BDBFE1F0FAB0B1B9B0BAB0B1BEB0A08D8AF3FFE4BEB1B1A1F5F8B0F2F5FBF5F4B0B1B1A1BCBB8D8EFDEFF4F5FDFFF2F5F3E5F9FEF5FFF4F1FBFFA8B9B0FBF4F1FAFCA0FFFB8D8A8D8AF3FFF0F9B0FCE2E3B0F6E9FCF5B0E6F2FFEDA0FDF3F5A0F6FCF1F3F8B0FCEFB0FDF3F5B0F6FCE1F3F8BEAEBE8D8EEFE2F4F8E7F8F4E2E3F4F6FCF2F5F8FEFFF4FDEEFBBFADB0F8E6E6E6E6E6E6E6E6BDAD8D8A8D8AF0F1FAF3E5B0FCF2E3B0F6FDECF5BEAEBE8D8EEEEFB0FCC2E3B0F6FDECF5B0FDEEB0FDF3F58D8AFFF0F5FEB0E7F0
+·ΆΛΝ²ιΡ―°ζ±Ύ:76657228290D
+·΄ΐ΅:φυϊ¨©ρππ°ϋτρϊό¬φυϊσωÿώΊτβΉΏ±¶ÿαππώΊ®°Ύÿÿβοοτφ²ΎΈ²°°ΰ±·Ί»°Ί½½­αψϊ ±Ή°Ί°±Ύ° §ό·Ό ²ΎΌ΄ΈΊΎΌ΄Ό°Έψ±ΈΈ°ςΈΏγγύτΎςεσÿϊδ³ΎΈÿτυϋτÿόρσϋ°όοÿπΎ®®½½±πυϊιÿτ°ςυψÿςτ°όασϋ°ςψ°ύϋηΊψχςωÿτ ςυψοςό°ςυωϋαφε°ντφ°ÿλ ΈΉΏ«²½°βωόυσΊϊεσÿϊδ³ΎΈÿτυϋόÿτρϋλ°όÿοπΎΎ®½½Ή½­αό°γύτ½Ώατ»γσρ½­οόϋζξϊΎσόκωςυσοςτ»¶°ÿόεσόÿτρϋÿ όÿÿψ®ΎΎΏ­±
+·ΆΛΝ²ιΡ―°ζ±Ύ:76657228290D
+·΄ΐ΅:ώεςΈ½ρψψ σόρςτΌώεςϋύοώΊόβ±µΉΎÿαψψφ²ΎΈ¶ÿÿβΟοόώΊ®°Ί° ΰΉΏΊ³ΈΊµ½½Απϊ°±Ή°ΊΈ±¶°°‰·ό·Ό°²¶ΈΌΈ²ΎΌΎ¬°Έό±°ΈΈβΈΏσσύδΎψυϊύÿδ°ϊχπÿϊό τρϋλ°ϊό ύϋχΎπυϊύοτ°ϊεπÿϊτ°ϊυρϋαφε°ιτώ°οϋ°Ό±·»Ί© ςωόεσΊϊχγÿϊτ³¶Έÿτυϋόÿτρϋλ όÿÿπΎΎΎ½½Ήςυψÿςτ°όασϋ°ςψ°ύσηΊώχτ°ϋόατυ½°ςυσοςτ»¶°ÿόχσόÿώασϋ°μÿÿψ®ΎΎ½­±
+·ΆΛΝ²ιΡ―°ζ±Ύ:76657228290D
+·΄ΐ΅:φυϊ¨Ήαπψ°στρϊτΌώυςσωÿώΊτβΉµ±Ύÿαπψώ²ΎΈΎίÿβοοτφΊΎ°²°°ΰ±ΏΎ³°Ί½µ½αψϊ ±Ή°²°ΉΎ °‰·ό·¬ ΊΎΈ΄ΈΊΎΈ΄Ό°°ψΉΈ°°ςΌ·σγύτΎψεςωÿδ°ϊυπÿϊό τρϋÿ ςψ°νσχΎπυϊύοτ°ϊεπÿϊτ ϊυωϋαφε°ιτώ°οϋ°Ό±·»Ί½ ςωόεσΊϊεσÿϊδ³ΎΈίτυϋώÿτρϋλ°όÿοπΎΎ®½½Ή

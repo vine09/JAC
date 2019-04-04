@@ -1,0 +1,43 @@
+--SN:011
+--Date and Time:2018-9-22 16:54
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:17
+--TestResult:
+Pass
+[测试名称]        	[TestItem ITEM]	[通道]                                     	[设置参数]               	[下限值]               	[上限值]               	[单位]	[测量值]               	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction       	B+                                         	1                        	                       	                       	      	                       	Done  	0.009000  	      	          	1
+ACC置高           	DOAction       	ACC                                        	1                        	                       	                       	      	                       	Done  	0.013000  	      	ACC_IO    	1
+延时              	Delay          	                                           	3                        	                       	                       	      	                       	Done  	3.011000  	      	          	1
+启动自动化测试进程	StartProcess   	启动自动化测试进程                         	5;100                    	PASS                   	PASS                   	String	PASS                   	PASS  	0.879000  	      	通信      	1
+启动自动化测试    	CMD_CF         	启动自动化测试                             	1000                     	01                     	01                     	String	01                     	PASS  	0.330000  	      	通信      	1
+延时              	Delay          	                                           	5                        	                       	                       	      	                       	Done  	5.014000  	      	          	1
+查询4G固件版本    	CMD_CF         	查询4G固件版本                             	1000                     	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	Hex   	EC20CEFAGR06A02M4G_OCPU	PASS  	0.335000  	      	生产信息  	1
+查询MCU软件版本   	CMD_CF         	查询MCU软件版本                            	1000                     	TB1805V1.00            	TB1805V1.00            	V     	TB1805V1.00            	PASS  	0.331000  	      	电压检测  	1
+查询OPEN软件版本  	CMD_CF         	读OPEN软件版本                             	1000                     	TB1805V1.00            	TB1805V1.00            	Hex   	TB1805V1.00            	PASS  	0.346000  	      	通信      	1
+CheckSN           	CheckSN        	                                           	                         	                       	                       	Hex   	PASS                   	PASS  	4.821000  	      	通信      	1
+TUID和证书编号入库	WDataToDB      	D:\File\08CAG2018031400000001等19个证书文件	证书列表.txt;4G T-BOX.txt	OK                     	OK                     	Hex   	OK                     	PASS  	0.191000  	      	生产信息  	1
+写入主机条码      	CMD_CF         	写入主机条码                               	1000                     	01                     	01                     	Hex   	01                     	PASS  	0.338000  	      	生产信息  	1
+读出CCID          	CMD_CF         	读出CCID                                   	1000                     	PASS                   	PASS                   	Hex   	PASS                   	PASS  	0.343000  	      	生产信息  	1
+
+通信信息:启动自动化测试进程：PASS
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01EC20CEFAGR06A02M4G_OCPU
+
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test$IdType:8051$ValType:01$Value:01TB1805V1.00
+
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01TB1805V1.00
+
+TUID和证书编号入库: OK
+发送写入主机条码:auto_test$IdType:0033$ValType:01$Value:011
+反馈:auto_test$IdType:8033$ValType:01$Value:01
+
+发送读出CCID:auto_test$IdType:0037$ValType:01$Value:
+反馈:auto_test$IdType:8037$ValType:01$Value:0189860117750042506791
+
+CCID与SN入库: ICCID IS REPEATED

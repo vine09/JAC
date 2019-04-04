@@ -1,0 +1,16 @@
+--SN:0203443F41511800045
+--Date and Time:2015-2-3 20:45
+--Tester:Slot1
+--OperatorID:
+--CycleTime:6
+--TestResult:
+Pass
+[测试名称]    	[TestItem ITEM]	[通道]        	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+气缸推进      	DOAction       	CylinderCtrl  	1         	        	        	      	        	Done  	0.012000  	      	          	1
+打开电源      	DOAction       	B+            	1         	        	        	      	        	Done  	0.017000  	      	          	1
+ACC置高       	DOAction       	ACC           	1         	        	        	      	        	Done  	0.018000  	      	ACC_IO    	1
+退出自动化测试	CMD            	退出自动化测试	1000      	        	0x01    	Hex   	        	PASS  	1.031000  	      	通信      	1
+延时          	Delay          	              	5         	        	        	      	        	Done  	5.016000  	      	CAN       	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:0020F0636D64206C696E6520726561647921200D0A636D643E

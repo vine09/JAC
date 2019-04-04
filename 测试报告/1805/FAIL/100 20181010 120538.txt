@@ -1,0 +1,48 @@
+--SN:100
+--Date and Time:2018-10-10 12:05
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:38
+--TestResult:
+测试项目	测试名称    	测量值  	下限值	上限值	测试结果
+        	测试工作电流	73.20000	100   	500   	FAIL    
+        	            	        	      	      	        
+
+[测试名称]        	[TestItem ITEM]	[通道]        	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction       	B+            	1         	        	        	      	        	Done  	0.011000  	      	          	1
+ACC置高           	DOAction       	ACC           	1         	        	        	      	        	Done  	0.014000  	      	          	1
+延时              	Delay          	              	5         	        	        	      	        	Done  	5.011000  	      	          	1
+测试工作电流      	Static Current 	GDM-8341      	          	100     	500     	ma    	73.20000	FAIL  	3.451000  	      	          	1
+延时              	Delay          	              	20        	        	        	      	        	Done  	20.012000 	      	          	1
+启动自动化测试进程	StartProcess   	100           	5;100     	PASS    	PASS    	String	PASS    	PASS  	3.666000  	      	通信      	1
+启动自动化测试    	CMD_CF         	启动自动化测试	1000      	01      	01      	String	01      	PASS  	0.222000  	      	通信      	1
+延时              	Delay          	              	5         	        	        	      	        	Done  	5.015000  	      	          	1
+
+通信信息:启动自动化测试进程：PASS
+COM4: 退出进程
+反馈：killall
+Password: 
+COM4
+退出系统：
+反馈：
+
+COM4
+输入用户名：root
+反馈：root
+
+COM4
+输入密码：quectel123
+反馈：
+root@mdm9607-perf:~# 
+COM4
+启动进程：
+反馈：/data/QuecOpen/local_data
+>>>>>start ok
+ip == 192.168.100.1, port == 22222
+bind socket failed!
+: Cannot assign requested address
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+

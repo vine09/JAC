@@ -1,0 +1,353 @@
+--SN:0
+--Date and Time:2015-1-17 17:40
+--Tester:Slot1
+--OperatorID:
+--CycleTime:159
+--TestResult:
+测试项目	测试名称      	测量值  	下限值	上限值	测试结果
+3G模块  	音频输出幅度  	1.65615 	0.3   	0.35  	FAIL    
+3G模块  	音频输出信噪比	19.47555	36    	      	FAIL    
+3G模块  	音频输出失真度	10.66103	0     	3     	FAIL    
+GPS     	GPS定位查询   	0x02    	0x01  	0x01  	FAIL    
+        	              	        	      	      	        
+
+[测试名称]          	[TestItem ITEM]	[通道]               	[设置参数]     	[下限值]	[上限值]	[单位]	[测量值]        	[结果]	[测试时间]	[备注]	[测试项目]  	 
+打开电源            	DOAction       	B+                   	1              	        	        	      	                	Done  	0.014000  	      	            	1
+ACC置高             	DOAction       	ACC                  	1              	        	        	      	                	Done  	0.022000  	      	ACC IO      	1
+延时                	Delay          	                     	15             	        	        	      	                	Done  	15.047000 	      	CAN         	1
+启动自动化测试      	CMD            	启动自动化测试       	1000           	OK      	OK      	String	OK              	PASS  	0.137000  	      	通信        	1
+查询BAT_DET电压     	CMD            	查询BAT_DET状态      	1000           	0x01    	0x01    	Hex   	0x01            	PASS  	0.337000  	      	电压检测    	1
+CHARGE_CTL输出      	CMD            	CHARGE_CTL输出高电平 	1000           	0x01    	0x01    	Hex   	0x01            	PASS  	0.938000  	      	通信        	1
+查询BAT7.2V_DET电压 	CMD            	查询BAT7.2V_DET电压  	1000           	0x0550  	0x0664  	Hex   	0x05E7          	PASS  	0.444000  	      	电压检测    	1
+CHARGE_CTL输出      	CMD            	CHARGE_CTL输出低电平 	1000           	0x01    	0x01    	Hex   	0x01            	PASS  	0.951000  	      	通信        	1
+查询ESN             	USBCMD         	查询ESN              	1000           	OK      	OK      	String	PASS            	PASS  	14.045000 	      	3G模块      	1
+设置AKEY            	USBCMD         	设置AKEY             	1000           	OK      	OK      	String	PASS            	PASS  	0.532000  	      	3G模块      	1
+设置IMSI1           	USBCMD         	设置IMSI1            	1000           	OK      	OK      	String	PASS            	PASS  	0.504000  	      	3G模块      	1
+设置IMSI2           	USBCMD         	设置IMSI2            	1000           	OK      	OK      	String	PASS            	PASS  	0.508000  	      	3G模块      	1
+设置IMSI3           	USBCMD         	设置IMSI3            	1000           	OK      	OK      	String	PASS            	PASS  	0.509000  	      	3G模块      	1
+设置EVDO账号        	USBCMD         	设置EVDO账号         	1000           	OK      	OK      	String	PASS            	PASS  	0.708000  	      	3G模块      	1
+设置EVDO密码        	USBCMD         	设置EVDO密码         	1000           	OK      	OK      	String	PASS            	PASS  	0.733000  	      	3G模块      	1
+设置RTRECF          	USBCMD         	设置RTRECF           	1000           	OK      	OK      	String	PASS            	PASS  	0.721000  	      	3G模块      	1
+BATVCC_CTL输出      	CMD            	BATVCC_CTL输出高电平 	1000           	0x01    	0x01    	Hex   	0x01            	PASS  	0.851000  	      	通信        	1
+关闭电源            	DOAction       	B+                   	0              	        	        	      	                	Done  	0.035000  	      	            	1
+查询BAT7.2V_DET电压 	CMD            	查询BAT7.2V_DET电压  	1000           	0x0550  	0x0664  	Hex   	0x05CA          	PASS  	0.322000  	      	电压检测    	1
+查询BAT_DET电压     	CMD            	查询BAT_DET状态      	1000           	0x02    	0x02    	Hex   	0x02            	PASS  	0.523000  	      	电压检测    	1
+重启                	CMD            	重启                 	1000           	0x00    	0x00    	Hex   	0x00            	PASS  	0.446000  	      	通信        	1
+打开电源            	DOAction       	B+                   	1              	        	        	      	                	Done  	0.033000  	      	            	1
+延时                	Delay          	                     	30             	        	        	      	                	Done  	30.027000 	      	CAN         	1
+启动自动化测试      	CMD            	启动自动化测试       	1000           	OK      	OK      	String	OK              	PASS  	0.244000  	      	通信        	1
+测量电流            	MeaCurrent     	Current              	Differential   	0.1     	0.3     	A     	0.25899         	PASS  	1.225000  	      	电流        	1
+测量电流            	MeaCurrent     	Current              	Differential   	0.1     	0.3     	A     	0.28058         	PASS  	1.211000  	      	电流        	1
+ACC置低             	DOAction       	ACC                  	0              	        	        	      	                	Done  	0.013000  	      	ACC IO      	1
+延时                	Delay          	                     	1              	        	        	      	                	Done  	1.012000  	      	            	1
+ACC状态查询         	CMD            	查询ACC状态          	1000           	0x02    	0x02    	Hex   	0x02            	PASS  	0.240000  	      	ACC IO      	1
+ACC置高             	DOAction       	ACC                  	1              	        	        	      	                	Done  	0.033000  	      	ACC IO      	1
+延时                	Delay          	                     	1              	        	        	      	                	Done  	1.023000  	      	            	1
+ACC状态查询         	CMD            	查询ACC状态          	1000           	0x01    	0x01    	Hex   	0x01            	PASS  	0.244000  	      	ACC IO      	1
+CSH无效             	DOAction       	CSH                  	0              	        	        	      	                	Done  	0.031000  	      	CSH检测     	1
+CSH状态查询         	CMD            	查询CSH状态          	1000           	0x01    	0x01    	Hex   	0x01            	PASS  	0.422000  	      	CSH检测     	1
+CSH有效             	DOAction       	CSH                  	1              	        	        	      	                	Done  	0.014000  	      	CSH检测     	1
+CSH状态查询         	CMD            	查询CSH状态          	1000           	0x02    	0x02    	Hex   	0x02            	PASS  	1.901000  	      	CSH检测     	1
+加速度传感器返回数据	CMD            	加速度传感器返回数据1	1000           	0x01    	0x02    	Hex   	0x01180011C0D700	PASS  	0.947000  	      	加速度传感器	1
+加速度传感器返回数据	CMD            	加速度传感器返回数据2	1000           	0x01    	0x02    	Hex   	0x0118401140D600	PASS  	0.949000  	      	加速度传感器	1
+外部Flash测试       	CMD            	外部Flash测试        	1000           	0x01    	0x01    	Hex   	0x01            	PASS  	0.444000  	      	Flash       	1
+音频回环测试        	USBCMD         	关闭音频LOOPBACK     	1000           	OK      	OK      	String	PASS            	PASS  	0.540000  	      	3G模块      	1
+切换声音通道        	USBCMD         	切换声音通道         	1000           	OK      	OK      	String	PASS            	PASS  	0.505000  	      	3G模块      	1
+音频回环测试        	USBCMD         	关闭音频LOOPBACK     	1000           	OK      	OK      	String	PASS            	PASS  	0.530000  	      	3G模块      	1
+音频回环测试        	USBCMD         	打开音频LOOPBACK     	1000           	OK      	OK      	String	PASS            	PASS  	0.506000  	      	3G模块      	1
+信号产生            	AOFreq         	MIC                  	F=1000HZ,A=0.2V	        	        	频率  	                	Done  	1.114000  	      	3G模块      	1
+打开信号            	DOAction       	MIC_RL               	1              	        	        	      	                	Done  	0.037000  	      	3G模块      	1
+测量音频输出        	AIFreq         	Audio                	Differential   	        	        	      	                	Done  	1.222000  	      	3G模块      	1
+音频输出频率        	Frequency      	                     	               	990     	1010    	Hz    	999.99934       	PASS  	0.051000  	      	3G模块      	1
+音频输出幅度        	Amplitude      	                     	               	0.3     	0.35    	V     	1.65615         	FAIL  	0.050000  	      	3G模块      	1
+音频输出信噪比      	SNR            	                     	               	36      	        	db    	19.47555        	FAIL  	0.097000  	      	3G模块      	1
+音频输出失真度      	THD            	                     	               	0       	3       	%     	10.66103        	FAIL  	0.085000  	      	3G模块      	1
+关闭信号            	DOAction       	MIC_RL               	0              	        	        	      	                	Done  	0.013000  	      	3G模块      	1
+音频回环测试        	USBCMD         	关闭音频LOOPBACK     	1000           	OK      	OK      	String	PASS            	PASS  	0.501000  	      	3G模块      	1
+3G通信自检          	CMD            	3G通信自检           	1000           	0x01    	0x01    	Hex   	0x01            	PASS  	0.329000  	      	3G模块      	1
+等待启动            	FindSIMCOMETH  	                     	60             	        	        	      	PASS            	PASS  	6.644000  	      	3G模块      	1
+打开网络            	USBCMD         	打开网络             	1000           	0x01    	0x01    	Hex   	PASS            	PASS  	0.403000  	      	3G模块      	1
+查询网络状态        	USBCMD         	查询网络状态         	1000           	0x01    	0x01    	Hex   	PASS            	PASS  	46.019000 	      	3G模块      	1
+查询IP              	USBCMD         	查询IP               	1000           	0x01    	0x01    	Hex   	PASS            	PASS  	0.530000  	      	3G模块      	1
+拨号                	USBCMD         	拨号                 	10000          	0x01    	0x01    	Hex   	PASS            	PASS  	3.419000  	      	3G模块      	1
+挂断                	USBCMD         	挂断                 	1000           	0x01    	0x01    	Hex   	PASS            	PASS  	0.729000  	      	3G模块      	1
+GPS定位查询         	CMD            	GPS定位查询          	1000           	0x01    	0x01    	Hex   	0x02            	FAIL  	14.041000 	      	GPS         	1
+退出自动化测试      	CMD            	退出自动化测试       	1000           	0x01    	0x01    	Hex   	0x01            	PASS  	0.346000  	      	通信        	1
+关闭电源            	DOAction       	B+                   	0              	        	        	      	                	Done  	0.034000  	      	            	1
+
+通信信息:发送启动自动化测试:746573746D6F64652831290D
+反馈:746573746D6F64652831290D0A09302C20307830303030303030300D0A636D643E
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010197F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010196F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205E793F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010196F0
+发送 查询ESN:AT+ESN?
+反馈:
+发送 查询ESN:AT+ESN?
+反馈:
+发送 查询ESN:AT+ESN?
+反馈:
++ESN: 808A93DA
+
+OK
+
+发送 设置AKEY:AT+AKEY=F20DF5B495104E47
+反馈:
+OK
+
+发送 设置IMSI1:AT+NAMCFG=0,1,460
+反馈:
+OK
+
+发送 设置IMSI2:AT+NAMCFG=0,2,03
+反馈:
+OK
+
+发送 设置IMSI3:AT+NAMCFG=0,3,6161699998
+反馈:
+OK
+
+发送 设置EVDO账号:AT+CNVW=1194,0,"19343630303336313631363939393938406D7963646D612E636E20"
+反馈:
++CNVW: 1
+
+OK
+
+发送 设置EVDO密码:AT+CNVW=1192,0,"1033453541354537383932374635343538"
+反馈:
++CNVW: 1
+
+OK
+
+发送 设置RTRECF:AT+RTRECF=1
+反馈:
++RTRECF: SUCCESS
+
+OK
+
+发送BATVCC_CTL输出高电平:0F0015010115F0
+反馈:0F8015010194F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205CA93F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010297F0
+发送重启:0F00220022F0
+反馈:0F80220100A3F0
+发送启动自动化测试:746573746D6F64652831290D
+反馈:746573746D6F64652831290D0A09302C20307830303030303030300D0A636D643E
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010284F0
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010184F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010187F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010187F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010287F0
+发送加速度传感器返回数据1:0F0007010006F0
+反馈:0F80070701180011C0D7009FF0
+发送加速度传感器返回数据2:0F0007010107F0
+反馈:0F8007070118401140D6005EF0
+发送外部Flash测试:0F00110011F0
+反馈:0F8011010190F0
+发送 关闭音频LOOPBACK:AT+CLOOPBACK=1,0
+反馈:
+OK
+
+发送 切换声音通道:AT+CSDVC=1,0
+反馈:
+OK
+
+发送 关闭音频LOOPBACK:AT+CLOOPBACK=1,0
+反馈:
+OK
+
+发送 打开音频LOOPBACK:AT+CLOOPBACK=1,1
+反馈:
+OK
+
+发送 关闭音频LOOPBACK:AT+CLOOPBACK=1,0
+反馈:
+OK
+
+发送3G通信自检:0F000B000BF0
+反馈:0F800B01018AF0
+发送 打开网络:AT+NETOPEN
+反馈:
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 0,1
+
+OK
+
++NETOPEN: 0
+
++CIPOPEN: 0,0
+
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 1,1
+
+OK
+
+发送 查询IP:AT+IPADDR
+反馈:
++IPADDR: 114.87.149.108
+
+发送 拨号:ATD10000;
+反馈:
+OK
+
+VOICE CALL: BEGIN
+
+VOICE CALL: ANSWERED
+
+发送 挂断:AT+CHUP
+反馈:
+VOICE CALL: END: 000002
+
+OK
+
+发送GPS定位查询:0F00080008F0
+反馈:0F8008010289F0
+发送GPS定位查询:0F00080008F0
+反馈:0F8008010289F0
+发送GPS定位查询:0F00080008F0
+反馈:0F8008010289F0
+发送GPS定位查询:0F00080008F0
+反馈:0F8008010289F0
+发送GPS定位查询:0F00080008F0
+反馈:0F8008010289F0
+发送GPS定位查询:0F00080008F0
+反馈:0F8008010289F0
+发送GPS定位查询:0F00080008F0
+反馈:0F8008010289F0
+发送GPS定位查询:0F00080008F0
+反馈:0F8008010289F0
+发送GPS定位查询:0F00080008F0
+反馈:0F8008010289F0
+发送GPS定位查询:0F00080008F0
+反馈:0F8008010289F0
+发送退出自动化测试:0F00020002F0
+反馈:0F8002010183F0

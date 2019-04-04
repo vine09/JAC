@@ -1,0 +1,65 @@
+--SN:0203443f41521000737
+--Date and Time:2015-3-23 15:13
+--Tester:Slot1
+--OperatorID:
+--CycleTime:34
+--TestResult:
+测试项目	测试名称 	测量值                    	下限值	上限值	测试结果               		 	    	                       		 	    	    
+版本    	查询版本 	TGS80_H206.01@14:32:40-Mar	23    	2015  	TGS80_H203_18:09:56-Feb		9	2015	TGS80_H203_18:09:56-Feb		9	2015	FAIL
+查询MEID	CheckMEID	FAIL                      	      	      	FAIL                   		 	    	                       		 	    	    
+        	         	                          	      	      	                       		 	    	                       		 	    	    
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]  	[下限值]                       	[上限值]                       	[单位]	[测量值]                          	[结果]	[测试时间]	[备注]	[测试项目]	 
+气缸推进           	DOAction       	CylinderCtrl        	1           	                               	                               	      	                                  	Done  	0.007000  	      	          	1
+打开电源           	DOAction       	B+                  	1           	                               	                               	      	                                  	Done  	0.010000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1           	                               	                               	      	                                  	Done  	0.010000  	      	ACC_IO    	1
+退出自动化测试     	CMD            	退出自动化测试      	1000        	                               	0x01                           	Hex   	                                  	PASS  	1.022000  	      	通信      	1
+延时               	Delay          	                    	5           	                               	                               	      	                                  	Done  	5.009000  	      	          	1
+延时               	Delay          	                    	10          	                               	                               	      	                                  	Done  	10.011000 	      	          	1
+查询版本           	CMD            	查询版本            	1000        	TGS80_H203_18:09:56-Feb  9 2015	TGS80_H203_18:09:56-Feb  9 2015	String	TGS80_H206.01@14:32:40-Mar 23 2015	FAIL  	2.531000  	      	版本      	1
+启动自动化测试     	CMD            	启动自动化测试      	1000        	OK                             	OK                             	String	OK                                	PASS  	0.119000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000        	11                             	12.5                           	V     	11.97900                          	PASS  	0.521000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000        	0x01                           	0x01                           	Hex   	0x01                              	PASS  	0.945000  	      	通信      	1
+测量电流           	MeaCurrent     	Current             	Differential	0.2                            	0.4                            	A     	0.20080                           	PASS  	5.227000  	      	电流      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	1                              	1.636                          	V     	1.17900                           	PASS  	0.229000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出低电平	1000        	0x01                           	0x01                           	Hex   	0x01                              	PASS  	1.028000  	      	通信      	1
+测量电流           	MeaCurrent     	Current             	Differential	0.1                            	0.25                           	A     	0.18112                           	PASS  	1.223000  	      	电流      	1
+等待启动           	FindSIMCOMETH  	                    	30          	                               	                               	      	PASS                              	PASS  	2.525000  	      	3G模块    	1
+查询MEID           	USBCMD         	查询MEID            	1000        	OK                             	OK                             	String	PASS                              	PASS  	0.773000  	      	3G模块    	1
+CheckMEID          	CheckMEID      	                    	            	                               	                               	      	FAIL                              	FAIL  	0.033000  	      	查询MEID  	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:636D64206C696E6520726561647921200D0A636D643E
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H206.01@14:32:40-Mar 23 2015
+	1, 0x00000001
+cmd>
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H206.01@14:32:40-Mar 23 2015
+	1, 0x00000001
+cmd>
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H206.01@14:32:40-Mar 23 2015
+	1, 0x00000001
+cmd>
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F801602044196F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010191F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F801402049B94F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010191F0
+发送 查询MEID:AT+SMEID?
+反馈:
++SMEID: A1000021A6B3C5
+
+OK
+

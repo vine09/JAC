@@ -1,0 +1,199 @@
+--SN:s
+--Date and Time:2014-12-31 12:28
+--Tester:Slot1
+--OperatorID:
+--CycleTime:61
+--TestResult:
+测试项目    	测试名称            	测量值        	下限值	上限值	测试结果
+电压检测    	查询BAT7.2V_DET电压 	0x02          	0x01  	0x01  	FAIL    
+电压检测    	查询BAT7.2V_DET电压 	0x02          	0x01  	0x01  	FAIL    
+电压检测    	BATVCC_CTL输出      	0x02          	0x01  	0x01  	FAIL    
+加速度传感器	加速度传感器返回数据	0xFFC0FDC0BDC0	0x01  	0x01  	FAIL    
+加速度传感器	加速度传感器返回数据	0xFF80FE40C040	0x01  	0x01  	FAIL    
+GPS         	GPS定位查询         	0x02          	0x01  	0x01  	FAIL    
+GPS         	GPS定位时间         	0x303030303030	0x01  	0x01  	FAIL    
+3G模块      	3G网络状态          	0x02          	0x01  	0x01  	FAIL    
+3G模块      	查询网络状态        	0x02          	0x01  	0x01  	FAIL    
+3G模块      	查询通话状态        	0x00          	0x01  	0x01  	FAIL    
+            	                    	              	      	      	        
+
+[测试名称]          	[TestItem ITEM]	[通道]               	[设置参数]      	[下限值]        	[上限值]        	[单位]	[测量值]        	[结果]	[测试时间]	[备注]	[测试项目]  	 
+打开电源            	DOAction       	B+                   	1               	                	                	      	                	Done  	0.017000  	      	            	1
+ACC置高             	DOAction       	ACC                  	1               	                	                	      	                	Done  	0.023000  	      	ACC IO      	1
+延时                	Delay          	                     	4               	                	                	      	                	Done  	4.023000  	      	CAN         	1
+启动自动化测试      	CMD            	启动自动化测试       	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.239000  	      	通信        	1
+查询BAT_DET电压     	CMD            	查询BAT_DET状态      	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.437000  	      	电压检测    	1
+CHARGE_CTL输出      	CMD            	CHARGE_CTL输出高电平 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	1.061000  	      	通信        	1
+查询BAT7.2V_DET电压 	CMD            	查询BAT7.2V_DET电压  	1000            	0x01            	0x01            	Hex   	0x02            	FAIL  	0.364000  	      	电压检测    	1
+CHARGE_CTL输出      	CMD            	CHARGE_CTL输出低电平 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.927000  	      	通信        	1
+查询MEID            	USBCMD         	查询MEID             	1000            	OK              	OK              	String	PASS            	PASS  	1.286000  	      	3G模块      	1
+BATVCC_CTL输出      	CMD            	BATVCC_CTL输出高电平 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.645000  	      	通信        	1
+启动自动化测试      	CMD            	启动自动化测试       	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.426000  	      	通信        	1
+查询BAT7.2V_DET电压 	CMD            	查询BAT7.2V_DET电压  	1000            	0x01            	0x01            	Hex   	0x02            	FAIL  	0.524000  	      	电压检测    	1
+查询BAT_DET电压     	CMD            	查询BAT_DET状态      	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.425000  	      	电压检测    	1
+BATVCC_CTL输出      	CMD            	BATVCC_CTL输出低电平 	1000            	0x01            	0x01            	Hex   	0x02            	FAIL  	1.027000  	      	电压检测    	1
+打开电源            	DOAction       	B+                   	1               	                	                	      	                	Done  	0.014000  	      	            	1
+启动自动化测试      	CMD            	启动自动化测试       	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.422000  	      	通信        	1
+测量电流            	MeaCurrent     	Current              	Differential    	0.1             	0.3             	A     	0.20967         	PASS  	1.105000  	      	电流        	1
+测量电流            	MeaCurrent     	Current              	Differential    	0.1             	0.3             	A     	0.21275         	PASS  	1.145000  	      	电流        	1
+启动自动化测试      	CMD            	启动自动化测试       	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.123000  	      	通信        	1
+ACC置低             	DOAction       	ACC                  	0               	                	                	      	                	Done  	0.013000  	      	ACC IO      	1
+延时                	Delay          	                     	1               	                	                	      	                	Done  	1.013000  	      	            	1
+ACC状态查询         	CMD            	查询ACC状态          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	0.443000  	      	ACC IO      	1
+ACC置高             	DOAction       	ACC                  	1               	                	                	      	                	Done  	0.034000  	      	ACC IO      	1
+延时                	Delay          	                     	1               	                	                	      	                	Done  	1.013000  	      	            	1
+ACC状态查询         	CMD            	查询ACC状态          	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.244000  	      	ACC IO      	1
+CSH无效             	Signal         	CSH                  	正常            	                	                	      	                	Done  	0.060000  	      	CSH检测     	1
+CSH状态查询         	CMD            	查询CSH状态          	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	1.026000  	      	CSH检测     	1
+CSH有效             	Signal         	CSH                  	碰撞            	                	                	      	                	Done  	1.036000  	      	CSH检测     	1
+CSH状态查询         	CMD            	查询CSH状态          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	1.044000  	      	CSH检测     	1
+加速度传感器返回数据	CMD            	加速度传感器返回数据1	1000            	0x01            	0x01            	Hex   	0xFFC0FDC0BDC0  	FAIL  	0.646000  	      	加速度传感器	1
+加速度传感器返回数据	CMD            	加速度传感器返回数据2	1000            	0x01            	0x01            	Hex   	0xFF80FE40C040  	FAIL  	0.948000  	      	加速度传感器	1
+GPS定位查询         	CMD            	GPS定位查询          	1000            	0x01            	0x01            	Hex   	0x02            	FAIL  	0.450000  	      	GPS         	1
+GPS定位时间         	CMD            	GPS定位时间          	1000            	0x01            	0x01            	Hex   	0x303030303030  	FAIL  	0.347000  	      	GPS         	1
+CAN                 	CANTransmit    	00000182             	000007d100000000	                	                	      	PASS            	PASS  	0.072000  	      	CAN         	1
+CAN通信测试         	CMD            	CAN通信接收          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	0.346000  	      	CAN         	1
+CAN                 	CANTransmit    	00000182             	000007d000000000	                	                	      	PASS            	PASS  	0.072000  	      	CAN         	1
+CAN通信测试         	CMD            	CAN通信接收          	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.346000  	      	CAN         	1
+CAN通信测试         	CMD-CAN        	CAN通信发送          	1000            	55040404040404FF	55040404040404FF	Hex   	55040404040404FF	PASS  	0.443000  	      	CAN         	1
+外部Flash测试       	CMD            	外部Flash测试        	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.445000  	      	Flash       	1
+音频回环测试        	USBCMD         	关闭音频LOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	1.183000  	      	3G模块      	1
+切换声音通道        	USBCMD         	切换声音通道         	1000            	OK              	OK              	String	PASS            	PASS  	1.183000  	      	3G模块      	1
+音频回环测试        	USBCMD         	关闭音频LOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	1.186000  	      	3G模块      	1
+音频回环测试        	USBCMD         	打开音频LOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	1.180000  	      	3G模块      	1
+信号产生            	AOFreq         	MIC                  	F=1000HZ,A=0.2V 	                	                	频率  	                	Done  	1.114000  	      	3G模块      	1
+打开信号            	DOAction       	MIC_RL               	1               	                	                	      	                	Done  	0.016000  	      	3G模块      	1
+测量音频输出        	AIFreq         	Audio                	Differential    	                	                	      	                	Done  	1.096000  	      	3G模块      	1
+音频输出频率        	Frequency      	                     	                	990             	1010            	Hz    	1000.00019      	PASS  	0.045000  	      	3G模块      	1
+音频输出幅度        	Amplitude      	                     	                	0.3             	0.35            	V     	0.31225         	PASS  	0.044000  	      	3G模块      	1
+音频输出信噪比      	SNR            	                     	                	36              	                	db    	49.45226        	PASS  	0.077000  	      	3G模块      	1
+音频输出失真度      	THD            	                     	                	0               	3               	%     	1.14649         	PASS  	0.081000  	      	3G模块      	1
+关闭信号            	DOAction       	MIC_RL               	0               	                	                	      	                	Done  	0.015000  	      	3G模块      	1
+音频回环测试        	USBCMD         	关闭音频LOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	1.159000  	      	3G模块      	1
+3G通信自检          	CMD            	3G通信自检           	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.548000  	      	3G模块      	1
+3G网络状态          	CMD            	3G网络状态           	1000            	0x01            	0x01            	Hex   	0x02            	FAIL  	21.459000 	      	3G模块      	1
+3G信号强度          	CMD            	3G信号强度           	1000            	0x03            	0x1F            	Hex   	0x1F            	PASS  	0.517000  	      	3G模块      	1
+查询网络状态        	CMD            	查询网络状态         	1000            	0x01            	0x01            	Hex   	0x02            	FAIL  	0.418000  	      	3G模块      	1
+拨号                	CMD            	拨号                 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.518000  	      	3G模块      	1
+延时                	Delay          	                     	2               	                	                	      	                	Done  	2.001000  	      	            	1
+查询通话状态        	CMD            	查询通话状态         	1000            	0x01            	0x01            	Hex   	0x00            	FAIL  	0.509000  	      	3G模块      	1
+挂断                	CMD            	挂断                 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.412000  	      	3G模块      	1
+关闭电源            	DOAction       	B+                   	0               	                	                	      	                	Done  	0.004000  	      	            	1
+
+通信信息:发送启动自动化测试:0F00010001F0
+反馈:536964655475726E416C61726D5F43616E5461736B4D626F78200D0A0F8001010188F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:564E576F726B53746174655F4E756C6C0D0A0F801601019FF0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F801701019EF0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:536964655475726E0F801401029DF0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F801701019EF0
+发送 查询MEID:AT+SMEID?
+反馈:AT+SMEID?
+
++SMEID: A1000021A5EB5D
+
+OK
+
+发送BATVCC_CTL输出高电平:0F0015010115F0
+反馈:0F801501019CF0
+发送启动自动化测试:0F00010001F0
+反馈:0F8001010188F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:536964655475726E0F801401029DF0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F801601019FF0
+发送BATVCC_CTL输出低电平:0F0015010014F0
+反馈:0F801501029CF0
+发送启动自动化测试:0F00010001F0
+反馈:536964655475726E0F8001010188F0
+发送启动自动化测试:0F00010001F0
+反馈:0F8001010188F0
+发送查询ACC状态:0F00050005F0
+反馈:536964655475726E0F800501028CF0
+发送查询ACC状态:0F00050005F0
+反馈:0F800501018CF0
+发送查询CSH状态:0F00060006F0
+反馈:536964655475726E0F800501018CF0
+发送查询CSH状态:0F00060006F0
+反馈:536964655475726E0F800501028CF0
+发送加速度传感器返回数据1:0F0007010006F0
+反馈:0F80070701FFC0FDC0BDC036F0
+发送加速度传感器返回数据2:0F0007010107F0
+反馈:536964655475726E0F80070701FF80FE40C04088F0
+发送GPS定位查询:0F00080008F0
+反馈:0F8008010281F0
+发送GPS定位时间:0F00090009F0
+反馈:0F80090701303030303030B7F0
+CAN发送:ID:00000182DATA:000007d100000000发送CAN通信接收:0F00200020F0
+反馈:0F80200102A9F0
+CAN发送:ID:00000182DATA:000007d000000000发送CAN通信接收:0F00200020F0
+反馈:0F80200101A9F0
+发送CAN通信发送:0F00210021F0
+反馈:0F80210101A8F0
+发送外部Flash测试:0F00110011F0
+反馈:0F8011010198F0
+发送 关闭音频LOOPBACK:AT+CLOOPBACK=1,0
+反馈:
+OK
+
+发送 切换声音通道:AT+CSDVC=1,0
+反馈:
+OK
+
+发送 关闭音频LOOPBACK:AT+CLOOPBACK=1,0
+反馈:
+OK
+
+发送 打开音频LOOPBACK:AT+CLOOPBACK=1,1
+反馈:
+OK
+
+发送 关闭音频LOOPBACK:AT+CLOOPBACK=1,0
+反馈:
+OK
+
+发送3G通信自检:0F000B000BF0
+反馈:0F800B010182F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G网络状态:0F000C000CF0
+反馈:0F800C010285F0
+发送3G信号强度:0F000D000DF0
+反馈:0F800D02011F86F0
+发送查询网络状态:0F000E000EF0
+反馈:0F800E010287F0
+发送拨号:0F00100010F0
+反馈:0F8010010199F0
+发送查询通话状态:0F001E001EF0
+反馈:0F801E010097F0
+发送挂断:0F001F001FF0
+反馈:0F801F010196F0

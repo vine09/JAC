@@ -1,0 +1,206 @@
+--SN:76844016023948395fc140123
+--Date and Time:2016-5-26 16:00
+--Tester:Slot1
+--OperatorID:
+--CycleTime:148
+--TestResult:
+测试项目       	测试名称           	测量值          	下限值          	上限值          	测试结果
+CHARGE_WAKE检测	CHARGE_WAKE状态查询	0x02            	0x01            	0x01            	FAIL    
+CAN            	CAN                	0000000000000000	55555555AAAAAAAA	55555555AAAAAAAA	FAIL    
+               	                   	                	                	                	        
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]      	[下限值]                                         	[上限值]                                         	[单位]	[测量值]                                         	[结果]	[测试时间]	[备注]	[测试项目]     	 
+打开电源           	DOAction       	B+                  	1               	                                                 	                                                 	      	                                                 	Done  	0.009000  	      	               	1
+ACC置高            	DOAction       	ACC                 	1               	                                                 	                                                 	      	                                                 	Done  	0.010000  	      	ACC_IO         	1
+退出自动化测试     	CMD            	退出自动化测试      	1000            	                                                 	0x01                                             	Hex   	                                                 	PASS  	1.020000  	      	通信           	1
+延时               	Delay          	                    	3               	                                                 	                                                 	      	                                                 	Done  	3.011000  	      	               	1
+查询版本           	CMD            	查询版本            	1000            	TB1516_APPV2.07__BOOTV2.02  @14:39:32-May 20 2016	TB1516_APPV2.07__BOOTV2.02  @14:39:32-May 20 2016	String	TB1516_APPV2.07__BOOTV2.02  @14:39:32-May 20 2016	PASS  	3.087000  	      	版本           	1
+启动自动化测试     	CMD            	启动自动化测试      	1000            	OK                                               	OK                                               	String	OK                                               	PASS  	0.129000  	      	通信           	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000            	11.5                                             	12.5                                             	V     	12.32300                                         	PASS  	0.134000  	      	电压检测       	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000            	0x01                                             	0x01                                             	Hex   	0x01                                             	PASS  	0.129000  	      	通信           	1
+测量电流           	MeaCurrent     	Current             	Differential    	0.12                                             	0.15                                             	A     	0.12403                                          	PASS  	3.640000  	      	电流           	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000            	6.5                                              	7.2                                              	V     	6.63800                                          	PASS  	0.121000  	      	电压检测       	1
+写入主机条码       	CMD            	写入五菱主机条码    	1000            	0x01                                             	0x01                                             	Hex   	0x01                                             	PASS  	0.121000  	      	生产信息       	1
+读出CCID           	CMD            	读出CCID            	1000            	PASS                                             	PASS                                             	String	PASS                                             	PASS  	0.110000  	      	生产信息       	1
+写入终端ID         	CMD            	写入终端ID          	1000            	0x01                                             	0x01                                             	Hex   	0x01                                             	PASS  	0.113000  	      	生产信息       	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出低电平	1000            	0x01                                             	0x01                                             	Hex   	0x01                                             	PASS  	0.108000  	      	通信           	1
+测量电流           	MeaCurrent     	Current             	Differential    	0.1                                              	0.13                                             	A     	0.10603                                          	PASS  	4.533000  	      	电流           	1
+BATVCC_CTL输出     	CMD            	BATVCC_CTL输出高电平	1000            	0x01                                             	0x01                                             	Hex   	0x01                                             	PASS  	0.118000  	      	通信           	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000            	6                                                	7.2                                              	V     	6.63000                                          	PASS  	0.116000  	      	电压检测       	1
+BATVCC_CTL输出     	CMD            	BATVCC_CTL输出低电平	1000            	                                                 	0x01                                             	String	0x01                                             	PASS  	0.118000  	      	电压检测       	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000            	0                                                	1                                                	V     	0.68600                                          	PASS  	0.115000  	      	电压检测       	1
+重启               	CMD            	重启                	1000            	                                                 	0x00                                             	Hex   	0x00                                             	PASS  	0.117000  	      	通信           	1
+打开电源           	DOAction       	B+                  	1               	                                                 	                                                 	      	                                                 	Done  	0.004000  	      	               	1
+延时               	Delay          	                    	3               	                                                 	                                                 	      	                                                 	Done  	3.002000  	      	               	1
+启动自动化测试     	CMD            	启动自动化测试      	1000            	OK                                               	OK                                               	String	OK                                               	PASS  	2.169000  	      	通信           	1
+ACC置低            	DOAction       	ACC                 	0               	                                                 	                                                 	      	                                                 	Done  	0.004000  	      	ACC_IO         	1
+延时               	Delay          	                    	1               	                                                 	                                                 	      	                                                 	Done  	1.002000  	      	               	1
+ACC状态查询        	CMD            	查询ACC状态         	1000            	0x02                                             	0x02                                             	Hex   	0x02                                             	PASS  	0.148000  	      	ACC_IO         	1
+ACC置高            	DOAction       	ACC                 	1               	                                                 	                                                 	      	                                                 	Done  	0.053000  	      	ACC_IO         	1
+延时               	Delay          	                    	1               	                                                 	                                                 	      	                                                 	Done  	1.012000  	      	               	1
+ACC状态查询        	CMD            	查询ACC状态         	1000            	0x01                                             	0x01                                             	Hex   	0x01                                             	PASS  	0.150000  	      	ACC_IO         	1
+CHARGE_WAKE有效    	DOAction       	CHARGE_WAKE         	1               	                                                 	                                                 	      	                                                 	Done  	0.037000  	      	CHARGE_WAKE检测	1
+CHARGE_WAKE状态查询	CMD            	查询CHARGE_WAKE状态 	1000            	0x01                                             	0x01                                             	Hex   	0x02                                             	FAIL  	19.748000 	      	CHARGE_WAKE检测	1
+CHARGE_WAKE无效    	DOAction       	CHARGE_WAKE         	0               	                                                 	                                                 	      	                                                 	Done  	0.030000  	      	CHARGE_WAKE检测	1
+CHARGE_WAKE状态查询	CMD            	查询CHARGE_WAKE状态 	1000            	0x02                                             	0x02                                             	Hex   	0x02                                             	PASS  	1.026000  	      	CHARGE_WAKE检测	1
+CAN                	CANTest        	00000651            	0000000000000000	55555555AAAAAAAA                                 	55555555AAAAAAAA                                 	      	0000000000000000                                 	FAIL  	2.052000  	      	CAN            	1
+外部Flash测试      	CMD            	外部Flash测试       	1000            	0x01                                             	0x01                                             	Hex   	0x01                                             	PASS  	1.048000  	      	Flash          	1
+3G通信自检         	CMD            	3G通信自检          	1000            	0x01                                             	0x01                                             	Hex   	0x01                                             	PASS  	0.753000  	      	3G模块         	1
+读出主机条码       	CMD            	读出五菱主机条码    	3000            	PASS                                             	PASS                                             	String	PASS                                             	PASS  	0.149000  	      	生产信息       	1
+读出终端ID         	CMD            	读出终端ID          	1000            	PASS                                             	PASS                                             	String	PASS                                             	PASS  	0.147000  	      	生产信息       	1
+退出自动化测试     	CMD            	退出自动化测试      	1000            	                                                 	                                                 	Hex   	                                                 	PASS  	1.048000  	      	Reset          	1
+ACC置低            	DOAction       	ACC                 	0               	                                                 	                                                 	      	                                                 	Done  	0.035000  	      	ACC_IO         	1
+关闭电源           	DOAction       	B+                  	0               	                                                 	                                                 	      	                                                 	Done  	0.014000  	      	               	1
+CheckSN            	CheckSN        	                    	                	                                                 	                                                 	      	PASS                                             	PASS  	95.938000 	      	比对SN         	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:50442052500D0A
+发送查询版本:76657228290D
+反馈:vTB1516_BOOTV2.02
+booting...
+now,jump to app...
+
+           core clk=120000000,Tick rate=1000,systicks per OS tick=120000
+cmd line ready! 
+   app start,version:TB1516_APPV2.07__BOOTV2.02  @14:39:32-May 20 2016  
+                                                                                                                                                                                                                                                                                              cmd>
+device_
+parse tbc file...
+NO TBC file in mcu
+broadcast_dev_manage_msg(1,4)
+can manage rx ctl msg: pwr on
+open_can_server()
+can_manage_open_module()...
+gps rx ctl msg: pwr on
+report task rx ctl msg: pwr on
+can_manage: Open can peripheral
+modem rx ctl msg:pwr on
+period_report task rx ctl msg: pwr on
+HIGHER 6.5V-------------------------
+broadcast_dev_manage_single_msg(1,3)
+can manage rx ctl msg: wake up
+open_can_server()
+can_manage_open_module()...
+can_manage: Open can peripheral
+挂载文件系统成功!!!
+update ACC=1=====device_state.run_mode=1
+broadcast_dev_manage_single_msg(0,1)
+can manage rx:ACC=1
+open_can_server()
+can_manage_open_module()...
+can_manage: Open can peripheral
+PD RP
+SAVE ITV ok (17+2) bytes:
+
+发送查询版本:76657228290D
+反馈:ver()
+app start,version:TB1516_APPV2.07__BOOTV2.02  @14:39:32-May 20 2016  
+	268482752, 0x1000b8c0
+cmd>PD RP
+SAVE ITV ok (17+2) bytes:
+
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+create auto test task
+
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F801602044590F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010196F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140219EE8FF0
+发送写入五菱主机条码:0F003319373638343430313630323339343833393546433134303132331FF0
+反馈:0F80330101B2F0
+发送读出CCID:0F00370037F0
+反馈:0F803715013839383630326232323131353330303030323234CAF0
+发送写入终端ID:0F003808323030303031313032F0
+反馈:0F80380101B9F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010196F0
+发送BATVCC_CTL输出高电平:0F0015010115F0
+反馈:0F8015010194F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140219E68FF0
+发送BATVCC_CTL输出低电平:0F0015010014F0
+反馈:0F8015010194F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140202AE94F0
+发送重启:0F00220022F0
+反馈:0F80220100A3F0
+发送启动自动化测试:746573746D6F64652831290D
+反馈:TB1516_BOOTV2.02
+booting...
+now,jump to app...
+
+           core clk=120000000,Tick rate=1000,systicks per OS tick=120000
+cmd line ready! 
+   app start,version:TB1516_APPV2.07__BOOTV2.02  @14:39:32-May 20 2016  
+                                                                                                                                                                                                                                                                                              cmd>
+device_
+parse tbc file...
+NO TBC file in mcu
+broadcast_dev_manage_msg(1,4)
+can manage rx ctl msg: pwr on
+open_can_server()
+can_manage_open_module()...
+gps rx ctl msg: pwr on
+report task rx ctl msg: pwr on
+can_manage: Open can peripheral
+modem rx ctl msg:pwr on
+period_report task rx ctl msg: pwr on
+HIGHER 6.5V-------------------------
+broadcast_dev_manage_single_msg(1,3)
+can manage rx ctl msg: wake up
+open_can_server()
+can_manage_open_module()...
+can_manage: Open can peripheral
+挂载文件系统成功!!!
+update ACC=1=====device_state.run_mode=1
+broadcast_dev_manage_single_msg(0,1)
+can manage rx:ACC=1
+open_can_server()
+can_manage_open_module()...
+can_manage: Open can peripheral
+PD RP
+SAVE ITV ok (17+2) bytes:
+
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+create auto test task
+
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010284F0
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010184F0
+发送查询CHARGE_WAKE状态:0F00180018F0
+反馈:0F8005010284F0
+发送查询CHARGE_WAKE状态:0F00180018F0
+反馈:0F8005010284F0
+发送查询CHARGE_WAKE状态:0F00180018F0
+反馈:0F8005010284F0
+发送查询CHARGE_WAKE状态:0F00180018F0
+反馈:0F8005010284F0
+发送查询CHARGE_WAKE状态:0F00180018F0
+反馈:0F8005010284F0
+发送查询CHARGE_WAKE状态:0F00180018F0
+反馈:0F8005010284F0
+发送查询CHARGE_WAKE状态:0F00180018F0
+反馈:0F8005010284F0
+发送查询CHARGE_WAKE状态:0F00180018F0
+反馈:0F8005010284F0
+发送查询CHARGE_WAKE状态:0F00180018F0
+反馈:0F8005010284F0
+发送查询CHARGE_WAKE状态:0F00180018F0
+反馈:0F8005010284F0
+发送查询CHARGE_WAKE状态:0F00180018F0
+反馈:0F8005010284F0
+CAN发送:ID:00000651DATA:0000000000000000发送外部Flash测试:0F00110011F0
+反馈:0F8012010193F0
+发送3G通信自检:0F000B000BF0
+反馈:0F800B01018AF0
+发送读出五菱主机条码:0F00340034F0
+反馈:0F80341A0137363834343031363032333934383339354643313430313233A9F0
+发送读出终端ID:0F00390039F0
+反馈:0F80390901323030303031313083F0
+发送退出自动化测试:0F00020002F0
+反馈:7265706F72742C61636B206F6B2C533D3078303435460D0A

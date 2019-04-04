@@ -1,0 +1,13 @@
+--SN:0203443F41520300581
+--Date and Time:2015-2-9 9:17
+--Tester:Slot1
+--OperatorID:
+--CycleTime:6
+--TestResult:
+Pass
+[测试名称]	[TestItem ITEM]	[通道]  	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+延时      	Delay          	        	5         	        	        	      	        	Done  	5.006000  	      	CAN       	1
+查询版本  	CMD            	查询版本	1000      	        	        	String	        	PASS  	1.056000  	      	版本      	1
+
+通信信息:发送查询版本:76657228290D
+反馈:

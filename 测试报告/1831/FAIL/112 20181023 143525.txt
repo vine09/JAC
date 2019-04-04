@@ -1,0 +1,13 @@
+--SN:112
+--Date and Time:2018-10-23 14:35
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:15
+--TestResult:
+
+[测试名称]	[TestItem ITEM]	[通道]	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源  	DOAction       	B+    	1         	        	        	      	        	Done  	0.010000  	      	          	1
+ACC置高   	DOAction       	ACC   	1         	        	        	      	        	Done  	0.012000  	      	          	1
+延时      	Delay          	      	15        	        	        	      	        	Done  	15.011000 	      	          	1
+
+通信信息:

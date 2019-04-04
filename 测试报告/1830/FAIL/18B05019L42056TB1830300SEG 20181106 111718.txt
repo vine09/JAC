@@ -1,0 +1,47 @@
+--SN:18B05019L42056TB1830300SEG
+--Date and Time:2018-11-6 11:17
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:35
+--TestResult:
+
+[测试名称]        	[TestItem ITEM]	[通道]        	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction       	B+            	1         	        	        	      	        	Done  	0.010000  	      	          	1
+ACC置高           	DOAction       	ACC           	1         	        	        	      	        	Done  	0.012000  	      	          	1
+延时              	Delay          	              	25        	        	        	      	        	Done  	25.012000 	      	          	1
+启动自动化测试进程	StartProcess   	100           	5;100     	PASS    	PASS    	String	PASS    	PASS  	4.177000  	      	通信      	1
+启动自动化测试    	CMD_CF         	启动自动化测试	4000      	01      	01      	String	01      	PASS  	0.870000  	      	通信      	1
+延时              	Delay          	              	5         	        	        	      	        	Done  	5.013000  	      	          	1
+
+通信信息:启动自动化测试进程：PASS
+COM23: 退出进程
+反馈：killall
+
+COM23
+退出系统：
+反馈：
+
+msm 201810200105 mdm9607 /dev/ttyGS0
+
+
+
+mdm9607 login: 
+COM23
+输入用户名：root
+反馈：root
+Password: 
+COM23
+输入密码：quectel123
+反馈：
+root@mdm9607:~# 
+COM23
+启动进程：
+反馈：/vendor/app/auto_test_main
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+本次串口通信耗时：8.570000E-1s
+读循环次数：7

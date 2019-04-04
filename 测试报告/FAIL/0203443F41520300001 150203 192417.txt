@@ -1,0 +1,284 @@
+--SN:0203443F41520300001
+--Date and Time:2015-2-3 19:24
+--Tester:Slot1
+--OperatorID:
+--CycleTime:117
+--TestResult:
+≤‚ ‘œÓƒø	≤‚ ‘√˚≥∆       	≤‚¡ø÷µ 	œ¬œﬁ÷µ	…œœﬁ÷µ	≤‚ ‘Ω·π˚
+µÁ—πºÏ≤‚	≤È—ØBAT_DETµÁ—π	6.06100	6.5   	8.4   	FAIL    
+GPS     	GPS∂®Œª≤È—Ø    	0x02   	0x01  	0x01  	FAIL    
+        	               	       	      	      	        
+
+[≤‚ ‘√˚≥∆]          	[TestItem ITEM]	[Õ®µ¿]               	[…Ë÷√≤Œ ˝]      	[œ¬œﬁ÷µ]        	[…œœﬁ÷µ]        	[µ•Œª]	[≤‚¡ø÷µ]        	[Ω·π˚]	[≤‚ ‘ ±º‰]	[±∏◊¢]	[≤‚ ‘œÓƒø]  	 
+∆¯∏◊Õ∆Ω¯            	DOAction       	CylinderCtrl         	1               	                	                	      	                	Done  	0.007000  	      	            	1
+¥Úø™µÁ‘¥            	DOAction       	B+                   	1               	                	                	      	                	Done  	0.012000  	      	            	1
+ACC÷√∏ﬂ             	DOAction       	ACC                  	1               	                	                	      	                	Done  	0.013000  	      	ACC_IO      	1
+ÕÀ≥ˆ◊‘∂ØªØ≤‚ ‘      	CMD            	ÕÀ≥ˆ◊‘∂ØªØ≤‚ ‘       	1000            	                	0x01            	Hex   	                	PASS  	1.025000  	      	Õ®–≈        	1
+—” ±                	Delay          	                     	5               	                	                	      	                	Done  	5.013000  	      	CAN         	1
+≤‚¡øµÁ¡˜            	MeaCurrent     	Current              	Differential    	.1              	.5              	A     	0.17486         	PASS  	1.327000  	      	µÁ¡˜        	1
+—” ±                	Delay          	                     	10              	                	                	      	                	Done  	10.000000 	      	CAN         	1
+∆Ù∂Ø◊‘∂ØªØ≤‚ ‘      	CMD            	∆Ù∂Ø◊‘∂ØªØ≤‚ ‘       	1000            	OK              	OK              	String	OK              	PASS  	0.220000  	      	Õ®–≈        	1
+≤È—ØBAT_DETµÁ—π     	CMD            	≤È—ØBAT_DET◊¥Ã¨      	1000            	11              	12              	V     	11.94600        	PASS  	1.984000  	      	µÁ—πºÏ≤‚    	1
+CHARGE_CTL ‰≥ˆ      	CMD            	CHARGE_CTL ‰≥ˆ∏ﬂµÁ∆Ω 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	3.001000  	      	Õ®–≈        	1
+≤‚¡øµÁ¡˜            	MeaCurrent     	Current              	Differential    	.2              	.4              	A     	0.29077         	PASS  	1.284000  	      	µÁ¡˜        	1
+≤È—ØBAT7.2V_DETµÁ—π 	CMD            	≤È—ØBAT7.2V_DETµÁ—π  	1000            	1               	1.636           	V     	1.30500         	PASS  	0.124000  	      	µÁ—πºÏ≤‚    	1
+CHARGE_CTL ‰≥ˆ      	CMD            	CHARGE_CTL ‰≥ˆµÕµÁ∆Ω 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	1.009000  	      	Õ®–≈        	1
+≤‚¡øµÁ¡˜            	MeaCurrent     	Current              	Differential    	.1              	.2              	A     	0.19081         	PASS  	1.263000  	      	µÁ¡˜        	1
+≤È—ØMEID            	USBCMD         	≤È—ØMEID             	1000            	OK              	OK              	String	PASS            	PASS  	0.752000  	      	3Gƒ£øÈ      	1
+…Ë÷√RTRECF          	USBCMD         	…Ë÷√RTRECF           	1000            	OK              	OK              	String	PASS            	PASS  	0.737000  	      	3Gƒ£øÈ      	1
+…Ë÷√ESN             	USBCMD         	…Ë÷√ESN              	1000            	OK              	OK              	String	PASS            	PASS  	0.563000  	      	3Gƒ£øÈ      	1
+≤È—ØESN             	USBCMD         	≤È—ØESN              	1000            	OK              	OK              	String	PASS            	PASS  	0.762000  	      	3Gƒ£øÈ      	1
+…Ë÷√AKEY            	USBCMD         	…Ë÷√AKEY             	1000            	OK              	OK              	String	PASS            	PASS  	0.544000  	      	3Gƒ£øÈ      	1
+…Ë÷√IMSI1           	USBCMD         	…Ë÷√IMSI1            	1000            	OK              	OK              	String	PASS            	PASS  	0.551000  	      	3Gƒ£øÈ      	1
+…Ë÷√IMSI2           	USBCMD         	…Ë÷√IMSI2            	1000            	OK              	OK              	String	PASS            	PASS  	0.547000  	      	3Gƒ£øÈ      	1
+…Ë÷√IMSI3           	USBCMD         	…Ë÷√IMSI3            	1000            	OK              	OK              	String	PASS            	PASS  	0.569000  	      	3Gƒ£øÈ      	1
+…Ë÷√EVDO’À∫≈        	USBCMD         	…Ë÷√EVDO’À∫≈         	1000            	OK              	OK              	String	PASS            	PASS  	0.769000  	      	3Gƒ£øÈ      	1
+…Ë÷√EVDO√‹¬Î        	USBCMD         	…Ë÷√EVDO√‹¬Î         	1000            	OK              	OK              	String	PASS            	PASS  	0.778000  	      	3Gƒ£øÈ      	1
+BATVCC_CTL ‰≥ˆ      	CMD            	BATVCC_CTL ‰≥ˆ∏ﬂµÁ∆Ω 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	1.036000  	      	Õ®–≈        	1
+πÿ±’µÁ‘¥            	DOAction       	B+                   	0               	                	                	      	                	Done  	0.003000  	      	            	1
+≤È—ØBAT7.2V_DETµÁ—π 	CMD            	≤È—ØBAT7.2V_DETµÁ—π  	1000            	1               	1.636           	V     	1.27200         	PASS  	0.425000  	      	µÁ—πºÏ≤‚    	1
+≤È—ØBAT_DETµÁ—π     	CMD            	≤È—ØBAT_DET◊¥Ã¨      	1000            	6.5             	8.4             	V     	6.06100         	FAIL  	6.477000  	      	µÁ—πºÏ≤‚    	1
+BATVCC_CTL ‰≥ˆ      	CMD            	BATVCC_CTL ‰≥ˆµÕµÁ∆Ω 	1000            	                	0x00            	String	                	PASS  	1.048000  	      	µÁ—πºÏ≤‚    	1
+÷ÿ∆Ù                	CMD            	÷ÿ∆Ù                 	1000            	                	0x00            	Hex   	                	PASS  	1.036000  	      	Õ®–≈        	1
+¥Úø™µÁ‘¥            	DOAction       	B+                   	1               	                	                	      	                	Done  	0.029000  	      	            	1
+—” ±                	Delay          	                     	30              	                	                	      	                	Done  	30.021000 	      	CAN         	1
+∆Ù∂Ø◊‘∂ØªØ≤‚ ‘      	CMD            	∆Ù∂Ø◊‘∂ØªØ≤‚ ‘       	1000            	OK              	OK              	String	OK              	PASS  	0.231000  	      	Õ®–≈        	1
+ACC÷√µÕ             	DOAction       	ACC                  	0               	                	                	      	                	Done  	0.023000  	      	ACC_IO      	1
+—” ±                	Delay          	                     	1               	                	                	      	                	Done  	1.022000  	      	            	1
+ACC◊¥Ã¨≤È—Ø         	CMD            	≤È—ØACC◊¥Ã¨          	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.326000  	      	ACC_IO      	1
+ACC÷√∏ﬂ             	DOAction       	ACC                  	1               	                	                	      	                	Done  	0.023000  	      	ACC_IO      	1
+—” ±                	Delay          	                     	1               	                	                	      	                	Done  	1.012000  	      	            	1
+ACC◊¥Ã¨≤È—Ø         	CMD            	≤È—ØACC◊¥Ã¨          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	0.310000  	      	ACC_IO      	1
+CSH”––ß             	DOAction       	CSH                  	1               	                	                	      	                	Done  	0.026000  	      	CSHºÏ≤‚     	1
+CSH◊¥Ã¨≤È—Ø         	CMD            	≤È—ØCSH◊¥Ã¨          	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.438000  	      	CSHºÏ≤‚     	1
+CSHŒﬁ–ß             	DOAction       	CSH                  	0               	                	                	      	                	Done  	0.004000  	      	CSHºÏ≤‚     	1
+CSH◊¥Ã¨≤È—Ø         	CMD            	≤È—ØCSH◊¥Ã¨          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	1.886000  	      	CSHºÏ≤‚     	1
+º”ÀŸ∂»¥´∏–∆˜∑µªÿ ˝æ›	CMD            	º”ÀŸ∂»¥´∏–∆˜∑µªÿ ˝æ›1	1000            	85              	110             	∂»    	101.00000       	PASS  	0.432000  	      	º”ÀŸ∂»¥´∏–∆˜	1
+CAN                 	CANTransmit    	00000182             	000007d100000000	                	                	      	PASS            	PASS  	0.065000  	      	CAN         	1
+CANÕ®–≈≤‚ ‘         	CMD            	CANÕ®–≈Ω” ’          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	0.329000  	      	CAN         	1
+CAN                 	CANTransmit    	00000182             	000007d000000000	                	                	      	PASS            	PASS  	0.061000  	      	CAN         	1
+CANÕ®–≈≤‚ ‘         	CMD            	CANÕ®–≈Ω” ’          	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.430000  	      	CAN         	1
+CANÕ®–≈≤‚ ‘         	CMD-CAN        	CANÕ®–≈∑¢ÀÕ          	1000            	55040404040404FF	55040404040404FF	Hex   	55040404040404FF	PASS  	0.444000  	      	CAN         	1
+Õ‚≤øFlash≤‚ ‘       	CMD            	Õ‚≤øFlash≤‚ ‘        	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.431000  	      	Flash       	1
+3GÕ®–≈◊‘ºÏ          	CMD            	3GÕ®–≈◊‘ºÏ           	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.430000  	      	3Gƒ£øÈ      	1
+µ»¥˝∆Ù∂Ø            	FindSIMCOMETH  	                     	60              	                	                	      	PASS            	PASS  	0.595000  	      	3Gƒ£øÈ      	1
+—” ±                	Delay          	                     	5               	                	                	      	                	Done  	5.023000  	      	            	1
+¥Úø™Õ¯¬Á            	USBCMD         	¥Úø™Õ¯¬Á             	1000            	                	                	Hex   	PASS            	PASS  	0.464000  	      	3Gƒ£øÈ      	1
+≤È—Ø2G–≈∫≈          	USBCMD         	≤È—Ø2G–≈∫≈           	1000            	20              	31              	Hex   	31              	PASS  	0.750000  	      	3Gƒ£øÈ      	1
+≤È—Ø3G–≈∫≈          	USBCMD         	≤È—Ø3G–≈∫≈           	1000            	20              	31              	Hex   	31              	PASS  	0.780000  	      	3Gƒ£øÈ      	1
+¥Úø™Õ¯¬Á            	USBCMD         	¥Úø™Õ¯¬Á             	1000            	                	                	Hex   	PASS            	PASS  	0.362000  	      	3Gƒ£øÈ      	1
+≤È—ØÕ¯¬Á◊¥Ã¨        	USBCMD         	≤È—ØÕ¯¬Á◊¥Ã¨         	1000            	OK              	OK              	Hex   	PASS            	PASS  	0.561000  	      	3Gƒ£øÈ      	1
+≤È—ØIP              	USBCMD         	≤È—ØIP               	1000            	OK              	OK              	Hex   	PASS            	PASS  	0.584000  	      	3Gƒ£øÈ      	1
+≤‚ ‘µ«¬º            	USBCMD         	≤‚ ‘µ«¬º             	5000            	OK              	OK              	Hex   	PASS            	PASS  	2.950000  	      	3Gƒ£øÈ      	1
+“Ù∆µªÿª∑≤‚ ‘        	USBCMD         	πÿ±’“Ù∆µLOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	0.564000  	      	3Gƒ£øÈ      	1
+«–ªª…˘“ÙÕ®µ¿        	USBCMD         	«–ªª…˘“ÙÕ®µ¿         	1000            	OK              	OK              	String	PASS            	PASS  	0.558000  	      	3Gƒ£øÈ      	1
+“Ù∆µªÿª∑≤‚ ‘        	USBCMD         	πÿ±’“Ù∆µLOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	0.562000  	      	3Gƒ£øÈ      	1
+“Ù∆µªÿª∑≤‚ ‘        	USBCMD         	¥Úø™“Ù∆µLOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	0.462000  	      	3Gƒ£øÈ      	1
+–≈∫≈≤˙…˙            	AOFreq         	MIC                  	F=1000HZ,A=0.2V 	                	                	∆µ¬   	                	Done  	1.126000  	      	3Gƒ£øÈ      	1
+¥Úø™–≈∫≈            	DOAction       	MIC_RL               	1               	                	                	      	                	Done  	0.022000  	      	3Gƒ£øÈ      	1
+≤‚¡ø“Ù∆µ ‰≥ˆ∑˘∂»    	AudioLoopBack  	Audio                	Differential    	.28             	.35             	V     	0.31346         	PASS  	1.320000  	      	3Gƒ£øÈ      	1
+“Ù∆µ ‰≥ˆ∆µ¬         	Frequency      	                     	                	990             	1010            	Hz    	1000.00020      	PASS  	0.067000  	      	3Gƒ£øÈ      	1
+“Ù∆µ ‰≥ˆ ß’Ê∂»      	THD            	                     	                	0               	5               	%     	2.62301         	PASS  	0.126000  	      	3Gƒ£øÈ      	1
+πÿ±’–≈∫≈            	DOAction       	MIC_RL               	0               	                	                	      	                	Done  	0.034000  	      	3Gƒ£øÈ      	1
+“Ù∆µªÿª∑≤‚ ‘        	USBCMD         	πÿ±’“Ù∆µLOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	0.541000  	      	3Gƒ£øÈ      	1
+≤¶∫≈                	USBCMD         	≤¶∫≈                 	10000           	OK              	OK              	Hex   	PASS            	PASS  	3.675000  	      	3Gƒ£øÈ      	1
+π“∂œ                	USBCMD         	π“∂œ                 	1000            	OK              	OK              	Hex   	PASS            	PASS  	0.570000  	      	3Gƒ£øÈ      	1
+GPS∂®Œª≤È—Ø         	CMD            	GPS∂®Œª≤È—Ø          	1000            	0x01            	0x01            	Hex   	0x02            	FAIL  	10.653000 	      	GPS         	1
+
+Õ®–≈–≈œ¢:∑¢ÀÕÕÀ≥ˆ◊‘∂ØªØ≤‚ ‘:0F00020002F0
+∑¥¿°:636D64206C696E6520726561647921200D0A636D643E
+∑¢ÀÕ∆Ù∂Ø◊‘∂ØªØ≤‚ ‘:746573746D6F64652831290D
+∑¥¿°:testmode(1)
+	0, 0x00000000
+cmd>
+∑¢ÀÕ≤È—ØBAT_DET◊¥Ã¨:0F00160016F0
+∑¥¿°:0F801602044496F0
+∑¢ÀÕ≤È—ØBAT_DET◊¥Ã¨:0F00160016F0
+∑¥¿°:0F801602043E96F0
+∑¢ÀÕCHARGE_CTL ‰≥ˆ∏ﬂµÁ∆Ω:0F0017010117F0
+∑¥¿°:0F8017010291F0
+∑¢ÀÕCHARGE_CTL ‰≥ˆ∏ﬂµÁ∆Ω:0F0017010117F0
+∑¥¿°:0F8017010191F0
+∑¢ÀÕ≤È—ØBAT7.2V_DETµÁ—π:0F00140014F0
+∑¥¿°:0F801402051995F0
+∑¢ÀÕCHARGE_CTL ‰≥ˆµÕµÁ∆Ω:0F0017010016F0
+∑¥¿°:0F8017010191F0
+∑¢ÀÕ ≤È—ØMEID:AT+SMEID?
+∑¥¿°:
++SMEID: A1000021A6A267
+
+OK
+
+∑¢ÀÕ …Ë÷√RTRECF:AT+RTRECF=1
+∑¥¿°:
++RTRECF: SUCCESS
+
+OK
+
+∑¢ÀÕ …Ë÷√ESN:AT+ESN=80E68FEC
+∑¥¿°:
+OK
+
+∑¢ÀÕ ≤È—ØESN:AT+ESN?
+∑¥¿°:
++ESN: 80E68FEC
+
+OK
+
+∑¢ÀÕ …Ë÷√AKEY:AT+AKEY=C9E10A3778E8C766
+∑¥¿°:
+OK
+
+∑¢ÀÕ …Ë÷√IMSI1:AT+NAMCFG=0,1,460
+∑¥¿°:
+OK
+
+∑¢ÀÕ …Ë÷√IMSI2:AT+NAMCFG=0,2,03
+∑¥¿°:
+OK
+
+∑¢ÀÕ …Ë÷√IMSI3:AT+NAMCFG=0,3,0893710898
+∑¥¿°:
+OK
+
+∑¢ÀÕ …Ë÷√EVDO’À∫≈:AT+CNVW=1194,0,"19343630303330383933373130383938406D7963646D612E636E"
+∑¥¿°:
++CNVW: 1
+
+OK
+
+∑¢ÀÕ …Ë÷√EVDO√‹¬Î:AT+CNVW=1192,0,"1038434143324541394437384631453839"
+∑¥¿°:
++CNVW: 1
+
+OK
+
+∑¢ÀÕBATVCC_CTL ‰≥ˆ∏ﬂµÁ∆Ω:0F0015010115F0
+∑¥¿°:0F8015010193F0
+∑¢ÀÕ≤È—ØBAT7.2V_DETµÁ—π:0F00140014F0
+∑¥¿°:0F80140204F894F0
+∑¢ÀÕ≤È—ØBAT_DET◊¥Ã¨:0F00160016F0
+∑¥¿°:0F801602022A90F0
+∑¢ÀÕ≤È—ØBAT_DET◊¥Ã¨:0F00160016F0
+∑¥¿°:0F801602022790F0
+∑¢ÀÕ≤È—ØBAT_DET◊¥Ã¨:0F00160016F0
+∑¥¿°:0F801602022A90F0
+∑¢ÀÕ≤È—ØBAT_DET◊¥Ã¨:0F00160016F0
+∑¥¿°:0F801602022A90F0
+∑¢ÀÕ≤È—ØBAT_DET◊¥Ã¨:0F00160016F0
+∑¥¿°:0F801602022790F0
+∑¢ÀÕBATVCC_CTL ‰≥ˆµÕµÁ∆Ω:0F0015010014F0
+∑¥¿°:
+∑¢ÀÕ÷ÿ∆Ù:0F00220022F0
+∑¥¿°:
+∑¢ÀÕ∆Ù∂Ø◊‘∂ØªØ≤‚ ‘:746573746D6F64652831290D
+∑¥¿°:testmode(1)
+	0, 0x00000000
+cmd>
+∑¢ÀÕ≤È—ØACC◊¥Ã¨:0F00050005F0
+∑¥¿°:0F8005010182F0
+∑¢ÀÕ≤È—ØACC◊¥Ã¨:0F00050005F0
+∑¥¿°:0F8005010282F0
+∑¢ÀÕ≤È—ØCSH◊¥Ã¨:0F00060006F0
+∑¥¿°:0F8006010181F0
+∑¢ÀÕ≤È—ØCSH◊¥Ã¨:0F00060006F0
+∑¥¿°:0F8006010181F0
+∑¢ÀÕ≤È—ØCSH◊¥Ã¨:0F00060006F0
+∑¥¿°:0F8006010281F0
+∑¢ÀÕº”ÀŸ∂»¥´∏–∆˜∑µªÿ ˝æ›1:0F0007010006F0
+∑¥¿°:0F8007016581F0
+CAN∑¢ÀÕ:ID:00000182DATA:000007d100000000∑¢ÀÕCANÕ®–≈Ω” ’:0F00200020F0
+∑¥¿°:0F80200102A7F0
+CAN∑¢ÀÕ:ID:00000182DATA:000007d000000000∑¢ÀÕCANÕ®–≈Ω” ’:0F00200020F0
+∑¥¿°:0F80200101A7F0
+∑¢ÀÕCANÕ®–≈∑¢ÀÕ:0F00210021F0
+∑¥¿°:0F80210101A6F0
+∑¢ÀÕÕ‚≤øFlash≤‚ ‘:0F00110011F0
+∑¥¿°:0F8011010196F0
+∑¢ÀÕ3GÕ®–≈◊‘ºÏ:0F000B000BF0
+∑¥¿°:0F800B01018CF0
+∑¢ÀÕ ¥Úø™Õ¯¬Á:AT+NETOPEN
+∑¥¿°:
+
+∑¢ÀÕ ≤È—Ø2G–≈∫≈:AT+CSQ
+∑¥¿°:
++CSQ: 31,99
+
+OK
+
+∑¢ÀÕ ≤È—Ø3G–≈∫≈:AT^HDRCSQ
+∑¥¿°:
+^HDRCSQ: 31
+
+OK
+
+∑¢ÀÕ ¥Úø™Õ¯¬Á:AT+NETOPEN
+∑¥¿°:
+
+∑¢ÀÕ ≤È—ØÕ¯¬Á◊¥Ã¨:AT+NETOPEN?
+∑¥¿°:
++NETOPEN: 1,1
+
+∑¢ÀÕ ≤È—ØIP:AT+IPADDR
+∑¥¿°:
++IPADDR: 114.81.148.4
+
+∑¢ÀÕ ≤‚ ‘µ«¬º:AT+CIPSEND=0,57
+∑¥¿°:
+>
+OK
+
++CIPSEND: 0,57,57
+
+
+
+RECV FROM:202.105.139.92:24000
++IPD31
+}"3DU   
+  ◊€ó!C8Œ}
+∑¢ÀÕ πÿ±’“Ù∆µLOOPBACK:AT+CLOOPBACK=1,0
+∑¥¿°:
+OK
+
+∑¢ÀÕ «–ªª…˘“ÙÕ®µ¿:AT+CSDVC=1,0
+∑¥¿°:
+OK
+
+∑¢ÀÕ πÿ±’“Ù∆µLOOPBACK:AT+CLOOPBACK=1,0
+∑¥¿°:
+OK
+
+∑¢ÀÕ ¥Úø™“Ù∆µLOOPBACK:AT+CLOOPBACK=1,1
+∑¥¿°:
+OK
+
+∑¢ÀÕ πÿ±’“Ù∆µLOOPBACK:AT+CLOOPBACK=1,0
+∑¥¿°:
+OK
+
+∑¢ÀÕ ≤¶∫≈:ATD10000;
+∑¥¿°:
+OK
+
+VOICE CALL: ANSWERED
+
+∑¢ÀÕ π“∂œ:AT+CHUP
+∑¥¿°:
+VOICE CALL: END: 000002
+
+∑¢ÀÕGPS∂®Œª≤È—Ø:0F00080008F0
+∑¥¿°:0F800801028FF0
+∑¢ÀÕGPS∂®Œª≤È—Ø:0F00080008F0
+∑¥¿°:0F800801028FF0
+∑¢ÀÕGPS∂®Œª≤È—Ø:0F00080008F0
+∑¥¿°:0F800801028FF0
+∑¢ÀÕGPS∂®Œª≤È—Ø:0F00080008F0
+∑¥¿°:0F800801028FF0
+∑¢ÀÕGPS∂®Œª≤È—Ø:0F00080008F0
+∑¥¿°:0F800801028FF0
+∑¢ÀÕGPS∂®Œª≤È—Ø:0F00080008F0
+∑¥¿°:0F800801028FF0
+∑¢ÀÕGPS∂®Œª≤È—Ø:0F00080008F0
+∑¥¿°:0F800801028FF0
+∑¢ÀÕGPS∂®Œª≤È—Ø:0F00080008F0
+∑¥¿°:0F800801028FF0

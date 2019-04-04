@@ -1,0 +1,131 @@
+--SN:124
+--Date and Time:2015-1-27 18:20
+--Tester:Slot1
+--OperatorID:
+--CycleTime:41
+--TestResult:
+测试项目	测试名称           	测量值  	下限值	上限值	测试结果
+电压检测	BATVCC_CTL输出     	0x01    	0x00  	0x00  	FAIL    
+电压检测	BATVCC_CTL输出     	0x      	0x00  	0x00  	FAIL    
+电压检测	查询BAT7.2V_DET电压	0.000000	1     	1.636 	FAIL    
+        	                   	        	      	      	        
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]  	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源           	DOAction       	B+                  	1           	        	        	      	        	Done  	0.014000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1           	        	        	      	        	Done  	0.023000  	      	ACC IO    	1
+退出自动化测试     	CMD            	退出自动化测试      	1000        	        	0x01    	Hex   	0x      	PASS  	1.049000  	      	通信      	1
+延时               	Delay          	                    	5           	        	        	      	        	Done  	5.023000  	      	CAN       	1
+测量电流           	MeaCurrent     	Current             	Differential	0.1     	0.5     	A     	0.30239 	PASS  	1.230000  	      	电流      	1
+延时               	Delay          	                    	10          	        	        	      	        	Done  	10.011000 	      	CAN       	1
+启动自动化测试     	CMD            	启动自动化测试      	1000        	OK      	OK      	String	OK      	PASS  	2.234000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.258000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.958000  	      	通信      	1
+测量电流           	MeaCurrent     	Current             	Differential	0.2     	0.4     	A     	0.25110 	PASS  	1.230000  	      	电流      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	1       	1.636   	V     	1.498000	PASS  	0.228000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出低电平	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	3.020000  	      	通信      	1
+BATVCC_CTL输出     	CMD            	BATVCC_CTL输出低电平	1000        	0x00    	0x00    	Hex   	0x01    	FAIL  	0.861000  	      	电压检测  	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	1       	1.636   	V     	1.485000	PASS  	0.464000  	      	电压检测  	1
+测量电流           	MeaCurrent     	Current             	Differential	0.1     	0.2     	A     	0.19883 	PASS  	1.247000  	      	电流      	1
+查询MEID           	USBCMD         	查询MEID            	1000        	OK      	OK      	String	PASS    	PASS  	0.708000  	      	3G模块    	1
+设置RTRECF         	USBCMD         	设置RTRECF          	1000        	OK      	OK      	String	PASS    	PASS  	0.736000  	      	3G模块    	1
+设置ESN            	USBCMD         	设置ESN             	1000        	OK      	OK      	String	PASS    	PASS  	0.522000  	      	3G模块    	1
+查询ESN            	USBCMD         	查询ESN             	1000        	OK      	OK      	String	PASS    	PASS  	0.709000  	      	3G模块    	1
+设置AKEY           	USBCMD         	设置AKEY            	1000        	OK      	OK      	String	PASS    	PASS  	0.537000  	      	3G模块    	1
+设置IMSI1          	USBCMD         	设置IMSI1           	1000        	OK      	OK      	String	PASS    	PASS  	0.505000  	      	3G模块    	1
+设置IMSI2          	USBCMD         	设置IMSI2           	1000        	OK      	OK      	String	PASS    	PASS  	0.504000  	      	3G模块    	1
+设置IMSI3          	USBCMD         	设置IMSI3           	1000        	OK      	OK      	String	PASS    	PASS  	0.510000  	      	3G模块    	1
+设置EVDO账号       	USBCMD         	设置EVDO账号        	1000        	OK      	OK      	String	PASS    	PASS  	0.701000  	      	3G模块    	1
+设置EVDO密码       	USBCMD         	设置EVDO密码        	1000        	OK      	OK      	String	PASS    	PASS  	0.707000  	      	3G模块    	1
+BATVCC_CTL输出     	CMD            	BATVCC_CTL输出高电平	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.735000  	      	通信      	1
+关闭电源           	DOAction       	B+                  	0           	        	        	      	        	Done  	0.035000  	      	          	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	1       	1.636   	V     	1.472000	PASS  	0.349000  	      	电压检测  	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000        	0x02    	0x02    	Hex   	0x02    	PASS  	0.434000  	      	电压检测  	1
+BATVCC_CTL输出     	CMD            	BATVCC_CTL输出低电平	1000        	0x00    	0x00    	Hex   	0x      	FAIL  	1.070000  	      	电压检测  	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	1       	1.636   	V     	0.000000	FAIL  	3.223000  	      	电压检测  	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:0F00020002F0414343204F4E0D0A
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+Unknown token
+cmd>
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010197F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010196F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205DA93F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010296F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010196F0
+发送BATVCC_CTL输出低电平:0F0015010014F0
+反馈:0F8015010194F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205CD93F0
+发送 查询MEID:AT+SMEID?
+反馈:
++SMEID: A1000021A67071
+
+OK
+
+发送 设置RTRECF:AT+RTRECF=1
+反馈:
++RTRECF: SUCCESS
+
+OK
+
+发送 设置ESN:AT+ESN=80AFB5B1
+反馈:
+OK
+
+发送 查询ESN:AT+ESN?
+反馈:
++ESN: 80AFB5B1
+
+OK
+
+发送 设置AKEY:AT+AKEY=710E2CA6533F8CE7
+反馈:
+OK
+
+发送 设置IMSI1:AT+NAMCFG=0,1,460
+反馈:
+OK
+
+发送 设置IMSI2:AT+NAMCFG=0,2,03
+反馈:
+OK
+
+发送 设置IMSI3:AT+NAMCFG=0,3,6161978626
+反馈:
+OK
+
+发送 设置EVDO账号:AT+CNVW=1194,0,"19343630303336313631393738363236406D7963646D612E636E"
+反馈:
++CNVW: 1
+
+OK
+
+发送 设置EVDO密码:AT+CNVW=1192,0,"1031443036463845353046303743423533"
+反馈:
++CNVW: 1
+
+OK
+
+发送BATVCC_CTL输出高电平:0F0015010115F0
+反馈:0F8015010194F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205C093F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010297F0
+发送BATVCC_CTL输出低电平:0F0015010014F0
+反馈:414343204F46460D0A
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:

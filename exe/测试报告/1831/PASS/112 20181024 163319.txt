@@ -1,0 +1,443 @@
+--SN:112
+--Date and Time:2018-10-24 16:33
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:134
+--TestResult:
+Pass
+[测试名称]         	[TestItem ITEM]   	[通道]              	[设置参数]      	[下限值]        	[上限值]        	[单位] 	[测量值]        	[结果]	[测试时间]	[备注]         	[测试项目]	 
+打开电源           	DOAction          	B+                  	1               	                	                	       	                	Done  	0.047000  	               	          	1
+ACC置高            	DOAction          	ACC                 	1               	                	                	       	                	Done  	0.013000  	               	          	1
+延时               	Delay             	                    	15              	                	                	       	                	Done  	15.011000 	               	          	1
+延时               	Delay             	                    	10              	                	                	       	                	Done  	10.012000 	               	          	1
+启动自动化测试进程 	StartProcess      	100                 	5;100           	PASS            	PASS            	String 	PASS            	PASS  	4.391000  	               	通信      	1
+启动自动化测试     	CMD_CF            	启动自动化测试      	4000            	01              	01              	String 	01              	PASS  	0.986000  	               	通信      	1
+延时               	Delay             	                    	5               	                	                	       	                	Done  	5.014000  	               	          	1
+查询4G固件版本     	CMD_CF            	查询4G固件版本      	4000            	LLA4101.1.0_M006	LLA4101.1.0_M006	Hex    	LLA4101.1.0_M006	PASS  	0.385000  	               	版本信息  	1
+查询MCU软件版本    	CMD_CF            	查询MCU软件版本     	4000            	V2.0            	V2.0            	V      	V2.0            	PASS  	0.385000  	               	版本信息  	1
+查询OPEN软件版本   	CMD_CF            	读OPEN软件版本      	4000            	V2.0            	V2.0            	Hex    	V2.0            	PASS  	0.482000  	               	版本信息  	1
+CheckSN            	CheckSN           	                    	                	                	                	Hex    	PASS            	PASS  	1.838000  	               	          	1
+写入主机条码       	CMD_CF            	写入主机条码        	4000            	01              	01              	Hex    	01              	PASS  	0.610000  	               	生产信息  	1
+读出CCID           	CMD_CF            	读出CCID            	4000            	PASS            	PASS            	Hex    	PASS            	PASS  	0.382000  	               	生产信息  	1
+CCID与SN入库       	WDataToDB         	CCIDTODB            	                	OK              	OK              	String 	OK              	PASS  	0.210000  	               	信息入库  	1
+延时               	Delay             	                    	1               	                	                	       	                	Done  	1.016000  	               	          	1
+写入硬件版本       	CMD_CF            	写入硬件版本        	4000            	01              	01              	String 	01              	PASS  	0.481000  	               	生产信息  	1
+写入生产日期       	CMD_CF            	写入生产日期        	4000            	01              	01              	String 	01              	PASS  	0.482000  	               	生产信息  	1
+写入供应商代码     	CMD_CF            	写入供应商代码      	4000            	01              	01              	String 	01              	PASS  	0.480000  	               	生产信息  	1
+写入零部件号       	CMD_CF            	写入零部件号        	4000            	01              	01              	String 	01              	PASS  	0.485000  	               	生产信息  	1
+写入WIFI名称       	CMD_CF            	写入WIFI名称        	5000            	01              	01              	       	01              	PASS  	1.493000  	               	生产信息  	1
+写入WIFI密码       	CMD_CF            	写入WIFI密码        	4000            	01              	01              	       	01              	PASS  	1.485000  	               	生产信息  	1
+延时               	Delay             	                    	8               	                	                	       	                	Done  	8.016000  	               	          	1
+读条码并比较       	CMD_CF            	读出主机条码        	4000            	PASS            	PASS            	String 	PASS            	PASS  	0.388000  	               	生产信息  	1
+读硬件版本并比较   	CMD_CF            	读出硬件版本        	4000            	PASS            	PASS            	String 	PASS            	PASS  	0.490000  	               	生产信息  	1
+读生产日期并比较   	CMD_CF            	读出生产日期        	4000            	PASS            	PASS            	String 	PASS            	PASS  	0.383000  	               	生产信息  	1
+读供应商代码并比较 	CMD_CF            	读出供应商代码      	4000            	PASS            	PASS            	Hex    	PASS            	PASS  	0.382000  	               	生产信息  	1
+读零部件号并比较   	CMD_CF            	读出零部件号        	4000            	PASS            	PASS            	       	PASS            	PASS  	0.377000  	               	生产信息  	1
+读WIFI名称并比较   	CMD_CF            	读出WIFI名称        	4000            	PASS            	PASS            	       	PASS            	PASS  	0.486000  	               	生产信息  	1
+读WIFI密码并比较   	CMD_CF            	读出WIFI密码        	4000            	PASS            	PASS            	Hex    	PASS            	PASS  	0.383000  	               	生产信息  	1
+读WIFI的MAC地址    	CMD_CF            	读出WIFI MAC地址    	4000            	12              	12              	       	12.00000        	PASS  	0.479000  	存到Reserved3中	生产信息  	1
+比较MAC地址        	WDataToDB         	取MAC地址           	1000            	PASS            	PASS            	Hex    	PASS            	PASS  	0.027000  	               	生产信息  	1
+延时               	Delay             	                    	3               	                	                	       	                	Done  	3.017000  	               	          	1
+WIFI/BT模块自检    	CMD_CF            	WIFI模块自检        	4000            	01              	01              	Hex    	01              	PASS  	0.483000  	               	通信      	1
+CAN                	CANTest           	00000666;00000667   	0011223344556677	55555555AAAAAAAA	55555555AAAAAAAA	String 	55555555AAAAAAAA	PASS  	2.020000  	               	CAN       	1
+CAN                	CANTest           	00000668;00000669   	0011223344556677	55555555AAAAAAAA	55555555AAAAAAAA	String 	55555555AAAAAAAA	PASS  	2.009000  	               	CAN       	1
+GPS定位查询        	CMD_CF            	GPS定位查询         	4000            	01              	01              	Hex    	01              	PASS  	0.381000  	               	GPS       	1
+读模块信号强度     	CMD_CF            	上网模块信号强度    	4000            	13              	35              	Hex    	31.00000        	PASS  	0.391000  	               	3G模块    	1
+外部FLASH测试      	CMD_CF            	外部Flash测试       	4000            	01              	01              	Hex    	01              	PASS  	0.389000  	               	          	1
+CHARGE_CTL置低     	CMD_CF            	CHARGE_CTL置低      	4000            	01              	01              	Hex    	01              	PASS  	0.589000  	               	          	1
+BATVCC_CTL置低     	CMD_CF            	切断备电供电        	4000            	01              	01              	String 	01              	PASS  	0.491000  	               	          	1
+延时               	Delay             	0                   	2               	                	                	       	                	Done  	2.016000  	               	          	1
+检测备电电压       	CMD_CF            	检测备电电压        	4000            	0.01            	0.5             	String 	0.20000         	PASS  	4.786000  	               	电压检测  	1
+CHARGE_CTL置低     	CMD_CF            	CHARGE_CTL置低      	4000            	01              	01              	Hex    	01              	PASS  	0.492000  	               	          	1
+BATVCC_CTL置高     	CMD_CF            	恢复备电供电        	4000            	01              	01              	String 	01              	PASS  	0.587000  	               	          	1
+延时               	Delay             	0                   	3               	                	                	       	                	Done  	3.016000  	               	          	1
+检测备电电压       	CMD_CF            	检测备电电压        	4000            	2.7             	4.5             	String 	3.90000         	PASS  	0.382000  	               	电压检测  	1
+CHARGE_CTL置高     	CMD_CF            	CHARGE_CTL置高      	4000            	01              	01              	Hex    	01              	PASS  	0.481000  	               	          	1
+延时               	Delay             	0                   	3               	                	                	       	                	Done  	3.016000  	               	          	1
+检测备电电压       	CMD_CF            	检测备电电压        	4000            	2.7             	4.5             	String 	3.90000         	PASS  	0.378000  	               	电压检测  	1
+检测B+电源电压     	CMD_CF            	检测B+电源电压      	4000            	11              	13              	String 	12.70000        	PASS  	0.389000  	               	          	1
+WIFI网络DOS测试    	WIFI_DOS          	2;10                	1;5             	PASS            	PASS            	String 	PASS            	PASS  	17.665000 	               	生产信息  	1
+启动测试回环Speaker	CMD_CF            	启动测试回环Speak   	4000            	01              	01              	String 	01              	PASS  	0.788000  	               	通信      	 
+MIC_CTL输出低电平  	CMD_CF            	MIC_CTL输出低电平   	4000            	01              	01              	String 	01              	PASS  	0.486000  	               	通信      	 
+延时               	Delay             	                    	1               	                	                	       	                	Done  	1.016000  	               	          	1
+信号产生           	AOFreq            	MIC                 	F=1000HZ,A=0.05V	                	                	频率   	                	Done  	1.117000  	               	3G模块    	1
+延时               	Delay             	                    	1               	                	                	       	                	Done  	1.017000  	               	          	1
+测量音频输出幅度   	AudioLoopBack_JHCA	Audio               	RSE             	1.4             	2               	V      	1.66169         	PASS  	1.147000  	               	3G模块    	1
+音频输出频率       	Frequency         	                    	                	990             	1010            	Hz     	999.70437       	PASS  	0.040000  	               	3G模块    	1
+关闭测试回环       	CMD_CF            	关闭测试回环        	4000            	01              	01              	String 	01              	PASS  	1.081000  	               	通信      	 
+Reset置高          	DOAction          	Reset               	1               	                	                	       	                	Done  	0.017000  	               	          	1
+延时               	Delay             	                    	5               	                	                	       	                	Done  	5.016000  	               	          	1
+E_call置高测试     	CMD_CF            	E-call状态返回      	4000            	01              	01              	String 	01              	PASS  	0.466000  	               	通信      	 
+Reset置低          	DOAction          	Reset               	0               	                	                	       	                	Done  	0.018000  	               	          	1
+延时               	Delay             	                    	5               	                	                	       	                	Done  	5.016000  	               	          	1
+E_call置低测试     	CMD_CF            	E-call状态返回      	4000            	00              	00              	String 	00              	PASS  	0.480000  	               	通信      	 
+E_call输出检测     	E_CALL测试        	E-call状态返回;Reset	4000;1          	01              	01              	String 	01              	PASS  	4.383000  	               	          	1
+E_call断开检测     	E_CALL测试        	E-call状态返回;Reset	4000;0          	00              	00              	String 	00              	PASS  	4.481000  	               	          	1
+查询ACC IO状态     	CMD_CF            	查询ACC IO状态      	4000            	01              	01              	Hex    	01              	PASS  	0.381000  	               	生产信息  	1
+ACC置低            	DOAction          	ACC                 	0               	PASS            	PASS            	String 	                	Done  	0.019000  	               	          	1
+ACC置高            	DOAction          	ACC                 	1               	                	                	       	                	Done  	0.017000  	               	          	1
+延时               	Delay             	                    	3               	                	                	       	                	Done  	3.017000  	               	          	1
+退出自动化测试     	CMD_CF            	退出自动化测试      	4000            	01              	01              	       	01              	PASS  	0.582000  	               	          	1
+延时               	Delay             	                    	1               	                	                	       	                	Done  	1.016000  	               	          	1
+杀死自动化测试进程 	QuitProcess       	杀死自动化测试进程  	100             	PASS            	PASS            	String 	PASS            	PASS  	0.277000  	               	          	1
+ACC置低            	DOAction          	ACC                 	0               	                	                	       	                	Done  	0.017000  	               	          	1
+关闭电源           	DOAction          	B+                  	0               	                	                	       	                	Done  	0.009000  	               	          	1
+
+通信信息:启动自动化测试进程：PASS
+COM92: 退出进程
+反馈：killall
+
+COM92
+退出系统：
+反馈：
+
+msm 201810092137 mdm9607 /dev/ttyGS0
+
+
+
+mdm9607 login: 
+COM92
+输入用户名：root
+反馈：root
+Password: 
+COM92
+输入密码：quectel123
+反馈：
+root@mdm9607:~# 
+COM92
+启动进程：
+反馈：/vendor/app/local_data
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+本次串口通信耗时：9.720000E-1s
+读循环次数：8
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01LLA4101.1.0_M006
+
+本次串口通信耗时：3.710000E-1s
+读循环次数：2
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test$IdType:8051$ValType:01$Value:01V2.0
+
+本次串口通信耗时：3.700000E-1s
+读循环次数：2
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01V2.0
+
+本次串口通信耗时：4.670000E-1s
+读循环次数：3
+发送写入主机条码:auto_test$IdType:0033$ValType:01$Value:112
+反馈:auto_test$IdType:8033$ValType:01$Value:01
+
+本次串口通信耗时：5.730000E-1s
+读循环次数：4
+发送读出CCID:auto_test$IdType:0037$ValType:01$Value:
+反馈:auto_test$IdType:8037$ValType:01$Value:01898602C9991890290701
+
+本次串口通信耗时：3.660000E-1s
+读循环次数：2
+CCID与SN入库: OK
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:8040$ValType:01$Value:01
+
+本次串口通信耗时：4.650000E-1s
+读循环次数：3
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20181024
+反馈:auto_test$IdType:8035$ValType:01$Value:01
+
+本次串口通信耗时：4.660000E-1s
+读循环次数：3
+发送写入供应商代码:auto_test$IdType:0054$ValType:01$Value:Seg1152
+反馈:auto_test$IdType:8054$ValType:01$Value:01
+
+本次串口通信耗时：4.650000E-1s
+读循环次数：3
+发送写入零部件号:auto_test$IdType:0056$ValType:01$Value:LV0.1
+反馈:auto_test$IdType:8056$ValType:01$Value:01
+
+本次串口通信耗时：4.690000E-1s
+读循环次数：3
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:jac_s4_1024163148
+反馈:auto_test$IdType:803a$ValType:01$Value:01
+
+本次串口通信耗时：1.466000E+0s
+读循环次数：13
+发送写入WIFI密码:auto_test$IdType:003b$ValType:01$Value:12345678
+反馈:auto_test$IdType:803b$ValType:01$Value:01
+
+本次串口通信耗时：1.469000E+0s
+读循环次数：13
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test$IdType:8034$ValType:01$Value:01112
+
+本次串口通信耗时：3.710000E-1s
+读循环次数：2
+发送读出硬件版本:auto_test$IdType:0041$ValType:01$Value:
+反馈:auto_test$IdType:8041$ValType:01$Value:01V0.2
+
+本次串口通信耗时：4.740000E-1s
+读循环次数：3
+发送读出生产日期:auto_test$IdType:0036$ValType:01$Value:
+反馈:auto_test$IdType:8036$ValType:01$Value:0120181024
+
+
+本次串口通信耗时：3.670000E-1s
+读循环次数：2
+发送读出供应商代码:auto_test$IdType:0055$ValType:01$Value:
+反馈:auto_test$IdType:8055$ValType:01$Value:01Seg1152
+
+本次串口通信耗时：3.650000E-1s
+读循环次数：2
+发送读出零部件号:auto_test$IdType:0057$ValType:01$Value:
+反馈:auto_test$IdType:8057$ValType:01$Value:01LV0.1
+
+本次串口通信耗时：3.600000E-1s
+读循环次数：2
+发送读出WIFI名称:auto_test$IdType:003c$ValType:01$Value:
+反馈:auto_test$IdType:803c$ValType:01$Value:01jac_s4_1024163148
+
+本次串口通信耗时：4.690000E-1s
+读循环次数：3
+发送读出WIFI密码:auto_test$IdType:003d$ValType:01$Value:
+反馈:auto_test$IdType:803d$ValType:01$Value:0112345678
+
+本次串口通信耗时：3.660000E-1s
+读循环次数：2
+发送读出WIFI MAC地址:auto_test$IdType:0058$ValType:01$Value:
+反馈:auto_test$IdType:8058$ValType:01$Value:0160d7e390484e
+
+本次串口通信耗时：4.620000E-1s
+读循环次数：3
+比较MAC地址: PASS
+发送WIFI模块自检:auto_test$IdType:000f$ValType:01$Value:
+反馈:auto_test$IdType:800f$ValType:01$Value:01
+
+本次串口通信耗时：4.660000E-1s
+读循环次数：3
+CAN发送:ID:00000666;00000667DATA:0011223344556677
+CAN接收:55555555AAAAAAAA
+CAN发送:ID:00000668;00000669DATA:0011223344556677
+CAN接收:55555555AAAAAAAA
+发送GPS定位查询:auto_test$IdType:0008$ValType:01$Value:
+反馈:auto_test$IdType:8008$ValType:01$Value:01
+
+本次串口通信耗时：3.650000E-1s
+读循环次数：2
+发送上网模块信号强度:auto_test$IdType:000d$ValType:01$Value:
+反馈:auto_test$IdType:800d$ValType:01$Value:0131
+
+本次串口通信耗时：3.750000E-1s
+读循环次数：2
+发送外部Flash测试:auto_test$IdType:0011$ValType:01$Value:
+反馈:auto_test$IdType:8011$ValType:01$Value:01
+
+本次串口通信耗时：3.720000E-1s
+读循环次数：2
+发送CHARGE_CTL置低:auto_test$IdType:0017$ValType:01$Value:00
+反馈:auto_test$IdType:8017$ValType:01$Value:01
+
+本次串口通信耗时：5.720000E-1s
+读循环次数：4
+发送切断备电供电:auto_test$IdType:0015$ValType:01$Value:00
+反馈:auto_test$IdType:8015$ValType:01$Value:01
+
+本次串口通信耗时：4.740000E-1s
+读循环次数：3
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:010.9
+
+
+本次串口通信耗时：3.650000E-1s
+读循环次数：2
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:010.2
+
+
+本次串口通信耗时：3.730000E-1s
+读循环次数：2
+发送CHARGE_CTL置低:auto_test$IdType:0017$ValType:01$Value:00
+反馈:auto_test$IdType:8017$ValType:01$Value:01
+
+本次串口通信耗时：4.740000E-1s
+读循环次数：3
+发送恢复备电供电:auto_test$IdType:0015$ValType:01$Value:01
+反馈:auto_test$IdType:8015$ValType:01$Value:01
+
+本次串口通信耗时：5.710000E-1s
+读循环次数：4
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:013.9
+
+
+本次串口通信耗时：3.650000E-1s
+读循环次数：2
+发送CHARGE_CTL置高:auto_test$IdType:0017$ValType:01$Value:01
+反馈:auto_test$IdType:8017$ValType:01$Value:01
+
+本次串口通信耗时：4.650000E-1s
+读循环次数：3
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:013.9
+
+
+本次串口通信耗时：3.610000E-1s
+读循环次数：2
+发送检测B+电源电压:auto_test$IdType:005c$ValType:01$Value:
+反馈:auto_test$IdType:805c$ValType:01$Value:0112.7
+
+
+本次串口通信耗时：3.730000E-1s
+读循环次数：2
+WIFI名:jac_s4_1024163148
+WIFI密码:12345678
+WIFI连接提示：
+WIFI名：
+jac_s4_1024163148
+原文本内容：
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>jac_s4_1024162420</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>6A61635F73345F31303234313632343230</hex>
+			<name>jac_s4_1024162420</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>false</protected>
+				<keyMaterial>12345678</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+</WLANProfile>
+
+新文本内容：
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>jac_s4_1024163148</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>6A61635F73345F31303234313633313438</hex>
+			<name>jac_s4_1024163148</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>false</protected>
+				<keyMaterial>12345678</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+</WLANProfile>
+
+添加配置情况说明输出：
+已将配置文件 jac_s4_1024163148 添加到接口 无线网络连接。
+
+WIFI连接情况说明输出：
+jac_s4_1024163148已成功完成连接请求。
+
+ping网络结果输出：
+单循环Ping次数：3s
+单循环Ping时间：10.079000ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：Ping 请求找不到主机 www.baidu.com。请检查该名称，然后重试。
+
+ping网关结果：无ping网关
+ping域名服务器结果：无ping域名
+ping百度结果：
+正在 Ping www.a.shifen.com [183.232.231.172] 具有 32 字节的数据:
+来自 183.232.231.172 的回复: 字节=32 时间=86ms TTL=53
+来自 183.232.231.172 的回复: 字节=32 时间=95ms TTL=53
+来自 183.232.231.172 的回复: 字节=32 时间=93ms TTL=53
+来自 183.232.231.172 的回复: 字节=32 时间=94ms TTL=53
+
+183.232.231.172 的 Ping 统计信息:
+    数据包: 已发送 = 4，已接收 = 4，丢失 = 0 (0% 丢失)，
+往返行程的估计时间(以毫秒为单位):
+    最短 = 86ms，最长 = 95ms，平均 = 92ms
+
+
+断开网络连接结果输出：断开WIFI：jac_s4_1024163148连接说明：
+已成功完成接口“无线网络连接”的断开连接请求。
+
+
+
+
+
+已从接口“无线网络连接”中删除配置文件“jac_s4_1024163148”。
+发送启动测试回环Speak:auto_test$IdType:005f$ValType:01$Value:00
+反馈:auto_test$IdType:805f$ValType:01$Value:01
+
+本次串口通信耗时：7.710000E-1s
+读循环次数：6
+发送MIC_CTL输出低电平:auto_test$IdType:006f$ValType:01$Value:00
+反馈:auto_test$IdType:806f$ValType:01$Value:01
+
+本次串口通信耗时：4.690000E-1s
+读循环次数：3
+发送关闭测试回环:auto_test$IdType:0060$ValType:01$Value:02
+反馈:auto_test$IdType:8060$ValType:01$Value:01
+
+本次串口通信耗时：1.065000E+0s
+读循环次数：9
+发送E-call状态返回:auto_test$IdType:0061$ValType:01$Value:
+反馈:auto_test$IdType:8061$ValType:01$Value:0101
+
+
+本次串口通信耗时：4.500000E-1s
+读循环次数：2
+发送E-call状态返回:auto_test$IdType:0061$ValType:01$Value:
+反馈:auto_test$IdType:8061$ValType:01$Value:0100
+
+
+本次串口通信耗时：4.650000E-1s
+读循环次数：3
+发送E-call状态返回:auto_test$IdType:0061$ValType:01$Value:
+反馈:auto_test$IdType:8061$ValType:01$Value:0101
+
+
+本次串口通信耗时：3.650000E-1s
+读循环次数：2
+发送E-call状态返回:auto_test$IdType:0061$ValType:01$Value:
+反馈:auto_test$IdType:8061$ValType:01$Value:0100
+
+
+本次串口通信耗时：4.640000E-1s
+读循环次数：3
+发送查询ACC IO状态:auto_test$IdType:0005$ValType:01$Value:
+反馈:auto_test$IdType:8005$ValType:01$Value:01
+
+本次串口通信耗时：3.640000E-1s
+读循环次数：2
+发送退出自动化测试:auto_test$IdType:0002$ValType:01$Value:
+反馈:auto_test$IdType:8002$ValType:01$Value:01
+
+本次串口通信耗时：5.650000E-1s
+读循环次数：4

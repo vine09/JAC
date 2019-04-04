@@ -1,0 +1,205 @@
+--SN:101
+--Date and Time:2019-3-7 15:24
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:77
+--TestResult:
+测试项目	测试名称        	测量值 	下限值	上限值	测试结果
+生产信息	读生产日期并比较	FAIL   	PASS  	PASS  	FAIL    
+生产信息	读WIFI的MAC地址 	0.00000	17    	17    	FAIL    
+生产信息	写入WIFI名称    	       	01    	01    	FAIL    
+        	                	       	      	      	        
+
+[测试名称]        	[TestItem ITEM]	[通道]          	[设置参数]	[下限值]               	[上限值]               	[单位]	[测量值]               	[结果]	[测试时间]	[备注]         	[测试项目]	 
+打开电源          	DOAction       	B+              	1         	                       	                       	      	                       	Done  	0.011000  	               	          	1
+ACC置高           	DOAction       	ACC             	1         	                       	                       	      	                       	Done  	0.012000  	               	          	1
+延时              	Delay          	                	25        	                       	                       	      	                       	Done  	25.011000 	               	          	1
+启动自动化测试进程	StartProcess   	100             	5;100     	PASS                   	PASS                   	String	PASS                   	PASS  	3.799000  	               	通信      	1
+启动自动化测试    	CMD_CF         	启动自动化测试  	1000      	01                     	01                     	String	01                     	PASS  	0.444000  	               	通信      	1
+延时              	Delay          	                	5         	                       	                       	      	                       	Done  	5.013000  	               	          	1
+查询4G固件版本    	CMD_CF         	查询4G固件版本  	3000      	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	Hex   	EC20CEFAGR06A02M4G_OCPU	PASS  	0.352000  	               	版本信息  	1
+查询MCU软件版本   	CMD_CF         	查询MCU软件版本 	3000      	SW:A.0.1               	SW:A.0.1               	V     	SW:A.0.1               	PASS  	0.339000  	               	版本信息  	1
+查询OPEN软件版本  	CMD_CF         	读OPEN软件版本  	3000      	SW:A.0.1               	SW:A.0.1               	Hex   	SW:A.0.1               	PASS  	3.710000  	               	版本信息  	1
+CheckSN           	CheckSN        	                	          	                       	                       	Hex   	PASS                   	PASS  	2.057000  	               	          	1
+写入主机条码      	CMD_CF         	写入主机条码    	3000      	01                     	01                     	Hex   	01                     	PASS  	0.366000  	               	生产信息  	1
+读出CCID          	CMD_CF         	读出CCID        	3000      	PASS                   	PASS                   	Hex   	PASS                   	PASS  	0.346000  	               	生产信息  	1
+CCID与SN入库      	WDataToDB      	CCIDTODB        	          	OK                     	OK                     	String	OK                     	PASS  	0.254000  	               	信息入库  	1
+延时              	Delay          	                	1         	                       	                       	      	                       	Done  	1.016000  	               	          	1
+写入硬件版本      	CMD_CF         	写入硬件版本    	2000      	01                     	01                     	String	01                     	PASS  	0.350000  	               	生产信息  	1
+写入生产日期      	CMD_CF         	写入生产日期    	2000      	01                     	01                     	String	01                     	PASS  	0.349000  	               	生产信息  	1
+读硬件版本并比较  	CMD_CF         	读出硬件版本    	2000      	PASS                   	PASS                   	String	PASS                   	PASS  	0.336000  	               	生产信息  	1
+读生产日期并比较  	CMD_CF         	读出生产日期    	2000      	PASS                   	PASS                   	String	FAIL                   	FAIL  	10.755000 	               	生产信息  	1
+读WIFI的MAC地址   	CMD_CF         	读出WIFI MAC地址	2000      	17                     	17                     	      	0.00000                	FAIL  	10.794000 	存到Reserved3中	生产信息  	1
+写入WIFI名称      	CMD_CF         	写入WIFI名称    	2000      	01                     	01                     	      	                       	FAIL  	10.812000 	               	生产信息  	1
+
+通信信息:启动自动化测试进程：PASS
+COM82: 退出进程
+反馈：imsi:460098000797160
+mount faided
+umount: can't umount /dev/mmcblk0p2: Invalid argument
+killall
+981
+Password: 
+COM82
+退出系统：
+反馈：
+
+COM82
+输入用户名：root
+反馈：root
+
+COM82
+输入密码：quectel123
+反馈：
+root@mdm9607-perf:~# 
+COM82
+启动进程：
+反馈：/data/QuecOpen/local_data
+start local main proc!
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+本次串口通信耗时：4.320000E-1s
+读循环次数：2
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01EC20CEFAGR06A02M4G_OCPU
+
+本次串口通信耗时：3.380000E-1s
+读循环次数：1
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test$IdType:8051$ValType:01$Value:01SW:A.0.1
+
+本次串口通信耗时：3.240000E-1s
+读循环次数：1
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01SW:A.0.1
+mount faided
+umount: can't umount /dev/mmcblk0p2: Invalid argument
+
+本次串口通信耗时：3.330000E-1s
+读循环次数：1
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01SW:A.0.1
+
+本次串口通信耗时：3.330000E-1s
+读循环次数：1
+发送写入主机条码:auto_test$IdType:0033$ValType:01$Value:101
+反馈:auto_test$IdType:8033$ValType:01$Value:01
+get net interface error
+
+本次串口通信耗时：3.300000E-1s
+读循环次数：1
+发送读出CCID:auto_test$IdType:0037$ValType:01$Value:
+反馈:auto_test$IdType:8037$ValType:01$Value:0189860919700024500759
+
+本次串口通信耗时：3.300000E-1s
+读循环次数：1
+CCID与SN入库: OK
+
+
+
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:8040$ValType:01$Value:01
+
+本次串口通信耗时：3.340000E-1s
+读循环次数：1
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20190307
+反馈:auto_test$IdType:8035$ValType:01$Value:01
+
+本次串口通信耗时：3.330000E-1s
+读循环次数：1
+发送读出硬件版本:auto_test$IdType:0041$ValType:01$Value:
+反馈:auto_test$IdType:8041$ValType:01$Value:01V0.2
+QL_NW_GetCSQ ret 0, CSQ=31
+ret = -3, rat=unknown, NetRegState= DENIED, rssi= 0, ber=0
+
+本次串口通信耗时：3.210000E-1s
+读循环次数：1
+发送读出生产日期:auto_test$IdType:0036$ValType:01$Value:
+反馈:auto_test
+本次串口通信耗时：2.216000E+0s
+读循环次数：20
+发送读出生产日期:auto_test$IdType:0036$ValType:01$Value:
+反馈:auto_test$IdType:0036$ValType:01$Value:
+-sh: auto_test:0036:01:: not found
+root@mdm9607-perf:~# mount faided
+umount: can't umount /dev/mmcblk0p2: Invalid argument
+ret = -3, rat=unknown, NetRegState= DENIED, rssi= 0, ber=0
+
+本次串口通信耗时：2.232000E+0s
+读循环次数：20
+发送读出生产日期:auto_test$IdType:0036$ValType:01$Value:
+反馈:auto_test$IdType:0036$ValType:01$Value:
+-sh: auto_test:0036:01:: not found
+root@mdm9607-perf:~# mount faided
+umount: can't umount /dev/mmcblk0p2: Invalid argument
+ret = -3, rat=unknown, NetRegState= DENIED, rssi= 0, ber=0
+mount: mounting /dev/mmcblk0p2 on /mnt failed: Invalid argument
+
+本次串口通信耗时：2.228000E+0s
+读循环次数：20
+发送读出WIFI MAC地址:auto_test$IdType:0058$ValType:01$Value:
+反馈:auto_test$IdType:0058$ValType:01$Value:
+-sh: auto_test:0058:01:: not found
+root@mdm9607-perf:~# mount faided
+umount: can't umount /dev/mmcblk0p2: Invalid argument
+ret = -3, rat=unknown, NetRegState= DENIED, rssi= 0, ber=0
+mount: mounting /dev/mmcblk0p2 on /mnt failed: Invalid argument
+
+本次串口通信耗时：2.229000E+0s
+读循环次数：20
+发送读出WIFI MAC地址:auto_test$IdType:0058$ValType:01$Value:
+反馈:auto_test$IdType:0058$ValType:01$Value:
+-sh: auto_test:0058:01:: not found
+root@mdm9607-perf:~# mount faided
+umount: can't umount /dev/mmcblk0p2: Invalid argument
+ret = -3, rat=unknown, NetRegState= DENIED, rssi= 0, ber=0
+mount: mounting /dev/mmcblk0p2 on /mnt failed: Invalid argument
+get net interface error
+
+本次串口通信耗时：2.239000E+0s
+读循环次数：20
+发送读出WIFI MAC地址:auto_test$IdType:0058$ValType:01$Value:
+反馈:auto_test$IdType:0058$ValType:01$Value:
+-sh: auto_test:0058:01:: not found
+root@mdm9607-perf:~# mount faided
+umount: can't umount /dev/mmcblk0p2: Invalid argument
+ret = -3, rat=unknown, NetRegState= DENIED, rssi= 0, ber=0
+mount: mounting /dev/mmcblk0p2 on /mnt failed: Invalid argument
+
+本次串口通信耗时：2.245000E+0s
+读循环次数：20
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:Hotspot
+反馈:auto_test$IdType:003a$ValType:01$Value:Hotspot
+-sh: auto_test:003a:01:Hotspot: not found
+root@mdm9607-perf:~# ret = -3, rat=unknown, NetRegState= DENIED, rssi= 0, ber=0
+mount: mounting /dev/mmcblk0p2 on /mnt failed: Invalid argument
+mount faided
+umount: can't umount /dev/mmcblk0p2: Invalid argument
+
+本次串口通信耗时：2.232000E+0s
+读循环次数：20
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:Hotspot
+反馈:auto_test$IdType:003a$ValType:01$Value:Hotspot
+-sh: auto_test:003a:01:Hotspot: not found
+root@mdm9607-perf:~# mount: mounting /dev/mmcblk0p2 on /mnt failed: Invalid argument
+get net interface error
+mount faided
+umount: can't umount /dev/mmcblk0p2: Invalid argument
+ret = -3, rat=unknown, NetRegState= DENIED, rssi= 0, ber=0
+
+本次串口通信耗时：2.242000E+0s
+读循环次数：20
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:Hotspot
+反馈:auto_test$IdType:003a$ValType:01$Value:Hotspot
+-sh: auto_test:003a:01:Hotspot: not found
+root@mdm9607-perf:~# mount: mounting /dev/mmcblk0p2 on /mnt failed: Invalid argument
+mount faided
+umount: can't umount /dev/mmcblk0p2: Invalid argument
+ret = -3, rat=unknown, NetRegState= DENIED, rssi= 0, ber=0
+
+本次串口通信耗时：2.242000E+0s
+读循环次数：20

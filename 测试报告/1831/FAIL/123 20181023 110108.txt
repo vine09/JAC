@@ -1,0 +1,85 @@
+--SN:123
+--Date and Time:2018-10-23 11:01
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:58
+--TestResult:
+测试项目	测试名称        	测量值     	下限值	上限值	测试结果
+3G模块  	测量音频输出幅度	0.87023    	1.4   	2     	FAIL    
+3G模块  	音频输出频率    	36281.57899	990   	1010  	FAIL    
+        	                	           	      	      	        
+
+[测试名称]        	[TestItem ITEM]   	[通道]              	[设置参数]      	[下限值]	[上限值]	[单位]	[测量值]   	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction          	B+                  	1               	        	        	      	           	Done  	0.009000  	      	          	1
+ACC置高           	DOAction          	ACC                 	1               	        	        	      	           	Done  	0.012000  	      	          	1
+延时              	Delay             	                    	25              	        	        	      	           	Done  	25.011000 	      	          	1
+启动自动化测试进程	StartProcess      	100                 	5;100           	PASS    	PASS    	String	PASS       	PASS  	4.292000  	      	通信      	1
+启动自动化测试    	CMD_CF            	启动自动化测试      	2000            	01      	01      	String	01         	PASS  	0.687000  	      	通信      	1
+延时              	Delay             	                    	5               	        	        	      	           	Done  	5.013000  	      	          	1
+启动测试回环Speak 	CMD_CF            	启动测试回环Speak   	2000            	01      	01      	String	01         	PASS  	0.984000  	      	通信      	 
+延时              	Delay             	                    	1               	        	        	      	           	Done  	1.014000  	      	          	1
+信号产生          	AOFreq            	MIC                 	F=1000HZ,A=0.05V	        	        	频率  	           	Done  	1.114000  	      	3G模块    	1
+延时              	Delay             	                    	2               	        	        	      	           	Done  	2.015000  	      	          	1
+测量音频输出幅度  	AudioLoopBack_JHCA	Audio               	RSE             	1.4     	2       	V     	0.87023    	FAIL  	1.124000  	      	3G模块    	1
+音频输出频率      	Frequency         	                    	                	990     	1010    	Hz    	36281.57899	FAIL  	0.120000  	      	3G模块    	1
+关闭测试回环      	CMD_CF            	关闭测试回环        	2000            	01      	01      	String	01         	PASS  	1.192000  	      	通信      	 
+E_call输出检测    	E_CALL测试        	E-call状态返回;Reset	2000;1          	01      	01      	String	01         	PASS  	6.894000  	      	          	1
+E_call断开检测    	E_CALL测试        	E-call状态返回;Reset	2000;0          	00      	00      	String	00         	PASS  	3.381000  	      	          	1
+延时              	Delay             	                    	3               	        	        	      	           	Done  	3.016000  	      	          	1
+退出自动化测试    	CMD_CF            	退出自动化测试      	2000            	01      	01      	      	01         	PASS  	0.384000  	      	          	1
+延时              	Delay             	                    	1               	        	        	      	           	Done  	1.015000  	      	          	1
+杀死自动化测试进程	QuitProcess       	杀死自动化测试进程  	100             	PASS    	PASS    	String	PASS       	PASS  	0.279000  	      	          	1
+ACC置低           	DOAction          	ACC                 	0               	        	        	      	           	Done  	0.016000  	      	          	1
+关闭电源          	DOAction          	B+                  	0               	        	        	      	           	Done  	0.016000  	      	          	1
+
+通信信息:启动自动化测试进程：PASS
+COM92: 退出进程
+反馈：killall
+
+COM92
+退出系统：
+反馈：
+
+msm 201810150859 mdm9607 /dev/ttyGS0
+
+
+
+mdm9607 login: 
+COM92
+输入用户名：root
+反馈：root
+Password: 
+COM92
+输入密码：quectel123
+反馈：
+root@mdm9607:~# 
+COM92
+启动进程：
+反馈：/vendor/app/local_data
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+发送启动测试回环Speak:auto_test$IdType:005f$ValType:01$Value:00
+反馈:auto_test$IdType:805f$ValType:01$Value:01
+
+发送关闭测试回环:auto_test$IdType:0060$ValType:01$Value:02
+反馈:auto_test$IdType:8060$ValType:01$Value:01
+
+发送E-call状态返回:auto_test$IdType:0061$ValType:01$Value:
+反馈:auto_test$IdType:8061$ValType:01$Value:0100
+
+
+发送E-call状态返回:auto_test$IdType:0061$ValType:01$Value:
+反馈:auto_test$IdType:8061$ValType:01$Value:0101
+
+
+发送E-call状态返回:auto_test$IdType:0061$ValType:01$Value:
+反馈:auto_test$IdType:8061$ValType:01$Value:0100
+
+
+发送退出自动化测试:auto_test$IdType:0002$ValType:01$Value:
+反馈:auto_test$IdType:8002$ValType:01$Value:01
+

@@ -1,0 +1,97 @@
+--SN:101
+--Date and Time:2018-9-29 10:24
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:56
+--TestResult:
+测试项目	测试名称    	测量值	下限值	上限值	测试结果
+生产信息	下载证书文件	FAIL  	      	      	FAIL    
+        	            	      	      	      	        
+
+[测试名称]          	[TestItem ITEM]  	[通道]                                     	[设置参数]               	[下限值]               	[上限值]               	[单位]	[测量值]               	[结果]	[测试时间]	[备注]          	[测试项目]	 
+打开电源            	DOAction         	B+                                         	1                        	                       	                       	      	                       	Done  	0.018000  	                	          	1
+ACC置高             	DOAction         	ACC                                        	1                        	                       	                       	      	                       	Done  	0.012000  	                	ACC_IO    	1
+延时                	Delay            	                                           	25                       	                       	                       	      	                       	Done  	25.012000 	                	          	1
+启动自动化测试进程  	StartProcess     	500                                        	5;100                    	PASS                   	PASS                   	String	PASS                   	PASS  	3.867000  	                	通信      	1
+启动自动化测试      	CMD_CF           	启动自动化测试                             	1000                     	01                     	01                     	String	01                     	PASS  	0.341000  	                	通信      	1
+延时                	Delay            	                                           	5                        	                       	                       	      	                       	Done  	5.013000  	                	          	1
+查询4G固件版本      	CMD_CF           	查询4G固件版本                             	1000                     	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	Hex   	EC20CEFAGR06A02M4G_OCPU	PASS  	0.348000  	                	生产信息  	1
+查询MCU软件版本     	CMD_CF           	查询MCU软件版本                            	1000                     	TB1805V1.00            	TB1805V1.00            	V     	TB1805V1.00            	PASS  	0.338000  	                	          	1
+查询OPEN软件版本    	CMD_CF           	读OPEN软件版本                             	1000                     	TB1805V1.00            	TB1805V1.00            	Hex   	TB1805V1.00            	PASS  	0.338000  	                	通信      	1
+CheckSN             	CheckSN          	                                           	                         	                       	                       	Hex   	PASS                   	PASS  	2.068000  	                	通信      	1
+TUID和证书编号入库  	WDataToDB        	D:\File\08CAG2018031400000001等19个证书文件	证书列表.txt;4G T-BOX.txt	OK                     	OK                     	Hex   	OK                     	PASS  	0.224000  	                	生产信息  	1
+写入主机条码        	CMD_CF           	写入主机条码                               	1000                     	01                     	01                     	Hex   	01                     	PASS  	0.346000  	                	生产信息  	1
+FindSim             	FindSIMCOMETH_CAn	找SIM模块                                  	1000                     	PASS                   	PASS                   	Hex   	PASS                   	PASS  	0.515000  	                	SIM模块   	1
+读出CCID            	CMD_CF           	读出CCID                                   	1000                     	PASS                   	PASS                   	Hex   	PASS                   	PASS  	0.350000  	                	生产信息  	1
+CCID与SN入库        	WDataToDB        	CCIDTODB                                   	                         	OK                     	OK                     	String	OK                     	PASS  	0.154000  	                	生产信息  	1
+库中读TUID及证书编号	WDataToDB        	获取TUID及证书编号                         	1000                     	OK                     	OK                     	Hex   	OK                     	PASS  	0.035000  	                	生产信息  	1
+写入TUID            	CMD_CF           	写入车辆TUID                               	500                      	01                     	01                     	Hex   	01                     	PASS  	0.339000  	                	生产信息  	1
+写入证书编号        	CMD_CF           	写入证书编号                               	500                      	01                     	01                     	Hex   	01                     	PASS  	0.340000  	                	生产信息  	1
+下载证书文件        	FileTransfer     	D:\File\08CAG2018031400000001等19个证书文件	500;0                    	                       	                       	Hex   	FAIL                   	FAIL  	15.493000 	MD5值存Reserved1	生产信息  	1
+
+通信信息:启动自动化测试进程：PASS
+COM82: 退出进程
+反馈：killall
+Password: 
+COM82
+退出系统：
+反馈：
+
+COM82
+输入用户名：root
+反馈：root
+
+COM82
+输入密码：quectel123
+反馈：
+root@mdm9607-perf:~# 
+COM82
+启动进程：
+反馈：/data/QuecOpen/local_data
+>>>>>start ok
+ip == 192.168.100.1, port == 22222
+bind socket failed!
+: Cannot assign requested address
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test$IdType:8051$ValType:01$Value:01TB1805V1.00
+
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01TB1805V1.00
+
+TUID和证书编号入库: OK
+发送写入主机条码:auto_test$IdType:0033$ValType:01$Value:101
+反馈:auto_test$IdType:8033$ValType:01$Value:01
+
+发送读出CCID:auto_test$IdType:0037$ValType:01$Value:
+反馈:auto_test$IdType:8037$ValType:01$Value:0189860117750042506585
+
+CCID与SN入库: OK
+库中读TUID及证书编号: OK
+发送写入车辆TUID:auto_test$IdType:004e$ValType:01$Value:
+反馈:auto_test$IdType:804e$ValType:01$Value:01
+
+发送写入证书编号:auto_test$IdType:0052$ValType:01$Value:
+反馈:auto_test$IdType:8052$ValType:01$Value:01
+
+下载证书文件: MD5值
+
+FAIL
+下载证书文件: MD5值
+
+FAIL
+下载证书文件: MD5值
+
+FAIL
+下载证书文件: MD5值
+
+FAIL
+下载证书文件: MD5值
+
+FAIL

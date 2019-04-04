@@ -1,0 +1,205 @@
+--SN:0203443f41511800045
+--Date and Time:2015-2-2 17:29
+--Tester:Slot1
+--OperatorID:
+--CycleTime:105
+--TestResult:
+测试项目    	测试名称            	测量值          	下限值          	上限值          	测试结果
+电压检测    	查询BAT_DET电压     	0x0031          	0x01            	0x01            	FAIL    
+电压检测    	查询BAT_DET电压     	0x00AE          	0x02            	0x02            	FAIL    
+ACC_IO      	ACC状态查询         	0x01            	0x02            	0x02            	FAIL    
+CSH检测     	CSH状态查询         	0x02            	0x01            	0x01            	FAIL    
+加速度传感器	加速度传感器返回数据	0x65            	0x01            	0x02            	FAIL    
+加速度传感器	加速度传感器返回数据	0x65            	0x01            	0x02            	FAIL    
+CAN         	CAN                 	FAIL            	                	                	FAIL    
+CAN         	CAN通信测试         	0x00            	0x02            	0x02            	FAIL    
+CAN         	CAN                 	FAIL            	                	                	FAIL    
+CAN         	CAN通信测试         	0x00            	0x01            	0x01            	FAIL    
+CAN         	CAN通信测试         	0000000000000000	55040404040404FF	55040404040404FF	FAIL    
+            	                    	                	                	                	        
+
+[测试名称]          	[TestItem ITEM]	[通道]               	[设置参数]      	[下限值]        	[上限值]        	[单位]	[测量值]        	[结果]	[测试时间]	[备注]	[测试项目]  	 
+打开电源            	DOAction       	B+                   	1               	                	                	      	                	Done  	0.069000  	      	            	1
+ACC置高             	DOAction       	ACC                  	1               	                	                	      	                	Done  	0.044000  	      	ACC_IO      	1
+退出自动化测试      	CMD            	退出自动化测试       	1000            	                	0x01            	Hex   	0x              	PASS  	1.091000  	      	通信        	1
+延时                	Delay          	                     	5               	                	                	      	                	Done  	5.019000  	      	CAN         	1
+测量电流            	MeaCurrent     	Current              	Differential    	0.1             	0.5             	A     	0.12604         	PASS  	5.615000  	      	电流        	1
+延时                	Delay          	                     	10              	                	                	      	                	Done  	10.027000 	      	CAN         	1
+启动自动化测试      	CMD            	启动自动化测试       	1000            	OK              	OK              	String	OK              	PASS  	0.141000  	      	通信        	1
+查询BAT_DET电压     	CMD            	查询BAT_DET状态      	1000            	0x01            	0x01            	Hex   	0x0031          	FAIL  	1.807000  	      	电压检测    	1
+CHARGE_CTL输出      	CMD            	CHARGE_CTL输出高电平 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	2.912000  	      	通信        	1
+测量电流            	MeaCurrent     	Current              	Differential    	0.2             	0.4             	A     	0.29537         	PASS  	1.247000  	      	电流        	1
+查询BAT7.2V_DET电压 	CMD            	查询BAT7.2V_DET电压  	1000            	1               	1.636           	V     	1.588000        	PASS  	0.219000  	      	电压检测    	1
+CHARGE_CTL输出      	CMD            	CHARGE_CTL输出低电平 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	1.028000  	      	通信        	1
+测量电流            	MeaCurrent     	Current              	Differential    	0.1             	0.2             	A     	0.19083         	PASS  	1.277000  	      	电流        	1
+查询MEID            	USBCMD         	查询MEID             	1000            	OK              	OK              	String	PASS            	PASS  	0.792000  	      	3G模块      	1
+设置RTRECF          	USBCMD         	设置RTRECF           	1000            	OK              	OK              	String	PASS            	PASS  	0.765000  	      	3G模块      	1
+设置ESN             	USBCMD         	设置ESN              	1000            	OK              	OK              	String	PASS            	PASS  	0.519000  	      	3G模块      	1
+查询ESN             	USBCMD         	查询ESN              	1000            	OK              	OK              	String	PASS            	PASS  	0.700000  	      	3G模块      	1
+设置AKEY            	USBCMD         	设置AKEY             	1000            	OK              	OK              	String	PASS            	PASS  	0.500000  	      	3G模块      	1
+设置IMSI1           	USBCMD         	设置IMSI1            	1000            	OK              	OK              	String	PASS            	PASS  	0.521000  	      	3G模块      	1
+设置IMSI2           	USBCMD         	设置IMSI2            	1000            	OK              	OK              	String	PASS            	PASS  	0.501000  	      	3G模块      	1
+设置IMSI3           	USBCMD         	设置IMSI3            	1000            	OK              	OK              	String	PASS            	PASS  	0.517000  	      	3G模块      	1
+设置EVDO账号        	USBCMD         	设置EVDO账号         	1000            	OK              	OK              	String	PASS            	PASS  	0.702000  	      	3G模块      	1
+设置EVDO密码        	USBCMD         	设置EVDO密码         	1000            	OK              	OK              	String	PASS            	PASS  	0.700000  	      	3G模块      	1
+BATVCC_CTL输出      	CMD            	BATVCC_CTL输出高电平 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.947000  	      	通信        	1
+关闭电源            	DOAction       	B+                   	0               	                	                	      	                	Done  	0.036000  	      	            	1
+查询BAT7.2V_DET电压 	CMD            	查询BAT7.2V_DET电压  	1000            	1               	1.636           	V     	1.566000        	PASS  	0.346000  	      	电压检测    	1
+查询BAT_DET电压     	CMD            	查询BAT_DET状态      	1000            	0x02            	0x02            	Hex   	0x00AE          	FAIL  	6.436000  	      	电压检测    	1
+BATVCC_CTL输出      	CMD            	BATVCC_CTL输出低电平 	1000            	0x              	0x00            	String	0x              	PASS  	1.050000  	      	电压检测    	1
+重启                	CMD            	重启                 	1000            	0x              	0x00            	Hex   	0x              	PASS  	1.044000  	      	通信        	1
+打开电源            	DOAction       	B+                   	1               	                	                	      	                	Done  	0.035000  	      	            	1
+延时                	Delay          	                     	30              	                	                	      	                	Done  	30.012000 	      	CAN         	1
+启动自动化测试      	CMD            	启动自动化测试       	1000            	OK              	OK              	String	OK              	PASS  	0.247000  	      	通信        	1
+ACC置低             	DOAction       	ACC                  	0               	                	                	      	                	Done  	0.034000  	      	ACC_IO      	1
+延时                	Delay          	                     	1               	                	                	      	                	Done  	1.015000  	      	            	1
+ACC状态查询         	CMD            	查询ACC状态          	1000            	0x02            	0x02            	Hex   	0x01            	FAIL  	1.924000  	      	ACC_IO      	1
+ACC置高             	DOAction       	ACC                  	1               	                	                	      	                	Done  	0.034000  	      	ACC_IO      	1
+延时                	Delay          	                     	1               	                	                	      	                	Done  	1.023000  	      	            	1
+ACC状态查询         	CMD            	查询ACC状态          	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.276000  	      	ACC_IO      	1
+CSH无效             	DOAction       	CSH                  	0               	                	                	      	                	Done  	0.031000  	      	CSH检测     	1
+CSH状态查询         	CMD            	查询CSH状态          	1000            	0x01            	0x01            	Hex   	0x02            	FAIL  	13.874000 	      	CSH检测     	1
+CSH有效             	DOAction       	CSH                  	1               	                	                	      	                	Done  	0.033000  	      	CSH检测     	1
+CSH状态查询         	CMD            	查询CSH状态          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	0.425000  	      	CSH检测     	1
+加速度传感器返回数据	CMD            	加速度传感器返回数据1	1000            	0x01            	0x02            	Hex   	0x65            	FAIL  	0.425000  	      	加速度传感器	1
+加速度传感器返回数据	CMD            	加速度传感器返回数据2	1000            	0x01            	0x02            	Hex   	0x65            	FAIL  	0.449000  	      	加速度传感器	1
+CAN                 	CANTransmit    	00000182             	000007d100000000	                	                	      	FAIL            	FAIL  	0.101000  	      	CAN         	1
+CAN通信测试         	CMD            	CAN通信接收          	1000            	0x02            	0x02            	Hex   	0x00            	FAIL  	1.729000  	      	CAN         	1
+CAN                 	CANTransmit    	00000182             	000007d000000000	                	                	      	FAIL            	FAIL  	0.074000  	      	CAN         	1
+CAN通信测试         	CMD            	CAN通信接收          	1000            	0x01            	0x01            	Hex   	0x00            	FAIL  	1.884000  	      	CAN         	1
+CAN通信测试         	CMD-CAN        	CAN通信发送          	1000            	55040404040404FF	55040404040404FF	Hex   	0000000000000000	FAIL  	1.915000  	      	CAN         	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:636D64206C696E6520726561647921200D0A636D643E
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F801602002D92F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F801602003192F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010291F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010191F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F801402063496F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010191F0
+发送 查询MEID:AT+SMEID?
+反馈:
++SMEID: A1000021A67071
+
+OK
+
+发送 设置RTRECF:AT+RTRECF=1
+反馈:
++RTRECF: SUCCESS
+
+OK
+
+发送 设置ESN:AT+ESN=80AFB5B1
+反馈:
+OK
+
+发送 查询ESN:AT+ESN?
+反馈:
++ESN: 80AFB5B1
+
+OK
+
+发送 设置AKEY:AT+AKEY=710E2CA6533F8CE7
+反馈:
+OK
+
+发送 设置IMSI1:AT+NAMCFG=0,1,460
+反馈:
+OK
+
+发送 设置IMSI2:AT+NAMCFG=0,2,03
+反馈:
+OK
+
+发送 设置IMSI3:AT+NAMCFG=0,3,6161978626
+反馈:
+OK
+
+发送 设置EVDO账号:AT+CNVW=1194,0,"19343630303336313631393738363236406D7963646D612E636E"
+反馈:
++CNVW: 1
+
+OK
+
+发送 设置EVDO密码:AT+CNVW=1192,0,"1031443036463845353046303743423533"
+反馈:
++CNVW: 1
+
+OK
+
+发送BATVCC_CTL输出高电平:0F0015010115F0
+反馈:0F8015010193F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F801402061E96F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F80160200B192F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F80160200B192F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F80160200B192F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F80160200B192F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F80160200AE92F0
+发送BATVCC_CTL输出低电平:0F0015010014F0
+反馈:
+发送重启:0F00220022F0
+反馈:
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010182F0
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010182F0
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010182F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010281F0
+发送加速度传感器返回数据1:0F0007010006F0
+反馈:0F8007016581F0
+发送加速度传感器返回数据2:0F0007010107F0
+反馈:0F8007016581F0
+CAN发送:ID:00000182DATA:000007d100000000发送CAN通信接收:0F00200020F0
+反馈:0F80200100A7F0
+发送CAN通信接收:0F00200020F0
+反馈:0F80200100A7F0
+CAN发送:ID:00000182DATA:000007d000000000发送CAN通信接收:0F00200020F0
+反馈:0F80200100A7F0
+发送CAN通信接收:0F00200020F0
+反馈:0F80200100A7F0
+发送CAN通信发送:0F00210021F0
+反馈:0F80210101A6F0
+发送CAN通信发送:0F00210021F0
+反馈:0F80210101A6F0

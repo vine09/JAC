@@ -1,0 +1,203 @@
+--SN:100
+--Date and Time:2019-3-6 16:23
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:62
+--TestResult:
+测试项目	测试名称          	测量值	下限值	上限值	测试结果
+通信    	启动自动化测试进程	FAIL  	PASS  	PASS  	FAIL    
+        	                  	      	      	      	        
+
+[测试名称]        	[TestItem ITEM]	[通道]	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction       	B+    	1         	        	        	      	        	Done  	0.011000  	      	          	1
+ACC置高           	DOAction       	ACC   	1         	        	        	      	        	Done  	0.012000  	      	          	1
+延时              	Delay          	      	25        	        	        	      	        	Done  	25.011000 	      	          	1
+启动自动化测试进程	StartProcess   	100   	5;100     	PASS    	PASS    	String	FAIL    	FAIL  	36.588000 	      	通信      	1
+
+通信信息:启动自动化测试进程：FAIL
+COM62: 退出进程
+反馈：killall
+Password: 
+COM62
+退出系统：
+反馈：
+
+COM62
+输入用户名：root
+反馈：root
+QL_NW_GetCSQ ret 0, CSQ=7
+ret = 0, rat=UTRANW_HSDPA, NetRegState= REGISTERED_HOME_NETWORK, rssi= -99, ber=99
+ret = 0, name: UNICOM, mcc:460, mnc:01
+set apn,profile_idx:1
+apn:jxncjlqc04.clfu.njm2mapn
+
+COM62
+输入密码：quectel123
+反馈：oelinux_ls123
+set apn,profile_idx:2
+apn:jxncjlqc01.clfu.njm2mapn
+Set apn ok
+
+COM62
+启动进程：
+反馈：/vendor/app/auto_test_main
+profile id 1 Interface Name: rmnet_data0
+profile 1 is Conn
+
+启动自动化测试进程：FAIL
+COM62: 退出进程
+反馈：killall
+
+COM62
+退出系统：
+反馈：exit
+
+COM62
+输入用户名：root
+反馈：Login incorrect
+
+mdm9607-perf login: Password: 
+
+COM62
+输入密码：quectel123
+反馈：oelinux_ls123
+Resolving uatcar.jmc.com.cn
+Sending Packet...Done
+
+Polling...Done
+
+
+The response contains : 
+ 1 Questions.
+ 1 Answers.
+ 1 Authoritative Servers.
+ 0 Additional records.
+
+Answer Records : 1 
+
+uatcar.jmc.com.cn has IPv4 address : 172.20.66.10
+
+ip_str:172.20.66.10
+command:route add -net 172.20.66.10/32 gw 10.201.30.146 dev rmnet_data1
+command:echo -n '172.20.66.10' > /data/QuecOpen/private_domain_ip
+IP address:          10.201.30.145
+Gateway address:     10.201.30.146
+Primary DNS address: 172.22.254.43
+Second DNS address:  172.26.254.43
+
+COM62
+启动进程：
+反馈：/vendor/app/auto_test_main
+Login incorrect
+
+mdm9607-perf login: Password: 
+
+启动自动化测试进程：FAIL
+COM62: 退出进程
+反馈：
+
+COM62
+退出系统：
+反馈：exit
+
+COM62
+输入用户名：root
+反馈：root
+
+COM62
+输入密码：quectel123
+反馈：oelinux_ls123
+
+COM62
+启动进程：
+反馈：/vendor/app/auto_test_main
+
+
+启动自动化测试进程：FAIL
+COM62: 退出进程
+反馈：killall
+
+COM62
+退出系统：
+反馈：exit
+
+COM62
+输入用户名：root
+反馈：root
+Password: 
+COM62
+输入密码：quectel123
+反馈：oelinux_ls123
+
+COM62
+启动进程：
+反馈：/vendor/app/auto_test_main
+
+
+启动自动化测试进程：FAIL
+COM62: 退出进程
+反馈：
+
+COM62
+退出系统：
+反馈：exit
+
+COM62
+输入用户名：root
+反馈：root
+
+COM62
+输入密码：quectel123
+反馈：oelinux_ls123
+
+COM62
+启动进程：
+反馈：/vendor/app/auto_test_main
+
+
+启动自动化测试进程：FAIL
+COM62: 退出进程
+反馈：killall
+
+COM62
+退出系统：
+反馈：exit
+
+COM62
+输入用户名：root
+反馈：Login incorrect
+
+mdm9607-perf login: Password: 
+
+COM62
+输入密码：quectel123
+反馈：oelinux_ls123
+
+COM62
+启动进程：
+反馈：/vendor/app/auto_test_main
+Login incorrect
+
+mdm9607-perf login: Password: 
+
+启动自动化测试进程：FAIL
+COM62: 退出进程
+反馈：
+
+COM62
+退出系统：
+反馈：exit
+
+COM62
+输入用户名：root
+反馈：root
+
+COM62
+输入密码：quectel123
+反馈：oelinux_ls123
+
+COM62
+启动进程：
+反馈：/vendor/app/auto_test_main
+
+

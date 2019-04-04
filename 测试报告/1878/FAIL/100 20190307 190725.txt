@@ -1,0 +1,163 @@
+--SN:100
+--Date and Time:2019-3-7 19:07
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:71
+--TestResult:
+测试项目	测试名称       	测量值 	下限值	上限值	测试结果
+生产信息	读WIFI的MAC地址	0.00000	17    	17    	FAIL    
+生产信息	写入WIFI名称   	       	01    	01    	FAIL    
+生产信息	写入WIFI密码   	       	01    	01    	FAIL    
+        	               	       	      	      	        
+
+[测试名称]        	[TestItem ITEM]	[通道]          	[设置参数]	[下限值]               	[上限值]               	[单位]	[测量值]               	[结果]	[测试时间]	[备注]         	[测试项目]	 
+打开电源          	DOAction       	B+              	1         	                       	                       	      	                       	Done  	0.010000  	               	          	1
+ACC置高           	DOAction       	ACC             	1         	                       	                       	      	                       	Done  	0.012000  	               	          	1
+延时              	Delay          	                	25        	                       	                       	      	                       	Done  	25.011000 	               	          	1
+启动自动化测试进程	StartProcess   	100             	5;100     	PASS                   	PASS                   	String	PASS                   	PASS  	3.795000  	               	通信      	1
+启动自动化测试    	CMD_CF         	启动自动化测试  	1000      	01                     	01                     	String	01                     	PASS  	0.438000  	               	通信      	1
+延时              	Delay          	                	5         	                       	                       	      	                       	Done  	5.012000  	               	          	1
+查询4G固件版本    	CMD_CF         	查询4G固件版本  	3000      	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	Hex   	EC20CEFAGR06A02M4G_OCPU	PASS  	0.352000  	               	版本信息  	1
+查询MCU软件版本   	CMD_CF         	查询MCU软件版本 	3000      	SW:A.0.1               	SW:A.0.1               	V     	SW:A.0.1               	PASS  	0.335000  	               	版本信息  	1
+查询OPEN软件版本  	CMD_CF         	读OPEN软件版本  	3000      	SW:A.0.1               	SW:A.0.1               	Hex   	SW:A.0.1               	PASS  	0.337000  	               	版本信息  	1
+CheckSN           	CheckSN        	                	          	                       	                       	Hex   	PASS                   	PASS  	1.616000  	               	          	1
+写入主机条码      	CMD_CF         	写入主机条码    	3000      	01                     	01                     	Hex   	01                     	PASS  	0.344000  	               	生产信息  	1
+读出CCID          	CMD_CF         	读出CCID        	3000      	PASS                   	PASS                   	Hex   	PASS                   	PASS  	0.331000  	               	生产信息  	1
+CCID与SN入库      	WDataToDB      	CCIDTODB        	          	OK                     	OK                     	String	OK                     	PASS  	0.266000  	               	信息入库  	1
+延时              	Delay          	                	1         	                       	                       	      	                       	Done  	1.016000  	               	          	1
+写入硬件版本      	CMD_CF         	写入硬件版本    	2000      	01                     	01                     	String	01                     	PASS  	0.338000  	               	生产信息  	1
+写入生产日期      	CMD_CF         	写入生产日期    	2000      	01                     	01                     	String	01                     	PASS  	0.350000  	               	生产信息  	1
+读硬件版本并比较  	CMD_CF         	读出硬件版本    	2000      	PASS                   	PASS                   	String	PASS                   	PASS  	0.335000  	               	生产信息  	1
+读生产日期并比较  	CMD_CF         	读出生产日期    	2000      	PASS                   	PASS                   	String	PASS                   	PASS  	0.350000  	               	生产信息  	1
+读WIFI的MAC地址   	CMD_CF         	读出WIFI MAC地址	2000      	17                     	17                     	      	0.00000                	FAIL  	10.794000 	存到Reserved3中	生产信息  	1
+延时              	Delay          	                	1         	                       	                       	      	                       	Done  	1.015000  	               	          	1
+写入WIFI名称      	CMD_CF         	写入WIFI名称    	2000      	01                     	01                     	      	                       	FAIL  	10.780000 	               	生产信息  	1
+延时              	Delay          	                	1         	                       	                       	      	                       	Done  	1.016000  	               	          	1
+写入WIFI密码      	CMD_CF         	写入WIFI密码    	2000      	01                     	01                     	      	                       	FAIL  	6.514000  	               	生产信息  	1
+
+通信信息:启动自动化测试进程：PASS
+COM82: 退出进程
+反馈：killall
+Password: 
+COM82
+退出系统：
+反馈：
+
+COM82
+输入用户名：root
+反馈：root
+1026
+
+COM82
+输入密码：quectel123
+反馈：
+root@mdm9607-perf:~# 
+COM82
+启动进程：
+反馈：/data/QuecOpen/local_data
+start local main proc!
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+本次串口通信耗时：4.260000E-1s
+读循环次数：2
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01EC20CEFAGR06A02M4G_OCPU
+
+本次串口通信耗时：3.390000E-1s
+读循环次数：1
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test$IdType:8051$ValType:01$Value:01SW:A.0.1
+
+本次串口通信耗时：3.220000E-1s
+读循环次数：1
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01SW:A.0.1
+
+本次串口通信耗时：3.230000E-1s
+读循环次数：1
+发送写入主机条码:auto_test$IdType:0033$ValType:01$Value:100
+反馈:auto_test$IdType:8033$ValType:01$Value:01
+
+本次串口通信耗时：3.250000E-1s
+读循环次数：1
+发送读出CCID:auto_test$IdType:0037$ValType:01$Value:
+反馈:auto_test$IdType:8037$ValType:01$Value:0189860918700321802057
+
+本次串口通信耗时：3.160000E-1s
+读循环次数：1
+CCID与SN入库: OK
+
+
+
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:8040$ValType:01$Value:01
+
+本次串口通信耗时：3.230000E-1s
+读循环次数：1
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20190307
+反馈:auto_test$IdType:8035$ValType:01$Value:01
+
+本次串口通信耗时：3.340000E-1s
+读循环次数：1
+发送读出硬件版本:auto_test$IdType:0041$ValType:01$Value:
+反馈:auto_test$IdType:8041$ValType:01$Value:01V0.2
+
+本次串口通信耗时：3.200000E-1s
+读循环次数：1
+发送读出生产日期:auto_test$IdType:0036$ValType:01$Value:
+反馈:auto_test$IdType:8036$ValType:01$Value:0120190307
+
+
+本次串口通信耗时：3.350000E-1s
+读循环次数：1
+发送读出WIFI MAC地址:auto_test$IdType:0058$ValType:01$Value:
+反馈:auto_test
+本次串口通信耗时：2.234000E+0s
+读循环次数：20
+发送读出WIFI MAC地址:auto_test$IdType:0058$ValType:01$Value:
+反馈:auto_test$IdType:0058$ValType:01$Value:
+-sh: auto_test:0058:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.242000E+0s
+读循环次数：20
+发送读出WIFI MAC地址:auto_test$IdType:0058$ValType:01$Value:
+反馈:auto_test$IdType:0058$ValType:01$Value:
+-sh: auto_test:0058:01:: not found
+root@mdm9607-perf:~# gps correct rtc ok
+
+本次串口通信耗时：2.239000E+0s
+读循环次数：20
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:Hotspot
+反馈:auto_test$IdType:003a$ValType:01$Value:Hotspot
+-sh: auto_test:003a:01:Hotspot: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.228000E+0s
+读循环次数：20
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:Hotspot
+反馈:auto_test$IdType:003a$ValType:01$Value:Hotspot
+-sh: auto_test:003a:01:Hotspot: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.235000E+0s
+读循环次数：20
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:Hotspot
+反馈:auto_test$IdType:003a$ValType:01$Value:Hotspot
+-sh: auto_test:003a:01:Hotspot: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.225000E+0s
+读循环次数：20
+发送写入WIFI密码:auto_test$IdType:003b$ValType:01$Value:jmsg00000000
+反馈:auto_test$IdType:003b$ValType:01$Value:jmsg00000000
+-sh: auto_test:003b:01:jmsg00000000: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.227000E+0s
+读循环次数：20
+发送写入WIFI密码:auto_test$IdType:003b$ValType:01$Value:jmsg00000000
+反馈:auto_test$IdType:003b$ValType:01$Value:jmsg00000000
+-sh: auto_test:003b:01:jmsg00000000: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.237000E+0s
+读循环次数：20

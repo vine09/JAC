@@ -1,0 +1,72 @@
+--SN:0
+--Date and Time:2015-1-16 16:01
+--Tester:Slot1
+--OperatorID:
+--CycleTime:180
+--TestResult:
+Pass
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源           	DOAction       	B+                  	1         	        	        	      	        	Done  	0.008000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1         	        	        	      	        	Done  	0.012000  	      	ACC IO    	1
+延时               	Delay          	                    	15        	        	        	      	        	Done  	15.013000 	      	CAN       	1
+启动自动化测试     	CMD            	启动自动化测试      	1000      	OK      	OK      	String	OK      	PASS  	0.208000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000      	0x01    	0x01    	Hex   	0x01    	PASS  	0.512000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000      	0x01    	0x01    	Hex   	0x01    	PASS  	1.011000  	      	通信      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000      	0x0550  	0x0618  	Hex   	0x05D4  	PASS  	0.518000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出低电平	1000      	0x01    	0x01    	Hex   	0x01    	PASS  	0.920000  	      	通信      	1
+查询MEID           	USBCMD         	查询MEID            	1000      	OK      	OK      	String	PASS    	PASS  	111.117000	      	3G模块    	1
+设置AKEY           	USBCMD         	设置AKEY            	1000      	OK      	OK      	String	PASS    	PASS  	17.029000 	      	3G模块    	1
+设置IMSI1          	USBCMD         	设置IMSI1           	1000      	OK      	OK      	String	PASS    	PASS  	5.012000  	      	3G模块    	1
+设置IMSI2          	USBCMD         	设置IMSI2           	1000      	OK      	OK      	String	PASS    	PASS  	1.827000  	      	3G模块    	1
+设置IMSI3          	USBCMD         	设置IMSI3           	1000      	OK      	OK      	String	PASS    	PASS  	1.817000  	      	3G模块    	1
+设置EVDO账号       	USBCMD         	设置EVDO账号        	1000      	OK      	OK      	String	PASS    	PASS  	2.028000  	      	3G模块    	1
+设置EVDO密码       	USBCMD         	设置EVDO密码        	1000      	OK      	OK      	String	PASS    	PASS  	2.037000  	      	3G模块    	1
+重启               	CMD            	重启                	1000      	0x00    	0x00    	Hex   	0x00    	PASS  	0.240000  	      	通信      	1
+延时               	Delay          	                    	20        	        	        	      	        	Done  	20.018000 	      	CAN       	1
+
+通信信息:发送启动自动化测试:746573746D6F64652831290D
+反馈:746573746D6F64652831290D0A09302C20307830303030303030300D0A636D643E
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010197F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010196F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205D493F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010196F0
+发送 查询MEID:AT+SMEID?
+反馈:
++SMEID: A1000021A5EB72
+
+OK
+
+发送 设置AKEY:AT+AKEY=F20DF5B495104E47
+反馈:
+OK
+
+发送 设置IMSI1:AT+NAMCFG=0,1,460
+反馈:
+OK
+
+发送 设置IMSI2:AT+NAMCFG=0,2,03
+反馈:
+OK
+
+发送 设置IMSI3:AT+NAMCFG=0,3,6161699998
+反馈:
+OK
+
+发送 设置EVDO账号:AT+CNVW=1194,0,"19343630303336313631363939393938406D7963646D612E636E20"
+反馈:
++CNVW: 1
+
+OK
+
+发送 设置EVDO密码:AT+CNVW=1192,0,"104131303030303231413545423732"
+反馈:
++CNVW: 1
+
+OK
+
+发送重启:0F00220022F0
+反馈:0F80220100A3F0

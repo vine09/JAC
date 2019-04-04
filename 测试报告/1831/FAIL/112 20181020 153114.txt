@@ -1,0 +1,69 @@
+--SN:112
+--Date and Time:2018-10-20 15:31
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:45
+--TestResult:
+测试项目	测试名称        	测量值          	下限值                 	上限值                 	测试结果
+版本信息	查询4G固件版本  	LLA4101.1.0_M006	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	FAIL    
+版本信息	查询MCU软件版本 	V2.0            	TB1805V1.00            	TB1805V1.00            	FAIL    
+版本信息	查询OPEN软件版本	V2.0            	TB1805V1.00            	TB1805V1.00            	FAIL    
+        	                	                	                       	                       	        
+
+[测试名称]        	[TestItem ITEM]	[通道]         	[设置参数]	[下限值]               	[上限值]               	[单位]	[测量值]        	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction       	B+             	1         	                       	                       	      	                	Done  	0.016000  	      	          	1
+ACC置高           	DOAction       	ACC            	1         	                       	                       	      	                	Done  	0.021000  	      	          	1
+延时              	Delay          	               	15        	                       	                       	      	                	Done  	15.019000 	      	          	1
+延时              	Delay          	               	10        	                       	                       	      	                	Done  	10.022000 	      	          	1
+启动自动化测试进程	StartProcess   	100            	5;100     	PASS                   	PASS                   	String	PASS            	PASS  	3.240000  	      	通信      	1
+启动自动化测试    	CMD_CF         	启动自动化测试 	2000      	01                     	01                     	String	01              	PASS  	0.385000  	      	通信      	1
+延时              	Delay          	               	5         	                       	                       	      	                	Done  	5.022000  	      	          	1
+查询4G固件版本    	CMD_CF         	查询4G固件版本 	2000      	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	Hex   	LLA4101.1.0_M006	FAIL  	2.841000  	      	版本信息  	1
+查询MCU软件版本   	CMD_CF         	查询MCU软件版本	2000      	TB1805V1.00            	TB1805V1.00            	V     	V2.0            	FAIL  	2.822000  	      	版本信息  	1
+查询OPEN软件版本  	CMD_CF         	读OPEN软件版本 	2000      	TB1805V1.00            	TB1805V1.00            	Hex   	V2.0            	FAIL  	2.833000  	      	版本信息  	1
+CheckSN           	CheckSN        	               	          	                       	                       	Hex   	PASS            	PASS  	2.173000  	      	          	1
+
+通信信息:启动自动化测试进程：PASS
+COM70: 退出进程
+反馈：>>>>kill OK
+
+COM70
+退出系统：
+反馈：
+COM70
+输入用户名：root
+反馈：root
+-sh: root: not found
+root@mdm9607:~# 
+COM70
+输入密码：quectel123
+反馈：oelinux_ls123
+-sh: oelinux_ls123: not found
+root@mdm9607:~# 
+COM70
+启动进程：
+反馈：/vendor/app/local_data
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01LLA4101.1.0_M006
+
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01LLA4101.1.0_M006
+
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test$IdType:8051$ValType:01$Value:01V2.0
+
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test$IdType:8051$ValType:01$Value:01V2.0
+
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01V2.0
+
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01V2.0
+

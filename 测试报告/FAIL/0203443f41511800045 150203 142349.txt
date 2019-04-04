@@ -1,0 +1,288 @@
+--SN:0203443f41511800045
+--Date and Time:2015-2-3 14:23
+--Tester:Slot1
+--OperatorID:
+--CycleTime:115
+--TestResult:
+▓т╩╘╧ю─┐	▓т╩╘├√│╞      	▓т┴┐╓╡	╧┬╧▐╓╡	╔╧╧▐╓╡	▓т╩╘╜с╣√
+═и╨┼    	CHARGE_CTL╩ф│Ў	0x02  	0x01  	0x01  	FAIL    
+ACC_IO  	ACC╫┤╠м▓щ╤п   	0x02  	0x01  	0x01  	FAIL    
+CSH╝ь▓т 	CSH╫┤╠м▓щ╤п   	0x02  	0x01  	0x01  	FAIL    
+        	              	      	      	      	        
+
+[▓т╩╘├√│╞]          	[TestItem ITEM]	[═и╡└]               	[╔ш╓├▓╬╩¤]      	[╧┬╧▐╓╡]        	[╔╧╧▐╓╡]        	[╡е╬╗]	[▓т┴┐╓╡]        	[╜с╣√]	[▓т╩╘╩▒╝ф]	[▒╕╫в]	[▓т╩╘╧ю─┐]  	 
+╞°╕╫═╞╜°            	DOAction       	CylinderCtrl         	1               	                	                	      	                	Done  	0.012000  	      	            	1
+┤Є┐к╡ч╘┤            	DOAction       	B+                   	1               	                	                	      	                	Done  	0.019000  	      	            	1
+ACC╓├╕▀             	DOAction       	ACC                  	1               	                	                	      	                	Done  	0.018000  	      	ACC_IO      	1
+═╦│Ў╫╘╢п╗п▓т╩╘      	CMD            	═╦│Ў╫╘╢п╗п▓т╩╘       	1000            	                	0x01            	Hex   	                	PASS  	1.108000  	      	═и╨┼        	1
+╤╙╩▒                	Delay          	                     	5               	                	                	      	                	Done  	5.018000  	      	CAN         	1
+▓т┴┐╡ч┴ў            	MeaCurrent     	Current              	Differential    	.1              	.5              	A     	0.22506         	PASS  	1.188000  	      	╡ч┴ў        	1
+╤╙╩▒                	Delay          	                     	10              	                	                	      	                	Done  	10.033000 	      	CAN         	1
+╞Ї╢п╫╘╢п╗п▓т╩╘      	CMD            	╞Ї╢п╫╘╢п╗п▓т╩╘       	1000            	OK              	OK              	String	OK              	PASS  	0.230000  	      	═и╨┼        	1
+▓щ╤пBAT_DET╡ч╤╣     	CMD            	▓щ╤пBAT_DET╫┤╠м      	1000            	11              	12              	V     	11.55000        	PASS  	0.528000  	      	╡ч╤╣╝ь▓т    	1
+CHARGE_CTL╩ф│Ў      	CMD            	CHARGE_CTL╩ф│Ў╕▀╡ч╞╜ 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.931000  	      	═и╨┼        	1
+▓т┴┐╡ч┴ў            	MeaCurrent     	Current              	Differential    	.2              	.4              	A     	0.29904         	PASS  	1.318000  	      	╡ч┴ў        	1
+▓щ╤пBAT7.2V_DET╡ч╤╣ 	CMD            	▓щ╤пBAT7.2V_DET╡ч╤╣  	1000            	1               	1.636           	V     	1.58800         	PASS  	0.526000  	      	╡ч╤╣╝ь▓т    	1
+CHARGE_CTL╩ф│Ў      	CMD            	CHARGE_CTL╩ф│Ў╡═╡ч╞╜ 	1000            	0x01            	0x01            	Hex   	0x02            	FAIL  	6.996000  	      	═и╨┼        	1
+▓т┴┐╡ч┴ў            	MeaCurrent     	Current              	Differential    	.1              	.2              	A     	0.16020         	PASS  	1.259000  	      	╡ч┴ў        	1
+▓щ╤пMEID            	USBCMD         	▓щ╤пMEID             	1000            	OK              	OK              	String	PASS            	PASS  	0.712000  	      	3G─г┐щ      	1
+╔ш╓├RTRECF          	USBCMD         	╔ш╓├RTRECF           	1000            	OK              	OK              	String	PASS            	PASS  	0.723000  	      	3G─г┐щ      	1
+╔ш╓├ESN             	USBCMD         	╔ш╓├ESN              	1000            	OK              	OK              	String	PASS            	PASS  	0.521000  	      	3G─г┐щ      	1
+▓щ╤пESN             	USBCMD         	▓щ╤пESN              	1000            	OK              	OK              	String	PASS            	PASS  	0.727000  	      	3G─г┐щ      	1
+╔ш╓├AKEY            	USBCMD         	╔ш╓├AKEY             	1000            	OK              	OK              	String	PASS            	PASS  	0.511000  	      	3G─г┐щ      	1
+╔ш╓├IMSI1           	USBCMD         	╔ш╓├IMSI1            	1000            	OK              	OK              	String	PASS            	PASS  	0.520000  	      	3G─г┐щ      	1
+╔ш╓├IMSI2           	USBCMD         	╔ш╓├IMSI2            	1000            	OK              	OK              	String	PASS            	PASS  	0.508000  	      	3G─г┐щ      	1
+╔ш╓├IMSI3           	USBCMD         	╔ш╓├IMSI3            	1000            	OK              	OK              	String	PASS            	PASS  	0.515000  	      	3G─г┐щ      	1
+╔ш╓├EVDO╒╦║┼        	USBCMD         	╔ш╓├EVDO╒╦║┼         	1000            	OK              	OK              	String	PASS            	PASS  	0.725000  	      	3G─г┐щ      	1
+╔ш╓├EVDO├▄┬ы        	USBCMD         	╔ш╓├EVDO├▄┬ы         	1000            	OK              	OK              	String	PASS            	PASS  	0.691000  	      	3G─г┐щ      	1
+BATVCC_CTL╩ф│Ў      	CMD            	BATVCC_CTL╩ф│Ў╕▀╡ч╞╜ 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	1.045000  	      	═и╨┼        	1
+╣╪▒╒╡ч╘┤            	DOAction       	B+                   	0               	                	                	      	                	Done  	0.026000  	      	            	1
+▓щ╤пBAT7.2V_DET╡ч╤╣ 	CMD            	▓щ╤пBAT7.2V_DET╡ч╤╣  	1000            	1               	1.636           	V     	1.56200         	PASS  	0.335000  	      	╡ч╤╣╝ь▓т    	1
+▓щ╤пBAT_DET╡ч╤╣     	CMD            	▓щ╤пBAT_DET╫┤╠м      	1000            	7               	7.8             	V     	7.57900         	PASS  	0.452000  	      	╡ч╤╣╝ь▓т    	1
+BATVCC_CTL╩ф│Ў      	CMD            	BATVCC_CTL╩ф│Ў╡═╡ч╞╜ 	1000            	                	0x00            	String	                	PASS  	1.039000  	      	╡ч╤╣╝ь▓т    	1
+╓╪╞Ї                	CMD            	╓╪╞Ї                 	1000            	                	0x00            	Hex   	                	PASS  	1.034000  	      	═и╨┼        	1
+┤Є┐к╡ч╘┤            	DOAction       	B+                   	1               	                	                	      	                	Done  	0.027000  	      	            	1
+╤╙╩▒                	Delay          	                     	30              	                	                	      	                	Done  	30.019000 	      	CAN         	1
+╞Ї╢п╫╘╢п╗п▓т╩╘      	CMD            	╞Ї╢п╫╘╢п╗п▓т╩╘       	1000            	OK              	OK              	String	OK              	PASS  	0.239000  	      	═и╨┼        	1
+ACC╓├╡═             	DOAction       	ACC                  	0               	                	                	      	                	Done  	0.030000  	      	ACC_IO      	1
+╤╙╩▒                	Delay          	                     	1               	                	                	      	                	Done  	1.006000  	      	            	1
+ACC╫┤╠м▓щ╤п         	CMD            	▓щ╤пACC╫┤╠м          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	0.330000  	      	ACC_IO      	1
+ACC╓├╕▀             	DOAction       	ACC                  	1               	                	                	      	                	Done  	0.022000  	      	ACC_IO      	1
+╤╙╩▒                	Delay          	                     	1               	                	                	      	                	Done  	1.008000  	      	            	1
+ACC╫┤╠м▓щ╤п         	CMD            	▓щ╤пACC╫┤╠м          	1000            	0x01            	0x01            	Hex   	0x02            	FAIL  	1.904000  	      	ACC_IO      	1
+CSH╬▐╨з             	DOAction       	CSH                  	0               	                	                	      	                	Done  	0.025000  	      	CSH╝ь▓т     	1
+CSH╫┤╠м▓щ╤п         	CMD            	▓щ╤пCSH╫┤╠м          	1000            	0x01            	0x01            	Hex   	0x02            	FAIL  	13.853000 	      	CSH╝ь▓т     	1
+CSH╙╨╨з             	DOAction       	CSH                  	1               	                	                	      	                	Done  	0.028000  	      	CSH╝ь▓т     	1
+CSH╫┤╠м▓щ╤п         	CMD            	▓щ╤пCSH╫┤╠м          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	0.430000  	      	CSH╝ь▓т     	1
+╝╙╦┘╢╚┤л╕╨╞ў╖╡╗╪╩¤╛▌	CMD            	╝╙╦┘╢╚┤л╕╨╞ў╖╡╗╪╩¤╛▌1	1000            	95              	115             	╢╚    	101.00000       	PASS  	0.437000  	      	╝╙╦┘╢╚┤л╕╨╞ў	1
+CAN                 	CANTransmit    	00000182             	000007d100000000	                	                	      	PASS            	PASS  	0.063000  	      	CAN         	1
+CAN═и╨┼▓т╩╘         	CMD            	CAN═и╨┼╜╙╩╒          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	0.334000  	      	CAN         	1
+CAN                 	CANTransmit    	00000182             	000007d000000000	                	                	      	PASS            	PASS  	0.062000  	      	CAN         	1
+CAN═и╨┼▓т╩╘         	CMD            	CAN═и╨┼╜╙╩╒          	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.333000  	      	CAN         	1
+CAN═и╨┼▓т╩╘         	CMD-CAN        	CAN═и╨┼╖в╦═          	1000            	55040404040404FF	55040404040404FF	Hex   	55040404040404FF	PASS  	0.442000  	      	CAN         	1
+═т▓┐Flash▓т╩╘       	CMD            	═т▓┐Flash▓т╩╘        	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.435000  	      	Flash       	1
+3G═и╨┼╫╘╝ь          	CMD            	3G═и╨┼╫╘╝ь           	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.416000  	      	3G─г┐щ      	1
+╡╚┤¤╞Ї╢п            	FindSIMCOMETH  	                     	60              	                	                	      	PASS            	PASS  	0.349000  	      	3G─г┐щ      	1
+╤╙╩▒                	Delay          	                     	5               	                	                	      	                	Done  	5.026000  	      	            	1
+┤Є┐к═°┬ч            	USBCMD         	┤Є┐к═°┬ч             	1000            	                	                	Hex   	PASS            	PASS  	0.397000  	      	3G─г┐щ      	1
+▓щ╤п2G╨┼║┼          	USBCMD         	▓щ╤п2G╨┼║┼           	1000            	20              	31              	Hex   	31              	PASS  	0.712000  	      	3G─г┐щ      	1
+▓щ╤п3G╨┼║┼          	USBCMD         	▓щ╤п3G╨┼║┼           	1000            	20              	31              	Hex   	31              	PASS  	0.724000  	      	3G─г┐щ      	1
+┤Є┐к═°┬ч            	USBCMD         	┤Є┐к═°┬ч             	1000            	                	                	Hex   	PASS            	PASS  	0.413000  	      	3G─г┐щ      	1
+▓щ╤п═°┬ч╫┤╠м        	USBCMD         	▓щ╤п═°┬ч╫┤╠м         	1000            	OK              	OK              	Hex   	PASS            	PASS  	0.510000  	      	3G─г┐щ      	1
+▓щ╤пIP              	USBCMD         	▓щ╤пIP               	1000            	OK              	OK              	Hex   	PASS            	PASS  	0.508000  	      	3G─г┐щ      	1
+▓т╩╘╡╟┬╝            	USBCMD         	▓т╩╘╡╟┬╝             	5000            	OK              	OK              	Hex   	PASS            	PASS  	1.516000  	      	3G─г┐щ      	1
+╥Ї╞╡╗╪╗╖▓т╩╘        	USBCMD         	╣╪▒╒╥Ї╞╡LOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	0.518000  	      	3G─г┐щ      	1
+╟╨╗╗╔∙╥Ї═и╡└        	USBCMD         	╟╨╗╗╔∙╥Ї═и╡└         	1000            	OK              	OK              	String	PASS            	PASS  	0.494000  	      	3G─г┐щ      	1
+╥Ї╞╡╗╪╗╖▓т╩╘        	USBCMD         	╣╪▒╒╥Ї╞╡LOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	0.516000  	      	3G─г┐щ      	1
+╥Ї╞╡╗╪╗╖▓т╩╘        	USBCMD         	┤Є┐к╥Ї╞╡LOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	0.502000  	      	3G─г┐щ      	1
+╨┼║┼▓·╔·            	AOFreq         	MIC                  	F=1000HZ,A=0.2V 	                	                	╞╡┬╩  	                	Done  	1.125000  	      	3G─г┐щ      	1
+┤Є┐к╨┼║┼            	DOAction       	MIC_RL               	1               	                	                	      	                	Done  	0.026000  	      	3G─г┐щ      	1
+▓т┴┐╥Ї╞╡╩ф│Ў╖∙╢╚    	AudioLoopBack  	Audio                	Differential    	.3              	.35             	V     	0.32616         	PASS  	1.332000  	      	3G─г┐щ      	1
+╥Ї╞╡╩ф│Ў╞╡┬╩        	Frequency      	                     	                	990             	1010            	Hz    	1000.00008      	PASS  	0.097000  	      	3G─г┐щ      	1
+╥Ї╞╡╩ф│Ў╩з╒ц╢╚      	THD            	                     	                	0               	5               	%     	0.72615         	PASS  	0.132000  	      	3G─г┐щ      	1
+╣╪▒╒╨┼║┼            	DOAction       	MIC_RL               	0               	                	                	      	                	Done  	0.025000  	      	3G─г┐щ      	1
+╥Ї╞╡╗╪╗╖▓т╩╘        	USBCMD         	╣╪▒╒╥Ї╞╡LOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	0.516000  	      	3G─г┐щ      	1
+▓ж║┼                	USBCMD         	▓ж║┼                 	10000           	OK              	OK              	Hex   	PASS            	PASS  	3.829000  	      	3G─г┐щ      	1
+╣╥╢╧                	USBCMD         	╣╥╢╧                 	1000            	OK              	OK              	Hex   	PASS            	PASS  	0.522000  	      	3G─г┐щ      	1
+═╦│Ў╫╘╢п╗п▓т╩╘      	CMD            	═╦│Ў╫╘╢п╗п▓т╩╘       	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.534000  	      	═и╨┼        	1
+ACC╓├╡═             	DOAction       	ACC                  	0               	                	                	      	                	Done  	0.027000  	      	ACC_IO      	1
+╣╪▒╒╡ч╘┤            	DOAction       	B+                   	0               	                	                	      	                	Done  	0.024000  	      	            	1
+╞°╕╫═╦│Ў            	DOAction       	CylinderCtrl         	0               	                	                	      	                	Done  	0.031000  	      	            	1
+
+═и╨┼╨┼╧в:╖в╦══╦│Ў╫╘╢п╗п▓т╩╘:0F00020002F0
+╖┤└б:636D64206C696E6520726561647921200D0A636D643E
+╖в╦═╞Ї╢п╫╘╢п╗п▓т╩╘:746573746D6F64652831290D
+╖┤└б:testmode(1)
+	0, 0x00000000
+cmd>
+╖в╦═▓щ╤пBAT_DET╫┤╠м:0F00160016F0
+╖┤└б:0F801602041A96F0
+╖в╦═CHARGE_CTL╩ф│Ў╕▀╡ч╞╜:0F0017010117F0
+╖┤└б:0F8017010191F0
+╖в╦═▓щ╤пBAT7.2V_DET╡ч╤╣:0F00140014F0
+╖┤└б:0F801402063496F0
+╖в╦═CHARGE_CTL╩ф│Ў╡═╡ч╞╜:0F0017010016F0
+╖┤└б:0F8017010291F0
+╖в╦═CHARGE_CTL╩ф│Ў╡═╡ч╞╜:0F0017010016F0
+╖┤└б:0F8017010291F0
+╖в╦═CHARGE_CTL╩ф│Ў╡═╡ч╞╜:0F0017010016F0
+╖┤└б:0F8017010291F0
+╖в╦═CHARGE_CTL╩ф│Ў╡═╡ч╞╜:0F0017010016F0
+╖┤└б:0F8017010291F0
+╖в╦═ ▓щ╤пMEID:AT+SMEID?
+╖┤└б:
++SMEID: A1000021A67071
+
+OK
+
+╖в╦═ ╔ш╓├RTRECF:AT+RTRECF=1
+╖┤└б:
++RTRECF: SUCCESS
+
+OK
+
+╖в╦═ ╔ш╓├ESN:AT+ESN=80AFB5B1
+╖┤└б:
+OK
+
+╖в╦═ ▓щ╤пESN:AT+ESN?
+╖┤└б:
++ESN: 80AFB5B1
+
+OK
+
+╖в╦═ ╔ш╓├AKEY:AT+AKEY=710E2CA6533F8CE7
+╖┤└б:
+OK
+
+╖в╦═ ╔ш╓├IMSI1:AT+NAMCFG=0,1,460
+╖┤└б:
+OK
+
+╖в╦═ ╔ш╓├IMSI2:AT+NAMCFG=0,2,03
+╖┤└б:
+OK
+
+╖в╦═ ╔ш╓├IMSI3:AT+NAMCFG=0,3,6161978626
+╖┤└б:
+OK
+
+╖в╦═ ╔ш╓├EVDO╒╦║┼:AT+CNVW=1194,0,"19343630303336313631393738363236406D7963646D612E636E"
+╖┤└б:
++CNVW: 1
+
+OK
+
+╖в╦═ ╔ш╓├EVDO├▄┬ы:AT+CNVW=1192,0,"1031443036463845353046303743423533"
+╖┤└б:
++CNVW: 1
+
+OK
+
+╖в╦═BATVCC_CTL╩ф│Ў╕▀╡ч╞╜:0F0015010115F0
+╖┤└б:0F8015010193F0
+╖в╦═▓щ╤пBAT7.2V_DET╡ч╤╣:0F00140014F0
+╖┤└б:0F801402061A96F0
+╖в╦═▓щ╤пBAT_DET╫┤╠м:0F00160016F0
+╖┤└б:0F80160202B190F0
+╖в╦═BATVCC_CTL╩ф│Ў╡═╡ч╞╜:0F0015010014F0
+╖┤└б:
+╖в╦═╓╪╞Ї:0F00220022F0
+╖┤└б:
+╖в╦═╞Ї╢п╫╘╢п╗п▓т╩╘:746573746D6F64652831290D
+╖┤└б:testmode(1)
+	0, 0x00000000
+cmd>
+╖в╦═▓щ╤пACC╫┤╠м:0F00050005F0
+╖┤└б:0F8005010282F0
+╖в╦═▓щ╤пACC╫┤╠м:0F00050005F0
+╖┤└б:0F8005010282F0
+╖в╦═▓щ╤пACC╫┤╠м:0F00050005F0
+╖┤└б:0F8005010282F0
+╖в╦═▓щ╤пCSH╫┤╠м:0F00060006F0
+╖┤└б:0F8006010281F0
+╖в╦═▓щ╤пCSH╫┤╠м:0F00060006F0
+╖┤└б:0F8006010281F0
+╖в╦═▓щ╤пCSH╫┤╠м:0F00060006F0
+╖┤└б:0F8006010281F0
+╖в╦═▓щ╤пCSH╫┤╠м:0F00060006F0
+╖┤└б:0F8006010281F0
+╖в╦═▓щ╤пCSH╫┤╠м:0F00060006F0
+╖┤└б:0F8006010281F0
+╖в╦═▓щ╤пCSH╫┤╠м:0F00060006F0
+╖┤└б:0F8006010281F0
+╖в╦═▓щ╤пCSH╫┤╠м:0F00060006F0
+╖┤└б:0F8006010281F0
+╖в╦═▓щ╤пCSH╫┤╠м:0F00060006F0
+╖┤└б:0F8006010281F0
+╖в╦═▓щ╤пCSH╫┤╠м:0F00060006F0
+╖┤└б:0F8006010281F0
+╖в╦═▓щ╤пCSH╫┤╠м:0F00060006F0
+╖┤└б:0F8006010281F0
+╖в╦═▓щ╤пCSH╫┤╠м:0F00060006F0
+╖┤└б:0F8006010281F0
+╖в╦═╝╙╦┘╢╚┤л╕╨╞ў╖╡╗╪╩¤╛▌1:0F0007010006F0
+╖┤└б:0F8007016581F0
+CAN╖в╦═:ID:00000182DATA:000007d100000000╖в╦═CAN═и╨┼╜╙╩╒:0F00200020F0
+╖┤└б:0F80200102A7F0
+CAN╖в╦═:ID:00000182DATA:000007d000000000╖в╦═CAN═и╨┼╜╙╩╒:0F00200020F0
+╖┤└б:0F80200101A7F0
+╖в╦═CAN═и╨┼╖в╦═:0F00210021F0
+╖┤└б:0F80210101A6F0
+╖в╦══т▓┐Flash▓т╩╘:0F00110011F0
+╖┤└б:0F8011010196F0
+╖в╦═3G═и╨┼╫╘╝ь:0F000B000BF0
+╖┤└б:0F800B01018CF0
+╖в╦═ ┤Є┐к═°┬ч:AT+NETOPEN
+╖┤└б:
+
+╖в╦═ ▓щ╤п2G╨┼║┼:AT+CSQ
+╖┤└б:
++CSQ: 31,99
+
+OK
+
+╖в╦═ ▓щ╤п3G╨┼║┼:AT^HDRCSQ
+╖┤└б:
+^HDRCSQ: 31
+
+OK
+
+╖в╦═ ┤Є┐к═°┬ч:AT+NETOPEN
+╖┤└б:
+
+╖в╦═ ▓щ╤п═°┬ч╫┤╠м:AT+NETOPEN?
+╖┤└б:
++NETOPEN: 1,1
+
+╖в╦═ ▓щ╤пIP:AT+IPADDR
+╖┤└б:
++IPADDR: 101.84.227.221
+
+╖в╦═ ▓т╩╘╡╟┬╝:AT+CIPSEND=0,57
+╖┤└б:
+>
+OK
+
++CIPSEND: 0,57,57
+
+
+
+RECV FROM:202.105.139.92:24000
++IPD31
+}"3DU   
+  Ygхр!$С}
+╖в╦═ ╣╪▒╒╥Ї╞╡LOOPBACK:AT+CLOOPBACK=1,0
+╖┤└б:
+OK
+
+╖в╦═ ╟╨╗╗╔∙╥Ї═и╡└:AT+CSDVC=1,0
+╖┤└б:
+OK
+
+╖в╦═ ╣╪▒╒╥Ї╞╡LOOPBACK:AT+CLOOPBACK=1,0
+╖┤└б:
+OK
+
+╖в╦═ ┤Є┐к╥Ї╞╡LOOPBACK:AT+CLOOPBACK=1,1
+╖┤└б:
+OK
+
+╖в╦═ ╣╪▒╒╥Ї╞╡LOOPBACK:AT+CLOOPBACK=1,0
+╖┤└б:
+OK
+
+╖в╦═ ▓ж║┼:ATD10000;
+╖┤└б:
+OK
+
+VOICE CALL: BEGIN
+
+VOICE CALL: ANSWERED
+
+╖в╦═ ╣╥╢╧:AT+CHUP
+╖┤└б:
+VOICE CALL: END: 000002
+
+╖в╦══╦│Ў╫╘╢п╗п▓т╩╘:0F00020002F0
+╖┤└б:0F8002010185F0

@@ -1,0 +1,11 @@
+--SN:1234567890123456789012345
+--Date and Time:2016-12-15 9:51
+--Tester:Slot2
+--OperatorID:
+--CycleTime:1
+--TestResult:
+Pass
+[测试名称]  	[TestItem ITEM]	[通道]	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	
+测试静态电流	Static Current 	      	          	0       	.999    	ma    	0.58000 	PASS  	5.693000  	      	          	
+
+通信信息:

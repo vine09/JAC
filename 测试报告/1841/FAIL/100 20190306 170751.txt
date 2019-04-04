@@ -1,0 +1,457 @@
+--SN:100
+--Date and Time:2019-3-6 17:07
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:247
+--TestResult:
+测试项目	测试名称          	测量值 	下限值	上限值	测试结果
+生产信息	读条码并比较      	FAIL   	PASS  	PASS  	FAIL    
+生产信息	写入硬件版本      	       	01    	01    	FAIL    
+生产信息	写入生产日期      	       	01    	01    	FAIL    
+生产信息	读硬件版本并比较  	FAIL   	PASS  	PASS  	FAIL    
+生产信息	读生产日期并比较  	FAIL   	PASS  	PASS  	FAIL    
+生产信息	写入供应商代码    	       	01    	01    	FAIL    
+生产信息	写入零部件号      	       	01    	01    	FAIL    
+生产信息	读WIFI的MAC地址   	0.00000	17    	17    	FAIL    
+生产信息	写入WIFI名称      	       	01    	01    	FAIL    
+生产信息	写入WIFI密码      	       	01    	01    	FAIL    
+生产信息	读供应商代码并比较	FAIL   	PASS  	PASS  	FAIL    
+生产信息	读零部件号并比较  	FAIL   	PASS  	PASS  	FAIL    
+生产信息	读WIFI名称并比较  	FAIL   	PASS  	PASS  	FAIL    
+3G模块  	读模块信号强度    	0.00000	13    	30    	FAIL    
+        	外部FLASH测试     	       	01    	01    	FAIL    
+        	退出自动化测试    	       	01    	01    	FAIL    
+        	杀死自动化测试进程	FAIL   	PASS  	PASS  	FAIL    
+        	                  	       	      	      	        
+
+[测试名称]        	[TestItem ITEM]	[通道]            	[设置参数]	[下限值]               	[上限值]               	[单位]	[测量值]               	[结果]	[测试时间]	[备注]         	[测试项目]	 
+打开电源          	DOAction       	B+                	1         	                       	                       	      	                       	Done  	0.010000  	               	          	1
+ACC置高           	DOAction       	ACC               	1         	                       	                       	      	                       	Done  	0.013000  	               	          	1
+延时              	Delay          	                  	25        	                       	                       	      	                       	Done  	25.013000 	               	          	1
+启动自动化测试进程	StartProcess   	100               	5;100     	PASS                   	PASS                   	String	PASS                   	PASS  	3.788000  	               	通信      	1
+启动自动化测试    	CMD_CF         	启动自动化测试    	1000      	01                     	01                     	String	01                     	PASS  	0.446000  	               	通信      	1
+延时              	Delay          	                  	5         	                       	                       	      	                       	Done  	5.014000  	               	          	1
+查询4G固件版本    	CMD_CF         	查询4G固件版本    	3000      	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	Hex   	EC20CEFAGR06A02M4G_OCPU	PASS  	0.350000  	               	版本信息  	1
+查询MCU软件版本   	CMD_CF         	查询MCU软件版本   	3000      	SW:A.0.1               	SW:A.0.1               	V     	SW:A.0.1               	PASS  	0.336000  	               	版本信息  	1
+查询OPEN软件版本  	CMD_CF         	读OPEN软件版本    	3000      	SW:A.0.1               	SW:A.0.1               	Hex   	SW:A.0.1               	PASS  	0.334000  	               	版本信息  	1
+CheckSN           	CheckSN        	                  	          	                       	                       	Hex   	PASS                   	PASS  	1.601000  	               	          	1
+写入主机条码      	CMD_CF         	写入主机条码      	3000      	01                     	01                     	Hex   	01                     	PASS  	0.357000  	               	生产信息  	1
+读出CCID          	CMD_CF         	读出CCID          	3000      	PASS                   	PASS                   	Hex   	PASS                   	PASS  	0.332000  	               	生产信息  	1
+CCID与SN入库      	WDataToDB      	CCIDTODB          	          	OK                     	OK                     	String	OK                     	PASS  	0.248000  	               	信息入库  	1
+读条码并比较      	CMD_CF         	读出主机条码      	2000      	PASS                   	PASS                   	String	FAIL                   	FAIL  	11.683000 	               	生产信息  	1
+延时              	Delay          	                  	1         	                       	                       	      	                       	Done  	1.017000  	               	          	1
+写入硬件版本      	CMD_CF         	写入硬件版本      	2000      	01                     	01                     	String	                       	FAIL  	19.267000 	               	生产信息  	1
+写入生产日期      	CMD_CF         	写入生产日期      	2000      	01                     	01                     	String	                       	FAIL  	19.259000 	               	生产信息  	1
+读硬件版本并比较  	CMD_CF         	读出硬件版本      	2000      	PASS                   	PASS                   	String	FAIL                   	FAIL  	10.770000 	               	生产信息  	1
+读生产日期并比较  	CMD_CF         	读出生产日期      	2000      	PASS                   	PASS                   	String	FAIL                   	FAIL  	10.770000 	               	生产信息  	1
+写入供应商代码    	CMD_CF         	写入供应商代码    	2000      	01                     	01                     	String	                       	FAIL  	10.785000 	               	生产信息  	1
+写入零部件号      	CMD_CF         	写入零部件号      	2000      	01                     	01                     	String	                       	FAIL  	10.785000 	               	生产信息  	1
+读WIFI的MAC地址   	CMD_CF         	读出WIFI MAC地址  	2000      	17                     	17                     	      	0.00000                	FAIL  	10.787000 	存到Reserved3中	生产信息  	1
+写入WIFI名称      	CMD_CF         	写入WIFI名称      	2000      	01                     	01                     	      	                       	FAIL  	10.794000 	               	生产信息  	1
+写入WIFI密码      	CMD_CF         	写入WIFI密码      	2000      	01                     	01                     	      	                       	FAIL  	10.781000 	               	生产信息  	1
+延时              	Delay          	                  	8         	                       	                       	      	                       	Done  	8.017000  	               	          	1
+读供应商代码并比较	CMD_CF         	读出供应商代码    	2000      	PASS                   	PASS                   	Hex   	FAIL                   	FAIL  	10.779000 	               	生产信息  	1
+读零部件号并比较  	CMD_CF         	读出零部件号      	2000      	PASS                   	PASS                   	      	FAIL                   	FAIL  	10.775000 	               	生产信息  	1
+读WIFI名称并比较  	CMD_CF         	读出WIFI名称      	2000      	PASS                   	PASS                   	      	FAIL                   	FAIL  	10.775000 	               	生产信息  	1
+读WIFI密码并比较  	CMD_CF         	读出WIFI密码      	2000      	PASS                   	PASS                   	Hex   	PASS                   	PASS  	6.516000  	               	生产信息  	1
+延时              	Delay          	0                 	3         	                       	                       	      	                       	Done  	3.017000  	               	          	1
+读模块信号强度    	CMD_CF         	上网模块信号强度  	2000      	13                     	30                     	Hex   	0.00000                	FAIL  	6.505000  	               	3G模块    	1
+外部FLASH测试     	CMD_CF         	外部Flash测试     	2000      	01                     	01                     	Hex   	                       	FAIL  	6.513000  	               	          	1
+延时              	Delay          	0                 	2         	                       	                       	      	                       	Done  	2.016000  	               	          	1
+延时              	Delay          	0                 	3         	                       	                       	      	                       	Done  	3.017000  	               	          	1
+退出自动化测试    	CMD_CF         	退出自动化测试    	15        	01                     	01                     	      	                       	FAIL  	0.737000  	               	          	1
+杀死自动化测试进程	QuitProcess    	杀死自动化测试进程	1000      	PASS                   	PASS                   	String	FAIL                   	FAIL  	12.284000 	               	          	1
+ACC置低           	DOAction       	ACC               	0         	                       	                       	      	                       	Done  	0.018000  	               	          	1
+关闭电源          	DOAction       	B+                	0         	                       	                       	      	                       	Done  	0.017000  	               	          	1
+
+通信信息:启动自动化测试进程：PASS
+COM62: 退出进程
+反馈：killall
+Password: imsi:460094500785688
+
+COM62
+退出系统：
+反馈：
+991
+
+COM62
+输入用户名：root
+反馈：root
+
+COM62
+输入密码：quectel123
+反馈：
+root@mdm9607-perf:~# 
+COM62
+启动进程：
+反馈：/data/QuecOpen/local_data
+start local main proc!
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+本次串口通信耗时：4.330000E-1s
+读循环次数：2
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01EC20CEFAGR06A02M4G_OCPU
+
+本次串口通信耗时：3.360000E-1s
+读循环次数：1
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test$IdType:8051$ValType:01$Value:01SW:A.0.1
+
+本次串口通信耗时：3.200000E-1s
+读循环次数：1
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01SW:A.0.1
+
+本次串口通信耗时：3.180000E-1s
+读循环次数：1
+发送写入主机条码:auto_test$IdType:0033$ValType:01$Value:100
+反馈:auto_test$IdType:8033$ValType:01$Value:01
+
+本次串口通信耗时：3.220000E-1s
+读循环次数：1
+发送读出CCID:auto_test$IdType:0037$ValType:01$Value:
+反馈:auto_test$IdType:8037$ValType:01$Value:0189860918700321802057
+
+本次串口通信耗时：3.150000E-1s
+读循环次数：1
+CCID与SN入库: OK
+
+
+
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test$IdType:8034$ValType:01$Value:0110070937900020CC10200J090022
+
+
+本次串口通信耗时：3.280000E-1s
+读循环次数：1
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test$IdType:8034$ValType:01$Value:0110070937900020CC10200J090022
+
+
+本次串口通信耗时：3.280000E-1s
+读循环次数：1
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test$IdType:8034$ValType:01$Value:0110070937900020CC10200J090022
+
+
+本次串口通信耗时：3.240000E-1s
+读循环次数：1
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test$IdType:8034$ValType:01$Value:0110070937900020CC10200J090022
+
+
+本次串口通信耗时：3.250000E-1s
+读循环次数：1
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test
+本次串口通信耗时：2.230000E+0s
+读循环次数：20
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:0040$ValType:01$Value:V0.2
+-sh: auto_test:0040:01:V0.2: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.232000E+0s
+读循环次数：20
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:0040$ValType:01$Value:V0.2
+-sh: auto_test:0040:01:V0.2: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.231000E+0s
+读循环次数：20
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:0040$ValType:01$Value:V0.2
+-sh: auto_test:0040:01:V0.2: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.219000E+0s
+读循环次数：20
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:0040$ValType:01$Value:V0.2
+-sh: auto_test:0040:01:V0.2: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.219000E+0s
+读循环次数：20
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:0040$ValType:01$Value:V0.2
+-sh: auto_test:0040:01:V0.2: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.219000E+0s
+读循环次数：20
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20190306
+反馈:auto_test$IdType:0035$ValType:01$Value:20190306
+-sh: auto_test:0035:01:20190306: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.223000E+0s
+读循环次数：20
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20190306
+反馈:auto_test$IdType:0035$ValType:01$Value:20190306
+-sh: auto_test:0035:01:20190306: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.230000E+0s
+读循环次数：20
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20190306
+反馈:auto_test$IdType:0035$ValType:01$Value:20190306
+-sh: auto_test:0035:01:20190306: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.218000E+0s
+读循环次数：20
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20190306
+反馈:auto_test$IdType:0035$ValType:01$Value:20190306
+-sh: auto_test:0035:01:20190306: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.219000E+0s
+读循环次数：20
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20190306
+反馈:auto_test$IdType:0035$ValType:01$Value:20190306
+-sh: auto_test:0035:01:20190306: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.217000E+0s
+读循环次数：20
+发送读出硬件版本:auto_test$IdType:0041$ValType:01$Value:
+反馈:auto_test$IdType:0041$ValType:01$Value:
+-sh: auto_test:0041:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.237000E+0s
+读循环次数：20
+发送读出硬件版本:auto_test$IdType:0041$ValType:01$Value:
+反馈:auto_test$IdType:0041$ValType:01$Value:
+-sh: auto_test:0041:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.228000E+0s
+读循环次数：20
+发送读出硬件版本:auto_test$IdType:0041$ValType:01$Value:
+反馈:auto_test$IdType:0041$ValType:01$Value:
+-sh: auto_test:0041:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.216000E+0s
+读循环次数：20
+发送读出生产日期:auto_test$IdType:0036$ValType:01$Value:
+反馈:auto_test$IdType:0036$ValType:01$Value:
+-sh: auto_test:0036:01:: not found
+root@mdm9607-perf:~# ip:172.20.66.10,port:9250,apn_type:2
+create_tcp_connect ok
+
+本次串口通信耗时：2.232000E+0s
+读循环次数：20
+发送读出生产日期:auto_test$IdType:0036$ValType:01$Value:
+反馈:auto_test$IdType:0036$ValType:01$Value:
+-sh: auto_test:0036:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.231000E+0s
+读循环次数：20
+发送读出生产日期:auto_test$IdType:0036$ValType:01$Value:
+反馈:auto_test$IdType:0036$ValType:01$Value:
+-sh: auto_test:0036:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.217000E+0s
+读循环次数：20
+发送写入供应商代码:auto_test$IdType:0054$ValType:01$Value:Seg1152
+反馈:auto_test$IdType:0054$ValType:01$Value:Seg1152
+-sh: auto_test:0054:01:Seg1152: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.233000E+0s
+读循环次数：20
+发送写入供应商代码:auto_test$IdType:0054$ValType:01$Value:Seg1152
+反馈:auto_test$IdType:0054$ValType:01$Value:Seg1152
+-sh: auto_test:0054:01:Seg1152: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.230000E+0s
+读循环次数：20
+发送写入供应商代码:auto_test$IdType:0054$ValType:01$Value:Seg1152
+反馈:auto_test$IdType:0054$ValType:01$Value:Seg1152
+-sh: auto_test:0054:01:Seg1152: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.231000E+0s
+读循环次数：20
+发送写入零部件号:auto_test$IdType:0056$ValType:01$Value:LV0.1
+反馈:auto_test$IdType:0056$ValType:01$Value:LV0.1
+-sh: auto_test:0056:01:LV0.1: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.234000E+0s
+读循环次数：20
+发送写入零部件号:auto_test$IdType:0056$ValType:01$Value:LV0.1
+反馈:auto_test$IdType:0056$ValType:01$Value:LV0.1
+-sh: auto_test:0056:01:LV0.1: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.229000E+0s
+读循环次数：20
+发送写入零部件号:auto_test$IdType:0056$ValType:01$Value:LV0.1
+反馈:auto_test$IdType:0056$ValType:01$Value:LV0.1
+-sh: auto_test:0056:01:LV0.1: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.230000E+0s
+读循环次数：20
+发送读出WIFI MAC地址:auto_test$IdType:0058$ValType:01$Value:
+反馈:auto_test$IdType:0058$ValType:01$Value:
+-sh: auto_test:0058:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.236000E+0s
+读循环次数：20
+发送读出WIFI MAC地址:auto_test$IdType:0058$ValType:01$Value:
+反馈:auto_test$IdType:0058$ValType:01$Value:
+-sh: auto_test:0058:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.228000E+0s
+读循环次数：20
+发送读出WIFI MAC地址:auto_test$IdType:0058$ValType:01$Value:
+反馈:auto_test$IdType:0058$ValType:01$Value:
+-sh: auto_test:0058:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.230000E+0s
+读循环次数：20
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:Hotspot
+反馈:auto_test$IdType:003a$ValType:01$Value:Hotspot
+-sh: auto_test:003a:01:Hotspot: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.228000E+0s
+读循环次数：20
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:Hotspot
+反馈:auto_test$IdType:003a$ValType:01$Value:Hotspot
+-sh: auto_test:003a:01:Hotspot: not found
+root@mdm9607-perf:~# get private data call information,1
+The profile id 1 IPv4 information
+	state:                 Connected
+	IP address:            10.14.38.21
+	Gateway address:       0.0.0.0
+	Primary DNS address:   221.6.4.66
+	Second DNS address:    58.240.57.33
+get private data call information,2
+The profile id 2 IPv4 information
+	state:                 Connected
+	IP address:            10.201.85.23
+	Gateway address:       10.201.85.24
+	Primary DNS address:   172.22.254.43
+	Second DNS address:    172.26.254.43
+
+本次串口通信耗时：2.225000E+0s
+读循环次数：20
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:Hotspot
+反馈:auto_test$IdType:003a$ValType:01$Value:Hotspot
+-sh: auto_test:003a:01:Hotspot: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.229000E+0s
+读循环次数：20
+发送写入WIFI密码:auto_test$IdType:003b$ValType:01$Value:jmsg00000000
+反馈:auto_test$IdType:003b$ValType:01$Value:jmsg00000000
+-sh: auto_test:003b:01:jmsg00000000: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.226000E+0s
+读循环次数：20
+发送写入WIFI密码:auto_test$IdType:003b$ValType:01$Value:jmsg00000000
+反馈:auto_test$IdType:003b$ValType:01$Value:jmsg00000000
+-sh: auto_test:003b:01:jmsg00000000: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.229000E+0s
+读循环次数：20
+发送写入WIFI密码:auto_test$IdType:003b$ValType:01$Value:jmsg00000000
+反馈:auto_test$IdType:003b$ValType:01$Value:jmsg00000000
+-sh: auto_test:003b:01:jmsg00000000: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.229000E+0s
+读循环次数：20
+发送读出供应商代码:auto_test$IdType:0055$ValType:01$Value:
+反馈:auto_test$IdType:0055$ValType:01$Value:
+-sh: auto_test:0055:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.230000E+0s
+读循环次数：20
+发送读出供应商代码:auto_test$IdType:0055$ValType:01$Value:
+反馈:auto_test$IdType:0055$ValType:01$Value:
+-sh: auto_test:0055:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.224000E+0s
+读循环次数：20
+发送读出供应商代码:auto_test$IdType:0055$ValType:01$Value:
+反馈:auto_test$IdType:0055$ValType:01$Value:
+-sh: auto_test:0055:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.227000E+0s
+读循环次数：20
+发送读出零部件号:auto_test$IdType:0057$ValType:01$Value:
+反馈:auto_test$IdType:0057$ValType:01$Value:
+-sh: auto_test:0057:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.226000E+0s
+读循环次数：20
+发送读出零部件号:auto_test$IdType:0057$ValType:01$Value:
+反馈:auto_test$IdType:0057$ValType:01$Value:
+-sh: auto_test:0057:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.222000E+0s
+读循环次数：20
+发送读出零部件号:auto_test$IdType:0057$ValType:01$Value:
+反馈:auto_test$IdType:0057$ValType:01$Value:
+-sh: auto_test:0057:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.228000E+0s
+读循环次数：20
+发送读出WIFI名称:auto_test$IdType:003c$ValType:01$Value:
+反馈:auto_test$IdType:003c$ValType:01$Value:
+-sh: auto_test:003c:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.225000E+0s
+读循环次数：20
+发送读出WIFI名称:auto_test$IdType:003c$ValType:01$Value:
+反馈:auto_test$IdType:003c$ValType:01$Value:
+-sh: auto_test:003c:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.224000E+0s
+读循环次数：20
+发送读出WIFI名称:auto_test$IdType:003c$ValType:01$Value:
+反馈:auto_test$IdType:003c$ValType:01$Value:
+-sh: auto_test:003c:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.226000E+0s
+读循环次数：20
+发送读出WIFI密码:auto_test$IdType:003d$ValType:01$Value:
+反馈:auto_test$IdType:003d$ValType:01$Value:
+-sh: auto_test:003d:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.224000E+0s
+读循环次数：20
+发送读出WIFI密码:auto_test$IdType:003d$ValType:01$Value:
+反馈:auto_test$IdType:003d$ValType:01$Value:
+-sh: auto_test:003d:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.231000E+0s
+读循环次数：20
+发送上网模块信号强度:auto_test$IdType:000d$ValType:01$Value:
+反馈:auto_test$IdType:000d$ValType:01$Value:
+-sh: auto_test:000d:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.221000E+0s
+读循环次数：20
+发送上网模块信号强度:auto_test$IdType:000d$ValType:01$Value:
+反馈:auto_test$IdType:000d$ValType:01$Value:
+-sh: auto_test:000d:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.222000E+0s
+读循环次数：20
+发送外部Flash测试:auto_test$IdType:0011$ValType:01$Value:
+反馈:auto_test$IdType:0011$ValType:01$Value:
+-sh: auto_test:0011:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.229000E+0s
+读循环次数：20
+发送外部Flash测试:auto_test$IdType:0011$ValType:01$Value:
+反馈:auto_test$IdType:0011$ValType:01$Value:
+-sh: auto_test:0011:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.222000E+0s
+读循环次数：20
+发送退出自动化测试:auto_test$IdType:0002$ValType:01$Value:
+反馈:auto_test$IdType:0002$ValType:01$Value:
+-sh: auto_test:0002:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：3.330000E-1s
+读循环次数：1
+发送退出自动化测试:auto_test$IdType:0002$ValType:01$Value:
+反馈:auto_test$IdType:0002$ValType:01$Value:
+-sh: auto_test:0002:01:: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：3.280000E-1s
+读循环次数：1

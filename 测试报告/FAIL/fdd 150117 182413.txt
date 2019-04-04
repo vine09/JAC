@@ -1,0 +1,33 @@
+--SN:fdd
+--Date and Time:2015-1-17 18:24
+--Tester:Slot1
+--OperatorID:
+--CycleTime:23
+--TestResult:
+测试项目	测试名称	测量值	下限值	上限值	测试结果
+3G模块  	查询MEID	FAIL  	OK    	OK    	FAIL    
+        	        	      	      	      	        
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源           	DOAction       	B+                  	1         	        	        	      	        	Done  	0.013000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1         	        	        	      	        	Done  	0.022000  	      	ACC IO    	1
+延时               	Delay          	                    	15        	        	        	      	        	Done  	15.020000 	      	CAN       	1
+启动自动化测试     	CMD            	启动自动化测试      	1000      	OK      	OK      	String	OK      	PASS  	0.218000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000      	0x01    	0x01    	Hex   	0x01    	PASS  	0.421000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000      	0x01    	0x01    	Hex   	0x01    	PASS  	0.917000  	      	通信      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000      	0x0550  	0x0664  	Hex   	0x05DA  	PASS  	0.427000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出低电平	1000      	0x01    	0x01    	Hex   	0x01    	PASS  	0.948000  	      	通信      	1
+查询MEID           	USBCMD         	查询MEID            	1000      	OK      	OK      	String	FAIL    	FAIL  	4.939000  	      	3G模块    	1
+
+通信信息:发送启动自动化测试:746573746D6F64652831290D
+反馈:746573746D6F64652831290D0A09302C20307830303030303030300D0A636D643E
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010197F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010196F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205DA93F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010196F0
+发送 查询MEID:AT+SMEID?
+反馈:

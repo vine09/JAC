@@ -1,0 +1,28 @@
+--SN:0203443f41520300582
+--Date and Time:2015-3-18 11:46
+--Tester:Slot1
+--OperatorID:
+--CycleTime:23
+--TestResult:
+测试项目	测试名称	测量值	下限值                    	上限值	测试结果	    	                          		 	    	    
+版本    	查询版本	      	TGS80_H204.02_14:20:44-Mar	      	7       	2015	TGS80_H204.02_14:20:44-Mar		7	2015	FAIL
+        	        	      	                          	      	        	    	                          		 	    	    
+
+[测试名称]    	[TestItem ITEM]	[通道]        	[设置参数]  	[下限值]                          	[上限值]                          	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+气缸推进      	DOAction       	CylinderCtrl  	1           	                                  	                                  	      	        	Done  	0.009000  	      	          	1
+打开电源      	DOAction       	B+            	1           	                                  	                                  	      	        	Done  	0.015000  	      	          	1
+ACC置高       	DOAction       	ACC           	1           	                                  	                                  	      	        	Done  	0.015000  	      	ACC_IO    	1
+退出自动化测试	CMD            	退出自动化测试	1000        	                                  	0x01                              	Hex   	        	PASS  	1.016000  	      	通信      	1
+延时          	Delay          	              	5           	                                  	                                  	      	        	Done  	5.021000  	      	          	1
+测量电流      	MeaCurrent     	Current       	Differential	0.1                               	0.5                               	A     	0.19417 	PASS  	1.221000  	      	电流      	1
+延时          	Delay          	              	10          	                                  	                                  	      	        	Done  	10.046000 	      	          	1
+查询版本      	CMD            	查询版本      	1000        	TGS80_H204.02_14:20:44-Mar  7 2015	TGS80_H204.02_14:20:44-Mar  7 2015	String	        	FAIL  	5.090000  	      	版本      	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:
+发送查询版本:76657228290D
+反馈:
+发送查询版本:76657228290D
+反馈:
+发送查询版本:76657228290D
+反馈:

@@ -1,0 +1,22 @@
+--SN:012
+--Date and Time:2018-9-20 16:23
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:45
+--TestResult:
+测试项目	测试名称          	测量值	下限值	上限值	测试结果
+通信    	启动自动化测试进程	FAIL  	PASS  	PASS  	FAIL    
+        	                  	      	      	      	        
+
+[测试名称]        	[TestItem ITEM]	[通道]            	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction       	B+                	1         	        	        	      	        	Done  	0.011000  	      	          	1
+ACC置高           	DOAction       	ACC               	1         	        	        	      	        	Done  	0.014000  	      	ACC_IO    	1
+延时              	Delay          	                  	3         	        	        	      	        	Done  	3.014000  	      	          	1
+启动自动化测试进程	StartProcess   	启动自动化测试进程	5;100     	PASS    	PASS    	String	FAIL    	FAIL  	41.394000 	      	通信      	1
+
+通信信息:启动自动化测试进程：FAIL
+启动自动化测试进程：FAIL
+启动自动化测试进程：FAIL
+启动自动化测试进程：FAIL
+启动自动化测试进程：FAIL
+启动自动化测试进程：FAIL

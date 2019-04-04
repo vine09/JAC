@@ -1,0 +1,96 @@
+--SN:18B05019L42056TB1830300SEG
+--Date and Time:2018-11-6 11:13
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:55
+--TestResult:
+测试项目	测试名称          	测量值	下限值	上限值	测试结果
+通信    	启动自动化测试进程	FAIL  	PASS  	PASS  	FAIL    
+        	                  	      	      	      	        
+
+[测试名称]        	[TestItem ITEM]	[通道]	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction       	B+    	1         	        	        	      	        	Done  	0.010000  	      	          	1
+ACC置高           	DOAction       	ACC   	1         	        	        	      	        	Done  	0.012000  	      	          	1
+延时              	Delay          	      	25        	        	        	      	        	Done  	25.011000 	      	          	1
+启动自动化测试进程	StartProcess   	100   	5;100     	PASS    	PASS    	String	FAIL    	FAIL  	30.351000 	      	通信      	1
+
+通信信息:启动自动化测试进程：FAIL
+COM23: 退出进程
+反馈：
+COM23
+退出系统：
+反馈：
+COM23
+输入用户名：root
+反馈：
+COM23
+输入密码：quectel123
+反馈：
+COM23
+启动进程：
+反馈：
+
+启动自动化测试进程：FAIL
+COM23: 退出进程
+反馈：
+COM23
+退出系统：
+反馈：
+COM23
+输入用户名：root
+反馈：
+COM23
+输入密码：quectel123
+反馈：
+COM23
+启动进程：
+反馈：
+
+启动自动化测试进程：FAIL
+COM23: 退出进程
+反馈：
+COM23
+退出系统：
+反馈：
+COM23
+输入用户名：root
+反馈：
+COM23
+输入密码：quectel123
+反馈：
+COM23
+启动进程：
+反馈：
+
+启动自动化测试进程：FAIL
+COM23: 退出进程
+反馈：
+COM23
+退出系统：
+反馈：
+COM23
+输入用户名：root
+反馈：
+COM23
+输入密码：quectel123
+反馈：
+COM23
+启动进程：
+反馈：
+
+启动自动化测试进程：FAIL
+COM23: 退出进程
+反馈：
+COM23
+退出系统：
+反馈：
+COM23
+输入用户名：root
+反馈：
+COM23
+输入密码：quectel123
+反馈：
+COM23
+启动进程：
+反馈：
+

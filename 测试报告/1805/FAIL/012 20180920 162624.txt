@@ -1,0 +1,99 @@
+--SN:012
+--Date and Time:2018-9-20 16:26
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:193
+--TestResult:
+测试项目	测试名称        	测量值	下限值                 	上限值                 	测试结果
+通信    	启动自动化测试  	      	01                     	01                     	FAIL    
+生产信息	查询4G固件版本  	      	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	FAIL    
+电压检测	查询MCU软件版本 	      	TB1805V1.00            	TB1805V1.00            	FAIL    
+通信    	查询OPEN软件版本	      	TB1805V1.00            	TB1805V1.00            	FAIL    
+生产信息	写入主机条码    	      	01                     	01                     	FAIL    
+生产信息	读出CCID        	FAIL  	PASS                   	PASS                   	FAIL    
+        	                	      	                       	                       	        
+
+[测试名称]        	[TestItem ITEM]  	[通道]                                     	[设置参数]               	[下限值]               	[上限值]               	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction         	B+                                         	1                        	                       	                       	      	        	Done  	0.018000  	      	          	1
+ACC置高           	DOAction         	ACC                                        	1                        	                       	                       	      	        	Done  	0.013000  	      	ACC_IO    	1
+延时              	Delay            	                                           	3                        	                       	                       	      	        	Done  	3.013000  	      	          	1
+启动自动化测试进程	StartProcess     	启动自动化测试进程                         	5;100                    	PASS                   	PASS                   	String	PASS    	PASS  	3.691000  	      	通信      	1
+启动自动化测试    	CMD_CF           	启动自动化测试                             	1000                     	01                     	01                     	String	        	FAIL  	44.369000 	      	通信      	1
+延时              	Delay            	                                           	5                        	                       	                       	      	        	Done  	5.015000  	      	          	1
+查询4G固件版本    	CMD_CF           	查询4G固件版本                             	1000                     	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	Hex   	        	FAIL  	3.549000  	      	生产信息  	1
+查询MCU软件版本   	CMD_CF           	查询MCU软件版本                            	1000                     	TB1805V1.00            	TB1805V1.00            	V     	        	FAIL  	3.533000  	      	电压检测  	1
+查询OPEN软件版本  	CMD_CF           	读OPEN软件版本                             	1000                     	TB1805V1.00            	TB1805V1.00            	Hex   	        	FAIL  	3.545000  	      	通信      	1
+CheckSN           	CheckSN          	                                           	                         	                       	                       	Hex   	PASS    	PASS  	113.328000	      	通信      	1
+TUID和证书编号入库	WDataToDB        	D:\File\08CAG2018031400000001等19个证书文件	证书列表.txt;4G T-BOX.txt	OK                     	OK                     	Hex   	OK      	PASS  	0.345000  	      	生产信息  	1
+写入主机条码      	CMD_CF           	写入主机条码                               	1000                     	01                     	01                     	Hex   	        	FAIL  	5.811000  	      	生产信息  	1
+FindSim           	FindSIMCOMETH_CAn	找SIM模块                                  	1000                     	PASS                   	PASS                   	Hex   	PASS    	PASS  	0.516000  	      	生产信息  	1
+读出CCID          	CMD_CF           	读出CCID                                   	1000                     	PASS                   	PASS                   	Hex   	FAIL    	FAIL  	5.843000  	      	生产信息  	1
+
+通信信息:启动自动化测试进程：PASS
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test
+TUID和证书编号入库: OK
+发送写入主机条码:auto_test$IdType:0033$ValType:01$Value:012
+反馈:auto_test
+发送写入主机条码:auto_test$IdType:0033$ValType:01$Value:012
+反馈:auto_test
+发送写入主机条码:auto_test$IdType:0033$ValType:01$Value:012
+反馈:auto_test
+发送读出CCID:auto_test$IdType:0037$ValType:01$Value:
+反馈:auto_test
+发送读出CCID:auto_test$IdType:0037$ValType:01$Value:
+反馈:auto_test
+发送读出CCID:auto_test$IdType:0037$ValType:01$Value:
+反馈:auto_test
+CCID与SN入库: SN IS REPEATED
+库中读TUID及证书编号: THE RECORD IS EMPTY

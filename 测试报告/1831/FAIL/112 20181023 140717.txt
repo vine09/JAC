@@ -1,0 +1,81 @@
+--SN:112
+--Date and Time:2018-10-23 14:07
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:49
+--TestResult:
+测试项目	测试名称          	测量值	下限值	上限值	测试结果
+通信    	启动自动化测试进程	FAIL  	PASS  	PASS  	FAIL    
+        	                  	      	      	      	        
+
+[测试名称]        	[TestItem ITEM]	[通道]	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction       	B+    	1         	        	        	      	        	Done  	0.009000  	      	          	1
+ACC置高           	DOAction       	ACC   	1         	        	        	      	        	Done  	0.013000  	      	          	1
+延时              	Delay          	      	15        	        	        	      	        	Done  	15.012000 	      	          	1
+延时              	Delay          	      	10        	        	        	      	        	Done  	10.016000 	      	          	1
+启动自动化测试进程	StartProcess   	100   	5;100     	PASS    	PASS    	String	FAIL    	FAIL  	24.371000 	      	通信      	1
+
+通信信息:启动自动化测试进程：FAIL
+COM70: 退出进程
+反馈：
+COM70
+退出系统：
+反馈：
+COM70
+输入用户名：root
+反馈：
+COM70
+输入密码：quectel123
+反馈：
+COM70
+启动进程：
+反馈：
+
+启动自动化测试进程：FAIL
+COM70: 退出进程
+反馈：
+COM70
+退出系统：
+反馈：
+COM70
+输入用户名：root
+反馈：
+COM70
+输入密码：quectel123
+反馈：
+COM70
+启动进程：
+反馈：
+
+启动自动化测试进程：FAIL
+COM70: 退出进程
+反馈：
+COM70
+退出系统：
+反馈：
+COM70
+输入用户名：root
+反馈：
+COM70
+输入密码：quectel123
+反馈：
+COM70
+启动进程：
+反馈：
+
+启动自动化测试进程：FAIL
+COM70: 退出进程
+反馈：
+COM70
+退出系统：
+反馈：
+COM70
+输入用户名：root
+反馈：
+COM70
+输入密码：quectel123
+反馈：
+COM70
+启动进程：
+反馈：
+

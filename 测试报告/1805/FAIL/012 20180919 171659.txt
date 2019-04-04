@@ -1,0 +1,227 @@
+--SN:012
+--Date and Time:2018-9-19 17:16
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:69
+--TestResult:
+²âÊÔÏîÄ¿   	²âÊÔÃû³Æ        	²âÁ¿Öµ 	ÏÂÏÞÖµ	ÉÏÏÞÖµ	²âÊÔ½á¹û
+µçÑ¹¼ì²â   	¶ÁÌõÂë²¢±È½Ï    	FAIL   	PASS  	PASS  	FAIL    
+Í¨ÐÅ       	¶ÁÓ²¼þ°æ±¾²¢±È½Ï	PASS   	      	0x00  	FAIL    
+           	¶ÁWIFIÃû³Æ²¢±È½Ï	FAIL   	PASS  	PASS  	FAIL    
+CHARGE_WAKE	¶ÁWIFIµÄMACµØÖ· 	5.00000	17    	17    	FAIL    
+GPS        	ÇÐ¶Ï±¸µç¹©µç    	00     	01    	01    	FAIL    
+Éú²úÐÅÏ¢   	¼ì²â±¸µçµçÑ¹    	0.00000	20    	36    	FAIL    
+Éú²úÐÅÏ¢   	²éÑ¯Æ½Ì¨µÇÂ¼×´Ì¬	02     	01    	01    	FAIL    
+Í¨ÐÅ       	ÇÐ¶Ï±¸µç¹©µç    	00     	01    	01    	FAIL    
+           	                	       	      	      	        
+
+[²âÊÔÃû³Æ]          	[TestItem ITEM]	[Í¨µÀ]                                     	[ÉèÖÃ²ÎÊý]               	[ÏÂÏÞÖµ]               	[ÉÏÏÞÖµ]               	[µ¥Î»]	[²âÁ¿Öµ]               	[½á¹û]	[²âÊÔÊ±¼ä]	[±¸×¢]          	[²âÊÔÏîÄ¿] 	 
+´ò¿ªµçÔ´            	DOAction       	B+                                         	1                        	                       	                       	      	                       	Done  	0.017000  	                	           	1
+ACCÖÃ¸ß             	DOAction       	ACC                                        	1                        	                       	                       	      	                       	Done  	0.014000  	                	ACC_IO     	1
+ÑÓÊ±                	Delay          	                                           	3                        	                       	                       	      	                       	Done  	3.011000  	                	           	1
+Æô¶¯×Ô¶¯»¯²âÊÔ½ø³Ì  	StartProcess   	Æô¶¯×Ô¶¯»¯²âÊÔ½ø³Ì                         	5;100                    	PASS                   	PASS                   	String	PASS                   	PASS  	0.884000  	                	Í¨ÐÅ       	1
+Æô¶¯×Ô¶¯»¯²âÊÔ      	CMD_CF         	Æô¶¯×Ô¶¯»¯²âÊÔ                             	1000                     	01                     	01                     	String	01                     	PASS  	0.341000  	                	Í¨ÐÅ       	1
+ÑÓÊ±                	Delay          	                                           	5                        	                       	                       	      	                       	Done  	5.014000  	                	           	1
+²éÑ¯4G¹Ì¼þ°æ±¾      	CMD_CF         	²éÑ¯4G¹Ì¼þ°æ±¾                             	1000                     	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	Hex   	EC20CEFAGR06A02M4G_OCPU	PASS  	0.338000  	                	Éú²úÐÅÏ¢   	1
+²éÑ¯MCUÈí¼þ°æ±¾     	CMD_CF         	²éÑ¯MCUÈí¼þ°æ±¾                            	1000                     	TB1805V1.00            	TB1805V1.00            	V     	TB1805V1.00            	PASS  	0.336000  	                	µçÑ¹¼ì²â   	1
+²éÑ¯OPENÈí¼þ°æ±¾    	CMD_CF         	¶ÁOPENÈí¼þ°æ±¾                             	1000                     	TB1805V1.00            	TB1805V1.00            	Hex   	TB1805V1.00            	PASS  	0.333000  	                	Í¨ÐÅ       	1
+CheckSN             	CheckSN        	                                           	                         	                       	                       	Hex   	PASS                   	PASS  	6.292000  	                	Í¨ÐÅ       	1
+TUIDºÍÖ¤Êé±àºÅÈë¿â  	WDataToDB      	D:\File\08CAG2018031400000001µÈ19¸öÖ¤ÊéÎÄ¼þ	Ö¤ÊéÁÐ±í.txt;4G T-BOX.txt	OK                     	OK                     	Hex   	OK                     	PASS  	0.237000  	                	Éú²úÐÅÏ¢   	1
+Ð´ÈëÖ÷»úÌõÂë        	CMD_CF         	Ð´ÈëÖ÷»úÌõÂë                               	1000                     	01                     	01                     	Hex   	01                     	PASS  	0.344000  	                	Éú²úÐÅÏ¢   	1
+¶Á³öCCID            	CMD_CF         	¶Á³öCCID                                   	1000                     	PASS                   	PASS                   	Hex   	PASS                   	PASS  	0.332000  	                	Éú²úÐÅÏ¢   	1
+CCIDÓëSNÈë¿â        	WDataToDB      	CCIDTODB                                   	                         	OK                     	OK                     	String	OK                     	PASS  	0.100000  	                	Éú²úÐÅÏ¢   	1
+¿âÖÐ¶ÁTUID¼°Ö¤Êé±àºÅ	WDataToDB      	»ñÈ¡TUID¼°Ö¤Êé±àºÅ                         	1000                     	OK                     	OK                     	Hex   	OK                     	PASS  	0.030000  	                	Éú²úÐÅÏ¢   	1
+Ð´ÈëTUID            	CMD_CF         	Ð´Èë³µÁ¾TUID                               	500                      	01                     	01                     	Hex   	01                     	PASS  	0.346000  	                	Éú²úÐÅÏ¢   	1
+Ð´ÈëÖ¤Êé±àºÅ        	CMD_CF         	Ð´ÈëÖ¤Êé±àºÅ                               	500                      	01                     	01                     	Hex   	01                     	PASS  	0.333000  	                	Éú²úÐÅÏ¢   	1
+ÏÂÔØÖ¤ÊéÎÄ¼þ        	FileTransfer   	D:\File\08CAG2018031400000001µÈ19¸öÖ¤ÊéÎÄ¼þ	500;0                    	                       	                       	Hex   	PASS                   	PASS  	2.092000  	MD5Öµ´æReserved1	Éú²úÐÅÏ¢   	1
+ÏÂÔØÃØÔ¿ÎÄ¼þ        	FileTransfer   	D:\File\08CAG2018031400000001µÈ19¸öÖ¤ÊéÎÄ¼þ	1000;0                   	                       	                       	Hex   	PASS                   	PASS  	2.316000  	MD5Öµ´æReserved2	Í¨ÐÅ       	1
+¶Á³öTUID²¢±È½Ï      	CMD_CF         	¶Á³ö³µÁ¾TUID                               	                         	PASS                   	PASS                   	A     	PASS                   	PASS  	0.353000  	                	µçÁ÷       	1
+¶Á³öÖ¤Êé±àºÅ²¢±È½Ï  	CMD_CF         	¶Á³öÖ¤Êé±àºÅ                               	                         	PASS                   	PASS                   	A     	PASS                   	PASS  	0.346000  	                	µçÁ÷       	1
+ÑÓÊ±                	Delay          	                                           	1                        	                       	                       	      	                       	Done  	1.016000  	                	           	1
+ÉÏ´«Ö¤ÊéÎÄ¼þ²¢±È½Ï  	FileReceive    	/media/card;D:\File\DownLoad               	0                        	PASS                   	PASS                   	String	PASS                   	PASS  	7.193000  	                	Í¨ÐÅ       	1
+ÉÏ´«ÃØÔ¿ÎÄ¼þ²¢±È½Ï  	FileReceive    	/media/card;D:\File\DownLoad               	0                        	PASS                   	PASS                   	String	PASS                   	PASS  	5.291000  	                	Í¨ÐÅ       	1
+¶ÁÌõÂë²¢±È½Ï        	CMD_CF         	¶Á³öÖ÷»úÌõÂë                               	500                      	PASS                   	PASS                   	String	FAIL                   	FAIL  	3.819000  	                	µçÑ¹¼ì²â   	1
+Ð´ÈëÓ²¼þ°æ±¾        	CMD_CF         	Ð´ÈëÓ²¼þ°æ±¾                               	500                      	01                     	01                     	String	01                     	PASS  	0.338000  	                	µçÑ¹¼ì²â   	1
+Ð´ÈëÉú²úÈÕÆÚ        	CMD_CF         	Ð´ÈëÉú²úÈÕÆÚ                               	1000                     	01                     	01                     	String	01                     	PASS  	0.345000  	                	µçÑ¹¼ì²â   	1
+¶ÁÓ²¼þ°æ±¾²¢±È½Ï    	CMD_CF         	¶Á³öÓ²¼þ°æ±¾                               	1000                     	                       	0x00                   	String	PASS                   	FAIL  	0.334000  	                	Í¨ÐÅ       	1
+¶ÁÉú²úÈÕÆÚ²¢±È½Ï    	CMD_CF         	¶Á³öÉú²úÈÕÆÚ                               	1                        	PASS                   	PASS                   	String	PASS                   	PASS  	0.346000  	                	           	1
+Ð´Èë¹©Ó¦ÉÌ´úÂë      	CMD_CF         	Ð´Èë¹©Ó¦ÉÌ´úÂë                             	5                        	01                     	01                     	String	01                     	PASS  	0.349000  	                	           	1
+Ð´ÈëÁã²¿¼þºÅ        	CMD_CF         	Ð´ÈëÁã²¿¼þºÅ                               	1000                     	01                     	01                     	String	01                     	PASS  	0.339000  	                	Í¨ÐÅ       	1
+Ð´ÈëWIFIÃû³Æ        	CMD_CF         	Ð´ÈëWIFIÃû³Æ                               	0                        	01                     	01                     	      	01                     	PASS  	0.335000  	                	ACC_IO     	1
+Ð´ÈëWIFIÃÜÂë        	CMD_CF         	Ð´ÈëWIFIÃÜÂë                               	1                        	01                     	01                     	      	01                     	PASS  	0.333000  	                	           	1
+¶Á¹©Ó¦ÉÌ´úÂë²¢±È½Ï  	CMD_CF         	¶Á³ö¹©Ó¦ÉÌ´úÂë                             	1000                     	PASS                   	PASS                   	Hex   	PASS                   	PASS  	0.345000  	                	ACC_IO     	1
+¶ÁÁã²¿¼þºÅ²¢±È½Ï    	CMD_CF         	¶Á³öÁã²¿¼þºÅ                               	1                        	PASS                   	PASS                   	      	PASS                   	PASS  	0.334000  	                	ACC_IO     	1
+¶ÁWIFIÃû³Æ²¢±È½Ï    	CMD_CF         	¶Á³öWIFIÃû³Æ                               	1                        	PASS                   	PASS                   	      	FAIL                   	FAIL  	0.340000  	                	           	1
+¶ÁWIFIÃÜÂë²¢±È½Ï    	CMD_CF         	¶Á³öWIFIÃÜÂë                               	1000                     	PASS                   	PASS                   	Hex   	PASS                   	PASS  	0.341000  	                	ACC_IO     	1
+¶ÁWIFIµÄMACµØÖ·     	CMD_CF         	¶Á³öWIFI MACµØÖ·                           	1                        	17                     	17                     	      	5.00000                	FAIL  	0.342000  	´æµ½Reserved3ÖÐ 	CHARGE_WAKE	1
+±È½ÏMACµØÖ·         	WDataToDB      	È¡MACµØÖ·                                  	1000                     	PASS                   	PASS                   	Hex   	PASS                   	PASS  	0.021000  	                	CHARGE_WAKE	1
+ÑÓÊ±                	Delay          	0                                          	3                        	                       	                       	      	                       	Done  	3.017000  	                	CHARGE_WAKE	1
+WIFI/BTÄ£¿é×Ô¼ì     	CMD_CF         	WIFIÄ£¿é×Ô¼ì                               	1000                     	01                     	01                     	Hex   	01                     	PASS  	0.337000  	                	CHARGE_WAKE	1
+GPS¶¨Î»²éÑ¯         	CMD_CF         	GPS¶¨Î»²éÑ¯                                	1000                     	01                     	01                     	Hex   	01                     	PASS  	0.343000  	                	Flash      	1
+OPENÄ£¿é×Ô¼ì        	CMD_CF         	OPENÄ£¿é×Ô¼ì                               	1000                     	01                     	01                     	Hex   	01                     	PASS  	0.333000  	                	3GÄ£¿é     	1
+¶ÁÄ£¿éÐÅºÅÇ¿¶È      	CMD_CF         	ÉÏÍøÄ£¿éÐÅºÅÇ¿¶È                           	3000                     	13                     	30                     	Hex   	20.00000               	PASS  	0.343000  	                	3GÄ£¿é     	1
+Íâ²¿FLASH²âÊÔ       	CMD_CF         	Íâ²¿Flash²âÊÔ                              	1000                     	01                     	01                     	Hex   	01                     	PASS  	0.348000  	                	WIFIÄ£¿é   	1
+ÇÐ¶Ï±¸µç¹©µç        	CMD_CF         	ÇÐ¶Ï±¸µç¹©µç                               	1000                     	01                     	01                     	Hex   	00                     	FAIL  	1.721000  	                	GPS        	1
+¼ì²â±¸µçµçÑ¹        	CMD_CF         	¼ì²â±¸µçµçÑ¹                               	                         	20                     	36                     	String	0.00000                	FAIL  	1.091000  	                	Éú²úÐÅÏ¢   	1
+²éÑ¯Æ½Ì¨µÇÂ¼×´Ì¬    	CMD_CF         	²éÑ¯Æ½Ì¨µÇÂ¼×´Ì¬                           	1000                     	01                     	01                     	String	02                     	FAIL  	3.088000  	                	Éú²úÐÅÏ¢   	1
+ACCÖÃµÍ             	DOAction       	ACC                                        	1000                     	PASS                   	PASS                   	String	                       	Done  	0.018000  	                	Éú²úÐÅÏ¢   	1
+ÑÓÊ±                	Delay          	                                           	1                        	                       	                       	      	                       	Done  	1.017000  	                	           	1
+²éÑ¯ACC IO×´Ì¬      	CMD_CF         	²éÑ¯ACC IO×´Ì¬                             	1000                     	01                     	01                     	Hex   	01                     	PASS  	0.346000  	                	Éú²úÐÅÏ¢   	1
+ÑÓÊ±                	Delay          	                                           	1                        	                       	                       	      	                       	Done  	1.018000  	                	           	1
+ACCÖÃ¸ß             	DOAction       	ACC                                        	1                        	                       	                       	      	                       	Done  	0.020000  	                	ACC_IO     	1
+ÑÓÊ±                	Delay          	                                           	5                        	                       	                       	      	                       	Done  	5.016000  	                	           	1
+ÇÐ¶Ï±¸µç¹©µç        	CMD_CF         	ÇÐ¶Ï±¸µç¹©µç                               	1000                     	01                     	01                     	String	00                     	FAIL  	0.348000  	                	Í¨ÐÅ       	1
+ÍË³ö×Ô¶¯»¯²âÊÔ      	CMD_CF         	ÍË³ö×Ô¶¯»¯²âÊÔ                             	15                       	01                     	01                     	      	01                     	PASS  	0.350000  	                	           	1
+É±ËÀ×Ô¶¯»¯²âÊÔ½ø³Ì  	QuitProcess    	É±ËÀ×Ô¶¯»¯²âÊÔ½ø³Ì                         	1000                     	PASS                   	PASS                   	String	PASS                   	PASS  	2.149000  	                	µçÑ¹¼ì²â   	1
+ACCÖÃµÍ             	DOAction       	ACC                                        	0                        	                       	                       	      	                       	Done  	0.017000  	                	ACC_IO     	1
+¹Ø±ÕµçÔ´            	DOAction       	B+                                         	0                        	                       	                       	      	                       	Done  	0.035000  	                	           	1
+
+Í¨ÐÅÐÅÏ¢:Æô¶¯×Ô¶¯»¯²âÊÔ½ø³Ì£ºPASS
+·¢ËÍÆô¶¯×Ô¶¯»¯²âÊÔ:auto_test$IdType:0001$ValType:01$Value:
+·´À¡:auto_test$IdType:8001$ValType:01$Value:01
+
+·¢ËÍ²éÑ¯4G¹Ì¼þ°æ±¾:auto_test$IdType:0050$ValType:01$Value:
+·´À¡:auto_test$IdType:8050$ValType:01$Value:01EC20CEFAGR06A02M4G_OCPU
+
+·¢ËÍ²éÑ¯MCUÈí¼þ°æ±¾:auto_test$IdType:0051$ValType:01$Value:
+·´À¡:auto_test$IdType:8051$ValType:01$Value:01TB1805V1.00
+
+·¢ËÍ¶ÁOPENÈí¼þ°æ±¾:auto_test$IdType:004b$ValType:01$Value:
+·´À¡:auto_test$IdType:804b$ValType:01$Value:01TB1805V1.00
+
+TUIDºÍÖ¤Êé±àºÅÈë¿â: OK
+·¢ËÍÐ´ÈëÖ÷»úÌõÂë:auto_test$IdType:0033$ValType:01$Value:012
+·´À¡:auto_test$IdType:8033$ValType:01$Value:01
+
+·¢ËÍ¶Á³öCCID:auto_test$IdType:0037$ValType:01$Value:
+·´À¡:auto_test$IdType:8037$ValType:01$Value:0189860918700303144593
+
+CCIDÓëSNÈë¿â: OK
+¿âÖÐ¶ÁTUID¼°Ö¤Êé±àºÅ: OK
+·¢ËÍÐ´Èë³µÁ¾TUID:auto_test$IdType:004e$ValType:01$Value:34002001180314080000000014541533
+·´À¡:auto_test$IdType:804e$ValType:01$Value:01
+
+·¢ËÍÐ´ÈëÖ¤Êé±àºÅ:auto_test$IdType:0052$ValType:01$Value:08CAG2018031400000001
+·´À¡:auto_test$IdType:8052$ValType:01$Value:01
+
+ÏÂÔØÖ¤ÊéÎÄ¼þ: MD5Öµ
+0163c8a7c7e8d492386fb779a7fff4a2
+PASS
+ÏÂÔØÃØÔ¿ÎÄ¼þ: MD5Öµ
+22d8b6132e09976a0805b9adb9173c3d
+PASS
+·¢ËÍ¶Á³ö³µÁ¾TUID:auto_test$IdType:004f$ValType:01$Value:
+·´À¡:auto_test$IdType:804f$ValType:01$Value:0134002001180314080000000014541533
+
+·¢ËÍ¶Á³öÖ¤Êé±àºÅ:auto_test$IdType:0053$ValType:01$Value:
+·´À¡:auto_test$IdType:8053$ValType:01$Value:0108CAG2018031400000001
+
+ÉÏ´«Ö¤ÊéÎÄ¼þ²¢±È½Ï:  PASS
+ÉÏ´«ÃØÔ¿ÎÄ¼þ²¢±È½Ï:  PASS
+·¢ËÍ¶Á³öÖ÷»úÌõÂë:auto_test$IdType:0034$ValType:01$Value:
+·´À¡:auto_test$IdType:8034$ValType:01$Value:01
+
+·¢ËÍ¶Á³öÖ÷»úÌõÂë:auto_test$IdType:0034$ValType:01$Value:
+·´À¡:auto_test$IdType:8034$ValType:01$Value:01
+
+·¢ËÍ¶Á³öÖ÷»úÌõÂë:auto_test$IdType:0034$ValType:01$Value:
+·´À¡:auto_test$IdType:8034$ValType:01$Value:01
+
+·¢ËÍ¶Á³öÖ÷»úÌõÂë:auto_test$IdType:0034$ValType:01$Value:
+·´À¡:auto_test$IdType:8034$ValType:01$Value:01
+
+·¢ËÍ¶Á³öÖ÷»úÌõÂë:auto_test$IdType:0034$ValType:01$Value:
+·´À¡:auto_test$IdType:8034$ValType:01$Value:01
+
+·¢ËÍÐ´ÈëÓ²¼þ°æ±¾:auto_test$IdType:0040$ValType:01$Value:V0.2
+·´À¡:auto_test$IdType:8040$ValType:01$Value:01
+
+·¢ËÍÐ´ÈëÉú²úÈÕÆÚ:auto_test$IdType:0035$ValType:01$Value:20180919
+·´À¡:auto_test$IdType:8035$ValType:01$Value:01
+
+·¢ËÍ¶Á³öÓ²¼þ°æ±¾:auto_test$IdType:0041$ValType:01$Value:
+·´À¡:auto_test$IdType:8041$ValType:01$Value:01V0.2
+
+·¢ËÍ¶Á³öÉú²úÈÕÆÚ:auto_test$IdType:0036$ValType:01$Value:
+·´À¡:auto_test$IdType:8036$ValType:01$Value:0120180919
+
+
+·¢ËÍÐ´Èë¹©Ó¦ÉÌ´úÂë:auto_test$IdType:0054$ValType:01$Value:Seg1152
+·´À¡:auto_test$IdType:8054$ValType:01$Value:01
+
+·¢ËÍÐ´ÈëÁã²¿¼þºÅ:auto_test$IdType:0056$ValType:01$Value:LV0.1
+·´À¡:auto_test$IdType:8056$ValType:01$Value:01
+
+·¢ËÍÐ´ÈëWIFIÃû³Æ:auto_test$IdType:003a$ValType:01$Value:WIFI-180919-1454
+·´À¡:auto_test$IdType:803a$ValType:01$Value:01
+
+·¢ËÍÐ´ÈëWIFIÃÜÂë:auto_test$IdType:003b$ValType:01$Value:12345678
+·´À¡:auto_test$IdType:803b$ValType:01$Value:01
+
+·¢ËÍ¶Á³ö¹©Ó¦ÉÌ´úÂë:auto_test$IdType:0055$ValType:01$Value:
+·´À¡:auto_test$IdType:8055$ValType:01$Value:01Seg1152
+
+·¢ËÍ¶Á³öÁã²¿¼þºÅ:auto_test$IdType:0057$ValType:01$Value:
+·´À¡:auto_test$IdType:8057$ValType:01$Value:01LV0.1
+
+·¢ËÍ¶Á³öWIFIÃû³Æ:auto_test$IdType:003c$ValType:01$Value:
+·´À¡:auto_test$IdType:803c$ValType:01$Value:01
+
+
+·¢ËÍ¶Á³öWIFIÃÜÂë:auto_test$IdType:003d$ValType:01$Value:
+·´À¡:auto_test$IdType:803d$ValType:01$Value:0112345678
+
+
+·¢ËÍ¶Á³öWIFI MACµØÖ·:auto_test$IdType:0058$ValType:01$Value:
+·´À¡:auto_test$IdType:8058$ValType:01$Value:01¨›ÛMˆ
+
+±È½ÏMACµØÖ·: PASS
+·¢ËÍWIFIÄ£¿é×Ô¼ì:auto_test$IdType:000f$ValType:01$Value:
+·´À¡:auto_test$IdType:800f$ValType:01$Value:01
+
+·¢ËÍGPS¶¨Î»²éÑ¯:auto_test$IdType:0008$ValType:01$Value:
+·´À¡:auto_test$IdType:8008$ValType:01$Value:01
+
+·¢ËÍOPENÄ£¿é×Ô¼ì:auto_test$IdType:0059$ValType:01$Value:
+·´À¡:auto_test$IdType:8059$ValType:01$Value:01
+
+·¢ËÍÉÏÍøÄ£¿éÐÅºÅÇ¿¶È:auto_test$IdType:000d$ValType:01$Value:
+·´À¡:auto_test$IdType:800d$ValType:01$Value:0120
+
+
+·¢ËÍÍâ²¿Flash²âÊÔ:auto_test$IdType:0011$ValType:01$Value:
+·´À¡:auto_test$IdType:8011$ValType:01$Value:01
+
+·¢ËÍÇÐ¶Ï±¸µç¹©µç:auto_test$IdType:005a$ValType:01$Value:00
+·´À¡:auto_test$IdType:805a$ValType:01$Value:00
+
+·¢ËÍÇÐ¶Ï±¸µç¹©µç:auto_test$IdType:005a$ValType:01$Value:00
+·´À¡:auto_test$IdType:805a$ValType:01$Value:00
+
+·¢ËÍ¼ì²â±¸µçµçÑ¹:auto_test$IdType:005b$ValType:01$Value:
+·´À¡:auto_test$IdType:805b$ValType:01$Value:02
+
+·¢ËÍ¼ì²â±¸µçµçÑ¹:auto_test$IdType:005b$ValType:01$Value:
+·´À¡:auto_test$IdType:805b$ValType:01$Value:02
+
+·¢ËÍ¼ì²â±¸µçµçÑ¹:auto_test$IdType:005b$ValType:01$Value:
+·´À¡:auto_test$IdType:805b$ValType:01$Value:02
+
+·¢ËÍ²éÑ¯Æ½Ì¨µÇÂ¼×´Ì¬:auto_test$IdType:005d$ValType:01$Value:
+·´À¡:auto_test$IdType:805d$ValType:01$Value:02
+
+·¢ËÍ²éÑ¯Æ½Ì¨µÇÂ¼×´Ì¬:auto_test$IdType:005d$ValType:01$Value:
+·´À¡:auto_test$IdType:805d$ValType:01$Value:02
+
+·¢ËÍ²éÑ¯Æ½Ì¨µÇÂ¼×´Ì¬:auto_test$IdType:005d$ValType:01$Value:
+·´À¡:auto_test$IdType:805d$ValType:01$Value:02
+
+·¢ËÍ²éÑ¯ACC IO×´Ì¬:auto_test$IdType:0005$ValType:01$Value:
+·´À¡:auto_test$IdType:8005$ValType:01$Value:01
+
+·¢ËÍÇÐ¶Ï±¸µç¹©µç:auto_test$IdType:005a$ValType:01$Value:00
+·´À¡:auto_test$IdType:805a$ValType:01$Value:00
+
+·¢ËÍÍË³ö×Ô¶¯»¯²âÊÔ:auto_test$IdType:0002$ValType:01$Value:
+·´À¡:auto_test$IdType:8002$ValType:01$Value:01
+

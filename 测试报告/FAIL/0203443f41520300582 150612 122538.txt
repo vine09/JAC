@@ -1,0 +1,40 @@
+--SN:0203443f41520300582
+--Date and Time:2015-6-12 12:25
+--Tester:Slot2
+--OperatorID:
+--CycleTime:34
+--TestResult:
+测试项目	测试名称	测量值	下限值	上限值	测试结果
+3G模块  	等待启动	FAIL  	      	      	FAIL    
+        	        	      	      	      	        
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]	[下限值]                       	[上限值]                       	[单位]	[测量值]                       	[结果]	[测试时间]	[备注]	[测试项目]	 
+气缸推进           	DOAction       	CylinderCtrl        	1         	                               	                               	      	                               	Done  	0.018000  	      	          	1
+打开电源           	DOAction       	B+                  	1         	                               	                               	      	                               	Done  	0.022000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1         	                               	                               	      	                               	Done  	0.022000  	      	ACC_IO    	1
+退出自动化测试     	CMD            	退出自动化测试      	1000      	                               	0x01                           	Hex   	                               	PASS  	1.022000  	      	通信      	1
+延时               	Delay          	                    	15        	                               	                               	      	                               	Done  	15.023000 	      	          	1
+查询版本           	CMD            	查询版本            	1000      	TGS80_H240@16:55:36-Jun 10 2015	TGS80_H240@16:55:36-Jun 10 2015	String	TGS80_H240@16:55:36-Jun 10 2015	PASS  	0.136000  	      	版本      	1
+启动自动化测试     	CMD            	启动自动化测试      	1000      	OK                             	OK                             	String	OK                             	PASS  	0.140000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000      	11.5                           	12.5                           	V     	12.07000                       	PASS  	0.442000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000      	0x01                           	0x01                           	Hex   	0x01                           	PASS  	0.947000  	      	通信      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000      	1                              	1.636                          	V     	1.43800                        	PASS  	0.445000  	      	电压检测  	1
+等待启动           	FindSIMCOMETH  	                    	30        	                               	                               	      	FAIL                           	FAIL  	15.031000 	      	3G模块    	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:0F00020002F0
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H240@16:55:36-Jun 10 2015
+	1, 0x00000001
+cmd>
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F801602042E96F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010191F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F801402059E95F0

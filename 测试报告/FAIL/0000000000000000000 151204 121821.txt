@@ -1,0 +1,48 @@
+--SN:0000000000000000000
+--Date and Time:2015-12-4 12:18
+--Tester:Slot1
+--OperatorID:
+--CycleTime:33
+--TestResult:
+测试项目	测试名称	测量值                 	下限值	上限值	测试结果               	  	    	                       	  	    	    
+版本    	查询版本	TGS80_H243@09:26:50-Jul	14    	2015  	TGS80_H240@16:55:36-Jun	10	2015	TGS80_H240@16:55:36-Jun	10	2015	FAIL
+电流    	测量电流	0.17972                	0.2   	0.4   	FAIL                   	  	    	                       	  	    	    
+        	        	                       	      	      	                       	  	    	                       	  	    	    
+
+[测试名称]     	[TestItem ITEM]	[通道]              	[设置参数]  	[下限值]                       	[上限值]                       	[单位]	[测量值]                       	[结果]	[测试时间]	[备注]	[测试项目]	 
+气缸推进       	DOAction       	CylinderCtrl        	1           	                               	                               	      	                               	Done  	0.022000  	      	          	1
+打开电源       	DOAction       	B+                  	1           	                               	                               	      	                               	Done  	0.032000  	      	          	1
+ACC置高        	DOAction       	ACC                 	1           	                               	                               	      	                               	Done  	0.019000  	      	ACC_IO    	1
+退出自动化测试 	CMD            	退出自动化测试      	1000        	                               	0x01                           	Hex   	                               	PASS  	1.240000  	      	通信      	1
+延时           	Delay          	                    	15          	                               	                               	      	                               	Done  	15.023000 	      	          	1
+查询版本       	CMD            	查询版本            	1000        	TGS80_H240@16:55:36-Jun 10 2015	TGS80_H240@16:55:36-Jun 10 2015	String	TGS80_H243@09:26:50-Jul 14 2015	FAIL  	2.593000  	      	版本      	1
+启动自动化测试 	CMD            	启动自动化测试      	1000        	OK                             	OK                             	String	OK                             	PASS  	0.221000  	      	通信      	1
+查询BAT_DET电压	CMD            	查询BAT_DET状态     	1000        	11.5                           	12.5                           	V     	12.44400                       	PASS  	0.420000  	      	电压检测  	1
+CHARGE_CTL输出 	CMD            	CHARGE_CTL输出高电平	1000        	0x01                           	0x01                           	Hex   	0x01                           	PASS  	0.944000  	      	通信      	1
+测量电流       	MeaCurrent     	Current             	Differential	0.2                            	0.4                            	A     	0.17972                        	FAIL  	12.567000 	      	电流      	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:0F00020002F0
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H243@09:26:50-Jul 14 2015
+	1, 0x00000001
+cmd>
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H243@09:26:50-Jul 14 2015
+	1, 0x00000001
+cmd>
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H243@09:26:50-Jul 14 2015
+	1, 0x00000001
+cmd>
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F801602045090F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010196F0

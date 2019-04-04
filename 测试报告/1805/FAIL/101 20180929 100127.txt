@@ -1,0 +1,51 @@
+--SN:101
+--Date and Time:2018-9-29 10:01
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:32
+--TestResult:
+
+[测试名称]        	[TestItem ITEM]	[通道]        	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction       	B+            	1         	        	        	      	        	Done  	0.023000  	      	          	1
+ACC置高           	DOAction       	ACC           	1         	        	        	      	        	Done  	0.013000  	      	ACC_IO    	1
+延时              	Delay          	              	25        	        	        	      	        	Done  	25.011000 	      	          	1
+启动自动化测试进程	StartProcess   	1000          	5;100     	PASS    	PASS    	String	PASS    	PASS  	0.970000  	      	通信      	1
+启动自动化测试    	CMD_CF         	启动自动化测试	1000      	01      	01      	String	01      	PASS  	0.331000  	      	通信      	1
+延时              	Delay          	              	5         	        	        	      	        	Done  	5.015000  	      	          	1
+
+通信信息:启动自动化测试进程：PASS
+COM8: 退出进程
+反馈：>>>>kill OK
+killallok
+Killed
+root@mdm9607-perf:~# 
+COM8
+退出系统：
+反馈：exit
+
+COM8
+输入用户名：root
+反馈：
+
+msm 201805122142 mdm9607-perf /dev/ttyHSL0
+
+
+
+mdm9607-perf login: root
+Password: 
+COM8
+输入密码：quectel123
+反馈：
+root@mdm9607-perf:~# 
+COM8
+启动进程：
+反馈：/data/QuecOpen/local_data
+>>>>>start ok
+ip == 192.168.100.1, port == 22222
+bind socket failed!
+: Cannot assign requested address
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+

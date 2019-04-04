@@ -1,0 +1,80 @@
+--SN:0
+--Date and Time:2015-1-15 20:03
+--Tester:Slot1
+--OperatorID:
+--CycleTime:55
+--TestResult:
+测试项目	测试名称           	测量值	下限值	上限值	测试结果
+电压检测	查询BAT7.2V_DET电压	0xD0  	0x01  	0x01  	FAIL    
+电压检测	查询BAT7.2V_DET电压	0xC0  	0x01  	0x01  	FAIL    
+        	                   	      	      	      	        
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]  	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+气缸推进           	DOAction       	CylinderCtrl        	1           	        	        	      	        	Done  	0.008000  	      	          	1
+打开电源           	DOAction       	B+                  	1           	        	        	      	        	Done  	0.011000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1           	        	        	      	        	Done  	0.020000  	      	ACC IO    	1
+延时               	Delay          	                    	10          	        	        	      	        	Done  	10.017000 	      	CAN       	1
+启动自动化测试     	CMD            	启动自动化测试      	1000        	OK      	OK      	String	OK      	PASS  	0.235000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.336000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.941000  	      	通信      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	0x01    	0x01    	Hex   	0xD0    	FAIL  	2.004000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出低电平	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	2.919000  	      	通信      	1
+查询MEID           	USBCMD         	查询MEID            	1000        	OK      	OK      	String	PASS    	PASS  	18.559000 	      	3G模块    	1
+BATVCC_CTL输出     	CMD            	BATVCC_CTL输出高电平	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.914000  	      	通信      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	0x01    	0x01    	Hex   	0xC0    	FAIL  	1.935000  	      	电压检测  	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.517000  	      	电压检测  	1
+BATVCC_CTL输出     	CMD            	BATVCC_CTL输出低电平	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	1.016000  	      	电压检测  	1
+打开电源           	DOAction       	B+                  	1           	        	        	      	        	Done  	0.004000  	      	          	1
+测量电流           	MeaCurrent     	Current             	Differential	0.1     	0.3     	A     	0.18970 	PASS  	3.456000  	      	电流      	1
+测量电流           	MeaCurrent     	Current             	Differential	0.1     	0.3     	A     	0.18783 	PASS  	3.396000  	      	电流      	1
+ACC置低            	DOAction       	ACC                 	0           	        	        	      	        	Done  	0.002000  	      	ACC IO    	1
+延时               	Delay          	                    	1           	        	        	      	        	Done  	1.000000  	      	          	1
+ACC状态查询        	CMD            	查询ACC状态         	1000        	0x02    	0x02    	Hex   	0x02    	PASS  	1.535000  	      	ACC IO    	1
+ACC置高            	DOAction       	ACC                 	1           	        	        	      	        	Done  	0.004000  	      	ACC IO    	1
+延时               	Delay          	                    	1           	        	        	      	        	Done  	1.000000  	      	          	1
+ACC状态查询        	CMD            	查询ACC状态         	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.514000  	      	ACC IO    	1
+CSH无效            	Signal         	CSH                 	正常        	        	        	      	        	Done  	1.207000  	      	CSH检测   	1
+CSH状态查询        	CMD            	查询CSH状态         	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.119000  	      	CSH检测   	1
+CSH有效            	Signal         	CSH                 	碰撞        	        	        	      	        	Done  	2.908000  	      	CSH检测   	1
+
+通信信息:发送启动自动化测试:746573746D6F64652831290D
+反馈:746573746D6F64652831290D0A09302C20307830303030303030300D0A636D643E
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010197F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010196F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205D093F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205D093F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010296F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010196F0
+发送 查询MEID:AT+SMEID?
+反馈:
+
+发送 查询MEID:AT+SMEID?
+反馈:
++SMEID: A1000021A5EB72
+
+OK
+
+发送BATVCC_CTL输出高电平:0F0015010115F0
+反馈:0F8015010194F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205C393F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140205C093F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010197F0
+发送BATVCC_CTL输出低电平:0F0015010014F0
+反馈:0F8015010194F0
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010184F0
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010284F0
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010184F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010187F0

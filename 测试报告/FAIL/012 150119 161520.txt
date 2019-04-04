@@ -1,0 +1,40 @@
+--SN:012
+--Date and Time:2015-1-19 16:15
+--Tester:Slot1
+--OperatorID:
+--CycleTime:26
+--TestResult:
+测试项目	测试名称           	测量值	下限值	上限值	测试结果
+电压检测	查询BAT7.2V_DET电压	0x04F5	0x0550	0x0664	FAIL    
+3G模块  	设置RTRECF         	FAIL  	OK    	OK    	FAIL    
+        	                   	      	      	      	        
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]  	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源           	DOAction       	B+                  	1           	        	        	      	        	Done  	0.008000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1           	        	        	      	        	Done  	0.011000  	      	ACC IO    	1
+延时               	Delay          	                    	5           	        	        	      	        	Done  	5.012000  	      	CAN       	1
+测量电流           	MeaCurrent     	Current             	Differential	.1      	.5      	A     	0.27473 	PASS  	1.191000  	      	电流      	1
+延时               	Delay          	                    	10          	        	        	      	        	Done  	10.014000 	      	CAN       	1
+启动自动化测试     	CMD            	启动自动化测试      	1000        	OK      	OK      	String	OK      	PASS  	0.222000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	0.119000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	1.023000  	      	通信      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	0x0550  	0x0664  	Hex   	0x04F5  	FAIL  	1.964000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出低电平	1000        	0x01    	0x01    	Hex   	0x01    	PASS  	2.970000  	      	通信      	1
+设置RTRECF         	USBCMD         	设置RTRECF          	1000        	OK      	OK      	String	FAIL    	FAIL  	3.108000  	      	3G模块    	1
+
+通信信息:发送启动自动化测试:746573746D6F64652831290D
+反馈:746573746D6F64652831290D0A09302C20307830303030303030300D0A636D643E
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010197F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010196F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140204F592F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140204F592F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010296F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010196F0
+发送 设置RTRECF:AT+RTRECF=1
+反馈:

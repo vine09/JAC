@@ -1,0 +1,280 @@
+--SN:100
+--Date and Time:2018-10-10 11:06
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:142
+--TestResult:
+测试项目	测试名称        	测量值 	下限值	上限值	测试结果
+        	测试工作电流    	0.00000	100   	500   	FAIL    
+电压检测	检测备电电压    	1.80000	2     	3.6   	FAIL    
+电压检测	检测备电电压    	1.80000	2     	3.6   	FAIL    
+生产信息	WIFI网络自动测试	FAIL   	PASS  	PASS  	FAIL    
+生产信息	查询平台登录状态	02     	01    	01    	FAIL    
+静态电流	测试静态电流    	0.00000	0.01  	3     	FAIL    
+        	                	       	      	      	        
+
+[测试名称]          	[TestItem ITEM]  	[通道]                                     	[设置参数]               	[下限值]               	[上限值]               	[单位] 	[测量值]               	[结果]	[测试时间]	[备注]          	[测试项目]	 
+打开电源            	DOAction         	B+                                         	1                        	                       	                       	       	                       	Done  	0.009000  	                	          	1
+ACC置高             	DOAction         	ACC                                        	1                        	                       	                       	       	                       	Done  	0.012000  	                	          	1
+测试工作电流        	Static Current   	GDM-8341                                   	                         	100                    	500                    	ma     	0.00000                	FAIL  	3.479000  	                	          	1
+延时                	Delay            	                                           	25                       	                       	                       	       	                       	Done  	25.011000 	                	          	1
+启动自动化测试进程  	StartProcess     	100                                        	5;100                    	PASS                   	PASS                   	String 	PASS                   	PASS  	3.665000  	                	通信      	1
+启动自动化测试      	CMD_CF           	启动自动化测试                             	1000                     	01                     	01                     	String 	01                     	PASS  	0.221000  	                	通信      	1
+延时                	Delay            	                                           	5                        	                       	                       	       	                       	Done  	5.014000  	                	          	1
+查询4G固件版本      	CMD_CF           	查询4G固件版本                             	1000                     	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	Hex    	EC20CEFAGR06A02M4G_OCPU	PASS  	0.222000  	                	版本信息  	1
+查询MCU软件版本     	CMD_CF           	查询MCU软件版本                            	1000                     	TB1805V1.00            	TB1805V1.00            	V      	TB1805V1.00            	PASS  	0.223000  	                	版本信息  	1
+查询OPEN软件版本    	CMD_CF           	读OPEN软件版本                             	1000                     	TB1805V1.00            	TB1805V1.00            	Hex    	TB1805V1.00            	PASS  	0.224000  	                	版本信息  	1
+CheckSN             	CheckSN          	                                           	                         	                       	                       	Hex    	PASS                   	PASS  	18.655000 	                	          	1
+TUID和证书编号入库  	WDataToDB        	D:\File\08CAG2018031400000001等19个证书文件	证书列表.txt;4G T-BOX.txt	OK                     	OK                     	Hex    	OK                     	PASS  	0.346000  	                	信息入库  	1
+写入主机条码        	CMD_CF           	写入主机条码                               	1000                     	01                     	01                     	Hex    	01                     	PASS  	0.225000  	                	生产信息  	1
+FindSim             	FindSIMCOMETH_CAn	找SIM模块                                  	1000                     	PASS                   	PASS                   	Hex    	PASS                   	PASS  	0.515000  	                	SIM模块   	1
+读出CCID            	CMD_CF           	读出CCID                                   	1000                     	PASS                   	PASS                   	Hex    	PASS                   	PASS  	0.224000  	                	生产信息  	1
+CCID与SN入库        	WDataToDB        	CCIDTODB                                   	                         	OK                     	OK                     	String 	OK                     	PASS  	0.126000  	                	信息入库  	1
+库中读TUID及证书编号	WDataToDB        	获取TUID及证书编号                         	1000                     	OK                     	OK                     	Hex    	OK                     	PASS  	0.035000  	                	信息入库  	1
+写入TUID            	CMD_CF           	写入车辆TUID                               	500                      	01                     	01                     	Hex    	01                     	PASS  	0.228000  	                	生产信息  	1
+写入证书编号        	CMD_CF           	写入证书编号                               	500                      	01                     	01                     	Hex    	01                     	PASS  	0.226000  	                	生产信息  	1
+下载证书文件        	FileTransfer     	D:\File\08CAG2018031400000001等19个证书文件	500;0                    	                       	                       	Hex    	PASS                   	PASS  	2.053000  	MD5值存Reserved1	文件下载  	1
+下载秘钥文件        	FileTransfer     	D:\File\08CAG2018031400000001等19个证书文件	1000;0                   	                       	                       	Hex    	PASS                   	PASS  	2.275000  	MD5值存Reserved2	文件下载  	1
+读条码并比较        	CMD_CF           	读出主机条码                               	500                      	PASS                   	PASS                   	String 	PASS                   	PASS  	0.224000  	                	生产信息  	1
+读出TUID并比较      	CMD_CF           	读出车辆TUID                               	                         	PASS                   	PASS                   	Hex    	PASS                   	PASS  	0.224000  	                	生产信息  	1
+读出证书编号并比较  	CMD_CF           	读出证书编号                               	                         	PASS                   	PASS                   	Hex    	PASS                   	PASS  	0.225000  	                	生产信息  	1
+延时                	Delay            	                                           	1                        	                       	                       	       	                       	Done  	1.016000  	                	          	1
+上传证书文件并比较  	FileReceive      	/media/card;D:\File\DownLoad               	0                        	PASS                   	PASS                   	String 	PASS                   	PASS  	7.083000  	                	文件上载  	1
+上传秘钥文件并比较  	FileReceive      	/media/card;D:\File\DownLoad               	0                        	PASS                   	PASS                   	String 	PASS                   	PASS  	5.172000  	                	文件上载  	1
+写入硬件版本        	CMD_CF           	写入硬件版本                               	500                      	01                     	01                     	String 	01                     	PASS  	0.225000  	                	生产信息  	1
+写入生产日期        	CMD_CF           	写入生产日期                               	1000                     	01                     	01                     	String 	01                     	PASS  	0.225000  	                	生产信息  	1
+读硬件版本并比较    	CMD_CF           	读出硬件版本                               	1000                     	PASS                   	PASS                   	String 	PASS                   	PASS  	0.225000  	                	生产信息  	1
+读生产日期并比较    	CMD_CF           	读出生产日期                               	1                        	PASS                   	PASS                   	String 	PASS                   	PASS  	0.223000  	                	生产信息  	1
+写入供应商代码      	CMD_CF           	写入供应商代码                             	5                        	01                     	01                     	String 	01                     	PASS  	0.225000  	                	生产信息  	1
+写入零部件号        	CMD_CF           	写入零部件号                               	1000                     	01                     	01                     	String 	01                     	PASS  	0.225000  	                	生产信息  	1
+写入WIFI名称        	CMD_CF           	写入WIFI名称                               	0                        	01                     	01                     	       	01                     	PASS  	0.225000  	                	生产信息  	1
+写入WIFI密码        	CMD_CF           	写入WIFI密码                               	1                        	01                     	01                     	       	01                     	PASS  	0.225000  	                	生产信息  	1
+延时                	Delay            	                                           	6                        	                       	                       	       	                       	Done  	6.017000  	                	          	1
+读供应商代码并比较  	CMD_CF           	读出供应商代码                             	1000                     	PASS                   	PASS                   	Hex    	PASS                   	PASS  	0.223000  	                	生产信息  	1
+读零部件号并比较    	CMD_CF           	读出零部件号                               	1                        	PASS                   	PASS                   	       	PASS                   	PASS  	0.224000  	                	生产信息  	1
+读WIFI名称并比较    	CMD_CF           	读出WIFI名称                               	1                        	PASS                   	PASS                   	       	PASS                   	PASS  	0.224000  	                	生产信息  	1
+读WIFI密码并比较    	CMD_CF           	读出WIFI密码                               	1000                     	PASS                   	PASS                   	Hex    	PASS                   	PASS  	0.224000  	                	生产信息  	1
+读WIFI的MAC地址     	CMD_CF           	读出WIFI MAC地址                           	1                        	17                     	17                     	       	17.00000               	PASS  	0.224000  	存到Reserved3中 	生产信息  	1
+比较MAC地址         	WDataToDB        	取MAC地址                                  	1000                     	PASS                   	PASS                   	Hex    	PASS                   	PASS  	0.035000  	                	生产信息  	1
+延时                	Delay            	0                                          	3                        	                       	                       	       	                       	Done  	3.016000  	                	          	1
+WIFI/BT模块自检     	CMD_CF           	WIFI模块自检                               	1000                     	01                     	01                     	Hex    	01                     	PASS  	0.225000  	                	通信      	1
+CAN                 	CANTest          	00000666;00000667                          	0011223344556677         	55555555AAAAAAAA       	55555555AAAAAAAA       	String 	55555555AAAAAAAA       	PASS  	2.008000  	                	CAN       	1
+GPS定位查询         	CMD_CF           	GPS定位查询                                	1000                     	01                     	01                     	Hex    	01                     	PASS  	0.224000  	                	GPS       	1
+OPEN模块自检        	CMD_CF           	OPEN模块自检                               	1000                     	01                     	01                     	Hex    	01                     	PASS  	0.224000  	                	3G模块    	1
+读模块信号强度      	CMD_CF           	上网模块信号强度                           	1000                     	13                     	30                     	Hex    	21.00000               	PASS  	2.367000  	                	3G模块    	1
+外部FLASH测试       	CMD_CF           	外部Flash测试                              	1000                     	01                     	01                     	Hex    	01                     	PASS  	0.225000  	                	          	1
+CHARGE_CTL置低      	CMD_CF           	CHARGE_CTL置低                             	1000                     	01                     	01                     	Hex    	01                     	PASS  	0.223000  	                	          	1
+BATVCC_CTL置低      	CMD_CF           	切断备电供电                               	                         	01                     	01                     	String 	01                     	PASS  	0.225000  	                	          	1
+延时                	Delay            	0                                          	2                        	                       	                       	       	                       	Done  	2.017000  	                	          	1
+检测备电电压        	CMD_CF           	检测备电电压                               	2000                     	0.01                   	0.5                    	String 	0.30000                	PASS  	0.225000  	                	电压检测  	1
+CHARGE_CTL置低      	CMD_CF           	CHARGE_CTL置低                             	1000                     	01                     	01                     	Hex    	01                     	PASS  	0.225000  	                	          	1
+BATVCC_CTL置高      	CMD_CF           	恢复备电供电                               	                         	01                     	01                     	String 	01                     	PASS  	0.223000  	                	          	1
+延时                	Delay            	0                                          	3                        	                       	                       	       	                       	Done  	3.015000  	                	          	1
+检测备电电压        	CMD_CF           	检测备电电压                               	2000                     	2                      	3.6                    	String 	1.80000                	FAIL  	4.706000  	                	电压检测  	1
+CHARGE_CTL置高      	CMD_CF           	CHARGE_CTL置高                             	1000                     	01                     	01                     	Hex    	01                     	PASS  	0.223000  	                	          	1
+延时                	Delay            	0                                          	3                        	                       	                       	       	                       	Done  	3.015000  	                	          	1
+检测备电电压        	CMD_CF           	检测备电电压                               	2000                     	2                      	3.6                    	String 	1.80000                	FAIL  	4.709000  	                	电压检测  	1
+检测B+电源电压      	CMD_CF           	检测B+电源电压                             	1000                     	11                     	13                     	String 	12.20000               	PASS  	0.223000  	                	          	1
+WIFI网络自动测试    	Wifi_Ping        	baidu.com                                  	2                        	PASS                   	PASS                   	String 	FAIL                   	FAIL  	10.071000 	                	生产信息  	1
+查询平台登录状态    	CMD_CF           	查询平台登录状态                           	1000                     	01                     	01                     	String 	02                     	FAIL  	2.710000  	                	生产信息  	1
+SRS检测             	SRSTest          	SRS碰撞检测;Reset                          	10;20                    	01                     	01                     	String 	01                     	PASS  	1.724000  	                	碰撞检测  	1
+查询ACC IO状态      	CMD_CF           	查询ACC IO状态                             	1000                     	01                     	01                     	Hex    	01                     	PASS  	0.224000  	                	生产信息  	1
+ACC置低             	DOAction         	ACC                                        	0                        	PASS                   	PASS                   	String 	                       	Done  	0.018000  	                	          	1
+延时                	Delay            	                                           	5                        	                       	                       	       	                       	Done  	5.017000  	                	          	1
+测试静态电流        	Static Current   	GDM-8341                                   	1000                     	0.01                   	3                      	Hex    	0.00000                	FAIL  	3.464000  	                	静态电流  	1
+ACC置高             	DOAction         	ACC                                        	1                        	                       	                       	       	                       	Done  	0.017000  	                	          	1
+延时                	Delay            	                                           	1                        	                       	                       	       	                       	Done  	1.017000  	                	          	1
+退出自动化测试      	CMD_CF           	退出自动化测试                             	15                       	01                     	01                     	       	01                     	PASS  	0.224000  	                	          	1
+杀死自动化测试进程  	QuitProcess      	杀死自动化测试进程                         	1000                     	PASS                   	PASS                   	String 	PASS                   	PASS  	2.017000  	                	          	1
+ACC置低             	DOAction         	ACC                                        	0                        	                       	                       	       	                       	Done  	0.016000  	                	          	1
+关闭电源            	DOAction         	B+                                         	0                        	                       	                       	       	                       	Done  	0.016000  	                	          	1
+
+通信信息:启动自动化测试进程：PASS
+COM4: 退出进程
+反馈：killall
+Password: 
+COM4
+退出系统：
+反馈：
+
+COM4
+输入用户名：root
+反馈：root
+
+COM4
+输入密码：quectel123
+反馈：
+root@mdm9607-perf:~# 
+COM4
+启动进程：
+反馈：/data/QuecOpen/local_data
+>>>>>start ok
+ip == 192.168.100.1, port == 22222
+bind socket failed!
+: Cannot assign requested address
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01EC20CEFAGR06A02M4G_OCPU
+
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test$IdType:8051$ValType:01$Value:01TB1805V1.00
+
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01TB1805V1.00
+
+TUID和证书编号入库: OK
+发送写入主机条码:auto_test$IdType:0033$ValType:01$Value:100
+反馈:auto_test$IdType:8033$ValType:01$Value:01
+
+FindSim: COM67
+发送读出CCID:auto_test$IdType:0037$ValType:01$Value:
+反馈:auto_test$IdType:8037$ValType:01$Value:0189860117750042506585
+
+CCID与SN入库: OK
+库中读TUID及证书编号: OK
+发送写入车辆TUID:auto_test$IdType:004e$ValType:01$Value:34002001180314080000000014541533
+反馈:auto_test$IdType:804e$ValType:01$Value:01
+
+发送写入证书编号:auto_test$IdType:0052$ValType:01$Value:08CAG2018031400000001
+反馈:auto_test$IdType:8052$ValType:01$Value:01
+
+下载证书文件: MD5值
+0163c8a7c7e8d492386fb779a7fff4a2
+PASS
+下载秘钥文件: MD5值
+22d8b6132e09976a0805b9adb9173c3d
+PASS
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test$IdType:8034$ValType:01$Value:01100
+
+发送读出车辆TUID:auto_test$IdType:004f$ValType:01$Value:
+反馈:auto_test$IdType:804f$ValType:01$Value:0134002001180314080000000014541533
+
+发送读出证书编号:auto_test$IdType:0053$ValType:01$Value:
+反馈:auto_test$IdType:8053$ValType:01$Value:0108CAG2018031400000001
+
+上传证书文件并比较:  PASS
+上传秘钥文件并比较:  PASS
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:8040$ValType:01$Value:01
+
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20181010
+反馈:auto_test$IdType:8035$ValType:01$Value:01
+
+发送读出硬件版本:auto_test$IdType:0041$ValType:01$Value:
+反馈:auto_test$IdType:8041$ValType:01$Value:01V0.2
+
+发送读出生产日期:auto_test$IdType:0036$ValType:01$Value:
+反馈:auto_test$IdType:8036$ValType:01$Value:0120181010
+
+
+发送写入供应商代码:auto_test$IdType:0054$ValType:01$Value:Seg1152
+反馈:auto_test$IdType:8054$ValType:01$Value:01
+
+发送写入零部件号:auto_test$IdType:0056$ValType:01$Value:LV0.1
+反馈:auto_test$IdType:8056$ValType:01$Value:01
+
+发送写入WIFI名称:auto_test$IdType:003a$ValType:01$Value:WIFI-180314-1454
+反馈:auto_test$IdType:803a$ValType:01$Value:01
+
+发送写入WIFI密码:auto_test$IdType:003b$ValType:01$Value:12345678
+反馈:auto_test$IdType:803b$ValType:01$Value:01
+
+发送读出供应商代码:auto_test$IdType:0055$ValType:01$Value:
+反馈:auto_test$IdType:8055$ValType:01$Value:01Seg1152
+
+发送读出零部件号:auto_test$IdType:0057$ValType:01$Value:
+反馈:auto_test$IdType:8057$ValType:01$Value:01LV0.1
+
+发送读出WIFI名称:auto_test$IdType:003c$ValType:01$Value:
+反馈:auto_test$IdType:803c$ValType:01$Value:01WIFI-180314-1454
+
+
+发送读出WIFI密码:auto_test$IdType:003d$ValType:01$Value:
+反馈:auto_test$IdType:803d$ValType:01$Value:0112345678
+
+
+发送读出WIFI MAC地址:auto_test$IdType:0058$ValType:01$Value:
+反馈:auto_test$IdType:8058$ValType:01$Value:01A4:86:AE:F7:EB:0F
+
+比较MAC地址: PASS
+发送WIFI模块自检:auto_test$IdType:000f$ValType:01$Value:
+反馈:auto_test$IdType:800f$ValType:01$Value:01
+
+CAN发送:ID:00000666;00000667DATA:0011223344556677
+发送GPS定位查询:auto_test$IdType:0008$ValType:01$Value:
+反馈:auto_test$IdType:8008$ValType:01$Value:01
+
+发送OPEN模块自检:auto_test$IdType:0059$ValType:01$Value:
+反馈:auto_test$IdType:8059$ValType:01$Value:01
+
+发送上网模块信号强度:auto_test$IdType:000d$ValType:01$Value:
+反馈:auto_test
+发送上网模块信号强度:auto_test$IdType:000d$ValType:01$Value:
+反馈:auto_test$IdType:800d$ValType:01$Value:0121
+
+
+发送外部Flash测试:auto_test$IdType:0011$ValType:01$Value:
+反馈:auto_test$IdType:8011$ValType:01$Value:01
+
+发送CHARGE_CTL置低:auto_test$IdType:0017$ValType:01$Value:00
+反馈:auto_test$IdType:8017$ValType:01$Value:01
+
+发送切断备电供电:auto_test$IdType:0015$ValType:01$Value:00
+反馈:auto_test$IdType:8015$ValType:01$Value:01
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:01
+
+发送CHARGE_CTL置低:auto_test$IdType:0017$ValType:01$Value:00
+反馈:auto_test$IdType:8017$ValType:01$Value:01
+
+发送恢复备电供电:auto_test$IdType:0015$ValType:01$Value:01
+反馈:auto_test$IdType:8015$ValType:01$Value:01
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:01
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:01
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:01
+
+发送CHARGE_CTL置高:auto_test$IdType:0017$ValType:01$Value:01
+反馈:auto_test$IdType:8017$ValType:01$Value:01
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:01
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:01
+
+发送检测备电电压:auto_test$IdType:005b$ValType:01$Value:
+反馈:auto_test$IdType:805b$ValType:01$Value:01
+
+发送检测B+电源电压:auto_test$IdType:005c$ValType:01$Value:
+反馈:auto_test$IdType:805c$ValType:01$Value:01z
+
+WIFI连接失败！WIFI连接失败！WIFI连接失败！发送查询平台登录状态:auto_test$IdType:005d$ValType:01$Value:
+反馈:auto_test$IdType:805d$ValType:01$Value:02
+
+发送查询平台登录状态:auto_test$IdType:005d$ValType:01$Value:
+反馈:auto_test$IdType:805d$ValType:01$Value:02
+
+发送查询平台登录状态:auto_test$IdType:005d$ValType:01$Value:
+反馈:auto_test$IdType:805d$ValType:01$Value:02
+
+发送SRS碰撞检测:auto_test$IdType:005e$ValType:01$Value:
+反馈:auto_test$IdType:805e$ValType:01$Value:01
+
+发送查询ACC IO状态:auto_test$IdType:0005$ValType:01$Value:
+反馈:auto_test$IdType:8005$ValType:01$Value:01
+
+发送退出自动化测试:auto_test$IdType:0002$ValType:01$Value:
+反馈:auto_test$IdType:8002$ValType:01$Value:01
+

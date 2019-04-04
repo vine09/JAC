@@ -1,0 +1,89 @@
+--SN:100
+--Date and Time:2019-3-6 16:26
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:41
+--TestResult:
+测试项目	测试名称          	测量值	下限值	上限值	测试结果
+通信    	启动自动化测试进程	FAIL  	PASS  	PASS  	FAIL    
+        	                  	      	      	      	        
+
+[测试名称]        	[TestItem ITEM]	[通道]	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction       	B+    	1         	        	        	      	        	Done  	0.063000  	      	          	1
+ACC置高           	DOAction       	ACC   	1         	        	        	      	        	Done  	0.012000  	      	          	1
+延时              	Delay          	      	25        	        	        	      	        	Done  	25.016000 	      	          	1
+启动自动化测试进程	StartProcess   	100   	5;100     	PASS    	PASS    	String	FAIL    	FAIL  	16.204000 	      	通信      	1
+
+通信信息:启动自动化测试进程：FAIL
+COM62: 退出进程
+反馈：killall
+Password: 
+COM62
+退出系统：
+反馈：
+
+COM62
+输入用户名：root
+反馈：root
+QL_NW_GetCSQ ret 0, CSQ=8
+ret = 0, rat=UTRANW_HSDPA, NetRegState= REGISTERED_HOME_NETWORK, rssi= -97, ber=99
+ret = 0, name: UNICOM, mcc:460, mnc:01
+set apn,profile_idx:1
+apn:jxncjlqc04.clfu.njm2mapn
+Set apn ok
+
+COM62
+输入密码：quectel123
+反馈：oelinux_ls123
+
+COM62
+启动进程：
+反馈：/vendor/app/auto_test_main
+
+
+启动自动化测试进程：FAIL
+COM62: 退出进程
+反馈：killall
+
+COM62
+退出系统：
+反馈：exit
+
+COM62
+输入用户名：root
+反馈：Login incorrect
+
+mdm9607-perf login: Password: 
+
+COM62
+输入密码：quectel123
+反馈：oelinux_ls123
+
+COM62
+启动进程：
+反馈：/vendor/app/auto_test_main
+Login incorrect
+
+mdm9607-perf login: Password: 
+
+启动自动化测试进程：FAIL
+COM62: 退出进程
+反馈：
+
+COM62
+退出系统：
+反馈：exit
+
+COM62
+输入用户名：root
+反馈：root
+
+COM62
+输入密码：quectel123
+反馈：oelinux_ls123
+
+COM62
+启动进程：
+反馈：/vendor/app/auto_test_main
+
+

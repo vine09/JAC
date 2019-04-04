@@ -1,0 +1,166 @@
+--SN:100
+--Date and Time:2019-3-6 19:32
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:81
+--TestResult:
+测试项目	测试名称    	测量值	下限值	上限值	测试结果
+生产信息	读条码并比较	FAIL  	PASS  	PASS  	FAIL    
+生产信息	写入硬件版本	      	01    	01    	FAIL    
+生产信息	写入生产日期	      	01    	01    	FAIL    
+        	            	      	      	      	        
+
+[测试名称]        	[TestItem ITEM]	[通道]         	[设置参数]	[下限值]               	[上限值]               	[单位]	[测量值]               	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源          	DOAction       	B+             	1         	                       	                       	      	                       	Done  	0.010000  	      	          	1
+ACC置高           	DOAction       	ACC            	1         	                       	                       	      	                       	Done  	0.014000  	      	          	1
+延时              	Delay          	               	25        	                       	                       	      	                       	Done  	25.013000 	      	          	1
+启动自动化测试进程	StartProcess   	100            	5;100     	PASS                   	PASS                   	String	PASS                   	PASS  	3.793000  	      	通信      	1
+启动自动化测试    	CMD_CF         	启动自动化测试 	1000      	01                     	01                     	String	01                     	PASS  	0.437000  	      	通信      	1
+延时              	Delay          	               	5         	                       	                       	      	                       	Done  	5.014000  	      	          	1
+查询4G固件版本    	CMD_CF         	查询4G固件版本 	3000      	EC20CEFAGR06A02M4G_OCPU	EC20CEFAGR06A02M4G_OCPU	Hex   	EC20CEFAGR06A02M4G_OCPU	PASS  	0.350000  	      	版本信息  	1
+查询MCU软件版本   	CMD_CF         	查询MCU软件版本	3000      	SW:A.0.1               	SW:A.0.1               	V     	SW:A.0.1               	PASS  	0.335000  	      	版本信息  	1
+查询OPEN软件版本  	CMD_CF         	读OPEN软件版本 	3000      	SW:A.0.1               	SW:A.0.1               	Hex   	SW:A.0.1               	PASS  	0.335000  	      	版本信息  	1
+CheckSN           	CheckSN        	               	          	                       	                       	Hex   	PASS                   	PASS  	1.745000  	      	          	1
+写入主机条码      	CMD_CF         	写入主机条码   	3000      	01                     	01                     	Hex   	01                     	PASS  	0.356000  	      	生产信息  	1
+读出CCID          	CMD_CF         	读出CCID       	3000      	PASS                   	PASS                   	Hex   	PASS                   	PASS  	0.331000  	      	生产信息  	1
+CCID与SN入库      	WDataToDB      	CCIDTODB       	          	OK                     	OK                     	String	OK                     	PASS  	0.243000  	      	信息入库  	1
+读条码并比较      	CMD_CF         	读出主机条码   	2000      	PASS                   	PASS                   	String	FAIL                   	FAIL  	11.678000 	      	生产信息  	1
+延时              	Delay          	               	1         	                       	                       	      	                       	Done  	1.017000  	      	          	1
+写入硬件版本      	CMD_CF         	写入硬件版本   	2000      	01                     	01                     	String	                       	FAIL  	19.254000 	      	生产信息  	1
+写入生产日期      	CMD_CF         	写入生产日期   	2000      	01                     	01                     	String	                       	FAIL  	10.760000 	      	生产信息  	1
+
+通信信息:启动自动化测试进程：PASS
+COM62: 退出进程
+反馈：killall
+imsi:460094500785688
+Password: 
+COM62
+退出系统：
+反馈：981
+
+
+COM62
+输入用户名：root
+反馈：root
+
+COM62
+输入密码：quectel123
+反馈：
+root@mdm9607-perf:~# 
+COM62
+启动进程：
+反馈：/data/QuecOpen/local_data
+start local main proc!
+>>>>>start ok
+
+
+发送启动自动化测试:auto_test$IdType:0001$ValType:01$Value:
+反馈:auto_test$IdType:8001$ValType:01$Value:01
+
+本次串口通信耗时：4.230000E-1s
+读循环次数：2
+发送查询4G固件版本:auto_test$IdType:0050$ValType:01$Value:
+反馈:auto_test$IdType:8050$ValType:01$Value:01EC20CEFAGR06A02M4G_OCPU
+
+本次串口通信耗时：3.350000E-1s
+读循环次数：1
+发送查询MCU软件版本:auto_test$IdType:0051$ValType:01$Value:
+反馈:auto_test$IdType:8051$ValType:01$Value:01SW:A.0.1
+
+本次串口通信耗时：3.200000E-1s
+读循环次数：1
+发送读OPEN软件版本:auto_test$IdType:004b$ValType:01$Value:
+反馈:auto_test$IdType:804b$ValType:01$Value:01SW:A.0.1
+
+本次串口通信耗时：3.190000E-1s
+读循环次数：1
+发送写入主机条码:auto_test$IdType:0033$ValType:01$Value:100
+反馈:auto_test$IdType:8033$ValType:01$Value:01
+
+本次串口通信耗时：3.220000E-1s
+读循环次数：1
+发送读出CCID:auto_test$IdType:0037$ValType:01$Value:
+反馈:auto_test$IdType:8037$ValType:01$Value:0189860918700321802057
+
+本次串口通信耗时：3.150000E-1s
+读循环次数：1
+CCID与SN入库: OK
+
+
+
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test$IdType:8034$ValType:01$Value:0110070937900020CC10200J090022
+
+
+本次串口通信耗时：3.330000E-1s
+读循环次数：1
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test$IdType:8034$ValType:01$Value:0110070937900020CC10200J090022
+
+
+本次串口通信耗时：3.220000E-1s
+读循环次数：1
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test$IdType:8034$ValType:01$Value:0110070937900020CC10200J090022
+
+
+本次串口通信耗时：3.250000E-1s
+读循环次数：1
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test$IdType:8034$ValType:01$Value:0110070937900020CC10200J090022
+
+
+本次串口通信耗时：3.260000E-1s
+读循环次数：1
+发送读出主机条码:auto_test$IdType:0034$ValType:01$Value:
+反馈:auto_test
+本次串口通信耗时：2.231000E+0s
+读循环次数：20
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:0040$ValType:01$Value:V0.2
+-sh: auto_test:0040:01:V0.2: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.220000E+0s
+读循环次数：20
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:0040$ValType:01$Value:V0.2
+-sh: auto_test:0040:01:V0.2: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.231000E+0s
+读循环次数：20
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:0040$ValType:01$Value:V0.2
+-sh: auto_test:0040:01:V0.2: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.219000E+0s
+读循环次数：20
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:0040$ValType:01$Value:V0.2
+-sh: auto_test:0040:01:V0.2: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.219000E+0s
+读循环次数：20
+发送写入硬件版本:auto_test$IdType:0040$ValType:01$Value:V0.2
+反馈:auto_test$IdType:0040$ValType:01$Value:V0.2
+-sh: auto_test:0040:01:V0.2: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.220000E+0s
+读循环次数：20
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20190306
+反馈:auto_test$IdType:0035$ValType:01$Value:20190306
+-sh: auto_test:0035:01:20190306: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.224000E+0s
+读循环次数：20
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20190306
+反馈:auto_test$IdType:0035$ValType:01$Value:20190306
+-sh: auto_test:0035:01:20190306: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.233000E+0s
+读循环次数：20
+发送写入生产日期:auto_test$IdType:0035$ValType:01$Value:20190306
+反馈:auto_test$IdType:0035$ValType:01$Value:20190306
+-sh: auto_test:0035:01:20190306: not found
+root@mdm9607-perf:~# 
+本次串口通信耗时：2.218000E+0s
+读循环次数：20

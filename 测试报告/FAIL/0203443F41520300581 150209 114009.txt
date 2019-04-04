@@ -1,0 +1,72 @@
+--SN:0203443F41520300581
+--Date and Time:2015-2-9 11:40
+--Tester:Slot1
+--OperatorID:
+--CycleTime:41
+--TestResult:
+测试项目	测试名称           	测量值                   	下限值	上限值	测试结果	                       		 	    	                       		 	    	    
+版本    	查询版本           	TGS80_H202_1_10:59:52-Feb	      	9     	2015    	TGS80_H201_10:28:35-Feb		5	2015	TGS80_H201_10:28:35-Feb		5	2015	FAIL
+电流    	测量电流           	0.17045                  	0.2   	0.4   	FAIL    	                       		 	    	                       		 	    	    
+电压检测	查询BAT7.2V_DET电压	1.69100                  	1     	1.636 	FAIL    	                       		 	    	                       		 	    	    
+3G模块  	查询MEID           	                         	OK    	OK    	FAIL    	                       		 	    	                       		 	    	    
+        	                   	                         	      	      	        	                       		 	    	                       		 	    	    
+
+[测试名称]         	[TestItem ITEM]	[通道]              	[设置参数]  	[下限值]                       	[上限值]                       	[单位]	[测量值]                         	[结果]	[测试时间]	[备注]	[测试项目]	 
+气缸推进           	DOAction       	CylinderCtrl        	1           	                               	                               	      	                                 	Done  	0.015000  	      	          	1
+打开电源           	DOAction       	B+                  	1           	                               	                               	      	                                 	Done  	0.011000  	      	          	1
+ACC置高            	DOAction       	ACC                 	1           	                               	                               	      	                                 	Done  	0.012000  	      	ACC_IO    	1
+退出自动化测试     	CMD            	退出自动化测试      	1000        	                               	0x01                           	Hex   	                                 	PASS  	1.058000  	      	通信      	1
+延时               	Delay          	                    	5           	                               	                               	      	                                 	Done  	5.026000  	      	CAN       	1
+测量电流           	MeaCurrent     	Current             	Differential	0.1                            	0.5                            	A     	0.13116                          	PASS  	1.613000  	      	电流      	1
+延时               	Delay          	                    	10          	                               	                               	      	                                 	Done  	10.012000 	      	CAN       	1
+查询版本           	CMD            	查询版本            	1000        	TGS80_H201_10:28:35-Feb  5 2015	TGS80_H201_10:28:35-Feb  5 2015	String	TGS80_H202_1_10:59:52-Feb  9 2015	FAIL  	0.234000  	      	版本      	1
+启动自动化测试     	CMD            	启动自动化测试      	1000        	OK                             	OK                             	String	OK                               	PASS  	0.135000  	      	通信      	1
+查询BAT_DET电压    	CMD            	查询BAT_DET状态     	1000        	11                             	12.5                           	V     	11.19800                         	PASS  	0.444000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出高电平	1000        	0x01                           	0x01                           	Hex   	0x01                             	PASS  	0.936000  	      	通信      	1
+测量电流           	MeaCurrent     	Current             	Differential	0.2                            	0.4                            	A     	0.17045                          	FAIL  	5.226000  	      	电流      	1
+查询BAT7.2V_DET电压	CMD            	查询BAT7.2V_DET电压 	1000        	1                              	1.636                          	V     	1.69100                          	FAIL  	1.771000  	      	电压检测  	1
+CHARGE_CTL输出     	CMD            	CHARGE_CTL输出低电平	1000        	0x01                           	0x01                           	Hex   	0x01                             	PASS  	0.925000  	      	通信      	1
+测量电流           	MeaCurrent     	Current             	Differential	0.1                            	0.25                           	A     	0.16650                          	PASS  	1.234000  	      	电流      	1
+查询MEID           	USBCMD         	查询MEID            	1000        	OK                             	OK                             	String	                                 	FAIL  	11.364000 	      	3G模块    	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:636D64206C696E6520726561647921200D0A636D643E
+发送查询版本:76657228290D
+反馈:ver()
+TGS80_H202_1_10:59:52-Feb  9 2015
+	1, 0x00000001
+cmd>
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F80160203FA91F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010191F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F80140206C996F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F801402069B96F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010191F0
+发送 查询MEID:AT+SMEID?
+反馈:
+发送 查询MEID:AT+SMEID?
+反馈:
+发送 查询MEID:AT+SMEID?
+反馈:
+发送 查询MEID:AT+SMEID?
+反馈:
+发送 查询MEID:AT+SMEID?
+反馈:
+发送 查询MEID:AT+SMEID?
+反馈:
+发送 查询MEID:AT+SMEID?
+反馈:
+发送 查询MEID:AT+SMEID?
+反馈:
+发送 查询MEID:AT+SMEID?
+反馈:
+发送 查询MEID:AT+SMEID?
+反馈:

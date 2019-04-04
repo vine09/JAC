@@ -1,0 +1,264 @@
+--SN:023
+--Date and Time:2015-1-29 12:09
+--Tester:Slot2
+--OperatorID:
+--CycleTime:108
+--TestResult:
+Pass
+[测试名称]          	[TestItem ITEM]	[通道]               	[设置参数]      	[下限值]        	[上限值]        	[单位]	[测量值]        	[结果]	[测试时间]	[备注]	[测试项目]  	 
+打开电源            	DOAction       	B+                   	1               	                	                	      	                	Done  	0.012000  	      	            	1
+ACC置高             	DOAction       	ACC                  	1               	                	                	      	                	Done  	0.011000  	      	ACC IO      	1
+退出自动化测试      	CMD            	退出自动化测试       	1000            	                	0x01            	Hex   	0x              	PASS  	1.466000  	      	通信        	1
+延时                	Delay          	                     	5               	                	                	      	                	Done  	5.022000  	      	CAN         	1
+测量电流            	MeaCurrent     	Current              	Differential    	0.1             	0.5             	A     	0.30195         	PASS  	1.236000  	      	电流        	1
+延时                	Delay          	                     	10              	                	                	      	                	Done  	10.010000 	      	CAN         	1
+启动自动化测试      	CMD            	启动自动化测试       	1000            	OK              	OK              	String	OK              	PASS  	3.200000  	      	通信        	1
+查询BAT_DET电压     	CMD            	查询BAT_DET状态      	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.879000  	      	电压检测    	1
+CHARGE_CTL输出      	CMD            	CHARGE_CTL输出高电平 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	1.483000  	      	通信        	1
+测量电流            	MeaCurrent     	Current              	Differential    	0.2             	0.4             	A     	0.25847         	PASS  	1.225000  	      	电流        	1
+查询BAT7.2V_DET电压 	CMD            	查询BAT7.2V_DET电压  	1000            	1               	1.636           	V     	1.437000        	PASS  	0.761000  	      	电压检测    	1
+CHARGE_CTL输出      	CMD            	CHARGE_CTL输出低电平 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	1.386000  	      	通信        	1
+测量电流            	MeaCurrent     	Current              	Differential    	0.1             	0.2             	A     	0.15299         	PASS  	1.238000  	      	电流        	1
+查询MEID            	USBCMD         	查询MEID             	1000            	OK              	OK              	String	PASS            	PASS  	0.704000  	      	3G模块      	1
+设置RTRECF          	USBCMD         	设置RTRECF           	1000            	OK              	OK              	String	PASS            	PASS  	0.719000  	      	3G模块      	1
+设置ESN             	USBCMD         	设置ESN              	1000            	OK              	OK              	String	PASS            	PASS  	0.519000  	      	3G模块      	1
+查询ESN             	USBCMD         	查询ESN              	1000            	OK              	OK              	String	PASS            	PASS  	0.704000  	      	3G模块      	1
+设置AKEY            	USBCMD         	设置AKEY             	1000            	OK              	OK              	String	PASS            	PASS  	0.523000  	      	3G模块      	1
+设置IMSI1           	USBCMD         	设置IMSI1            	1000            	OK              	OK              	String	PASS            	PASS  	0.502000  	      	3G模块      	1
+设置IMSI2           	USBCMD         	设置IMSI2            	1000            	OK              	OK              	String	PASS            	PASS  	0.518000  	      	3G模块      	1
+设置IMSI3           	USBCMD         	设置IMSI3            	1000            	OK              	OK              	String	PASS            	PASS  	0.499000  	      	3G模块      	1
+设置EVDO账号        	USBCMD         	设置EVDO账号         	1000            	OK              	OK              	String	PASS            	PASS  	0.725000  	      	3G模块      	1
+设置EVDO密码        	USBCMD         	设置EVDO密码         	1000            	OK              	OK              	String	PASS            	PASS  	0.720000  	      	3G模块      	1
+BATVCC_CTL输出      	CMD            	BATVCC_CTL输出高电平 	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	1.087000  	      	通信        	1
+关闭电源            	DOAction       	B+                   	0               	                	                	      	                	Done  	0.036000  	      	            	1
+查询BAT7.2V_DET电压 	CMD            	查询BAT7.2V_DET电压  	1000            	1               	1.636           	V     	1.408000        	PASS  	0.872000  	      	电压检测    	1
+查询BAT_DET电压     	CMD            	查询BAT_DET状态      	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	0.886000  	      	电压检测    	1
+BATVCC_CTL输出      	CMD            	BATVCC_CTL输出低电平 	1000            	0x              	0x00            	String	0x              	PASS  	1.490000  	      	电压检测    	1
+重启                	CMD            	重启                 	1000            	0x              	0x00            	Hex   	0x              	PASS  	1.521000  	      	通信        	1
+打开电源            	DOAction       	B+                   	1               	                	                	      	                	Done  	0.016000  	      	            	1
+延时                	Delay          	                     	30              	                	                	      	                	Done  	30.014000 	      	CAN         	1
+启动自动化测试      	CMD            	启动自动化测试       	1000            	OK              	OK              	String	OK              	PASS  	0.652000  	      	通信        	1
+ACC置低             	DOAction       	ACC                  	0               	                	                	      	                	Done  	0.002000  	      	ACC IO      	1
+延时                	Delay          	                     	1               	                	                	      	                	Done  	1.039000  	      	            	1
+ACC状态查询         	CMD            	查询ACC状态          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	0.662000  	      	ACC IO      	1
+ACC置高             	DOAction       	ACC                  	1               	                	                	      	                	Done  	0.004000  	      	ACC IO      	1
+延时                	Delay          	                     	1               	                	                	      	                	Done  	1.001000  	      	            	1
+ACC状态查询         	CMD            	查询ACC状态          	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.954000  	      	ACC IO      	1
+CSH无效             	DOAction       	CSH                  	0               	                	                	      	                	Done  	0.004000  	      	CSH检测     	1
+CSH状态查询         	CMD            	查询CSH状态          	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.955000  	      	CSH检测     	1
+CSH有效             	DOAction       	CSH                  	1               	                	                	      	                	Done  	0.005000  	      	CSH检测     	1
+CSH状态查询         	CMD            	查询CSH状态          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	2.506000  	      	CSH检测     	1
+加速度传感器返回数据	CMD            	加速度传感器返回数据1	1000            	0x01            	0x02            	Hex   	0x011E801200D580	PASS  	1.465000  	      	加速度传感器	1
+加速度传感器返回数据	CMD            	加速度传感器返回数据2	1000            	0x01            	0x02            	Hex   	0x011E8012C0D600	PASS  	1.054000  	      	加速度传感器	1
+CAN                 	CANTransmit    	00000182             	000007d100000000	                	                	      	PASS            	PASS  	0.043000  	      	CAN         	1
+CAN通信测试         	CMD            	CAN通信接收          	1000            	0x02            	0x02            	Hex   	0x02            	PASS  	0.955000  	      	CAN         	1
+CAN                 	CANTransmit    	00000182             	000007d000000000	                	                	      	PASS            	PASS  	0.041000  	      	CAN         	1
+CAN通信测试         	CMD            	CAN通信接收          	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.856000  	      	CAN         	1
+CAN通信测试         	CMD-CAN        	CAN通信发送          	1000            	55040404040404FF	55040404040404FF	Hex   	55040404040404FF	PASS  	0.550000  	      	CAN         	1
+外部Flash测试       	CMD            	外部Flash测试        	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.951000  	      	Flash       	1
+3G通信自检          	CMD            	3G通信自检           	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.550000  	      	3G模块      	1
+等待启动            	FindSIMCOMETH  	                     	60              	                	                	      	PASS            	PASS  	0.296000  	      	3G模块      	1
+延时                	Delay          	                     	5               	                	                	      	                	Done  	5.000000  	      	            	1
+打开网络            	USBCMD         	打开网络             	1000            	                	                	Hex   	PASS            	PASS  	0.470000  	      	3G模块      	1
+查询2G信号          	USBCMD         	查询2G信号           	1000            	20              	31              	Hex   	29              	PASS  	0.690000  	      	3G模块      	1
+查询3G信号          	USBCMD         	查询3G信号           	1000            	20              	31              	Hex   	31              	PASS  	0.699000  	      	3G模块      	1
+打开网络            	USBCMD         	打开网络             	1000            	                	                	Hex   	PASS            	PASS  	0.411000  	      	3G模块      	1
+查询网络状态        	USBCMD         	查询网络状态         	1000            	OK              	OK              	Hex   	PASS            	PASS  	0.424000  	      	3G模块      	1
+查询IP              	USBCMD         	查询IP               	1000            	OK              	OK              	Hex   	PASS            	PASS  	0.487000  	      	3G模块      	1
+测试登录            	USBCMD         	测试登录             	5000            	OK              	OK              	Hex   	PASS            	PASS  	3.098000  	      	3G模块      	1
+音频回环测试        	USBCMD         	关闭音频LOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	0.518000  	      	3G模块      	1
+切换声音通道        	USBCMD         	切换声音通道         	1000            	OK              	OK              	String	PASS            	PASS  	0.502000  	      	3G模块      	1
+音频回环测试        	USBCMD         	关闭音频LOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	0.520000  	      	3G模块      	1
+音频回环测试        	USBCMD         	打开音频LOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	0.501000  	      	3G模块      	1
+信号产生            	AOFreq         	MIC                  	F=1000HZ,A=0.2V 	                	                	频率  	                	Done  	1.134000  	      	3G模块      	1
+打开信号            	DOAction       	MIC_RL               	1               	                	                	      	                	Done  	0.037000  	      	3G模块      	1
+测量音频输出幅度    	AudioLoopBack  	Audio                	Differential    	0.3             	0.35            	V     	0.30767         	PASS  	1.268000  	      	3G模块      	1
+音频输出频率        	Frequency      	                     	                	990             	1010            	Hz    	1000.00022      	PASS  	0.046000  	      	3G模块      	1
+音频输出失真度      	THD            	                     	                	0               	5               	%     	1.12084         	PASS  	0.087000  	      	3G模块      	1
+关闭信号            	DOAction       	MIC_RL               	0               	                	                	      	                	Done  	0.015000  	      	3G模块      	1
+音频回环测试        	USBCMD         	关闭音频LOOPBACK     	1000            	OK              	OK              	String	PASS            	PASS  	0.499000  	      	3G模块      	1
+拨号                	USBCMD         	拨号                 	10000           	OK              	OK              	Hex   	PASS            	PASS  	3.516000  	      	3G模块      	1
+挂断                	USBCMD         	挂断                 	1000            	OK              	OK              	Hex   	PASS            	PASS  	0.521000  	      	3G模块      	1
+退出自动化测试      	CMD            	退出自动化测试       	1000            	0x01            	0x01            	Hex   	0x01            	PASS  	0.566000  	      	通信        	1
+ACC置低             	DOAction       	ACC                  	0               	                	                	      	                	Done  	0.033000  	      	ACC IO      	1
+关闭电源            	DOAction       	B+                   	0               	                	                	      	                	Done  	0.022000  	      	            	1
+
+通信信息:发送退出自动化测试:0F00020002F0
+反馈:0F00020002F0414343204F4E0D0A495456207265706F72740D0A
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+Unknown token
+cmd>
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010197F0
+发送CHARGE_CTL输出高电平:0F0017010117F0
+反馈:0F8017010196F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F801402059D93F0
+发送CHARGE_CTL输出低电平:0F0017010016F0
+反馈:0F8017010196F0
+发送 查询MEID:AT+SMEID?
+反馈:
++SMEID: A1000021A67071
+
+OK
+
+发送 设置RTRECF:AT+RTRECF=1
+反馈:
++RTRECF: SUCCESS
+
+OK
+
+发送 设置ESN:AT+ESN=80AFB5B1
+反馈:
+OK
+
+发送 查询ESN:AT+ESN?
+反馈:
++ESN: 80AFB5B1
+
+OK
+
+发送 设置AKEY:AT+AKEY=710E2CA6533F8CE7
+反馈:
+OK
+
+发送 设置IMSI1:AT+NAMCFG=0,1,460
+反馈:
+OK
+
+发送 设置IMSI2:AT+NAMCFG=0,2,03
+反馈:
+OK
+
+发送 设置IMSI3:AT+NAMCFG=0,3,6161978626
+反馈:
+OK
+
+发送 设置EVDO账号:AT+CNVW=1194,0,"19343630303336313631393738363236406D7963646D612E636E"
+反馈:
++CNVW: 1
+
+OK
+
+发送 设置EVDO密码:AT+CNVW=1192,0,"1031443036463845353046303743423533"
+反馈:
++CNVW: 1
+
+OK
+
+发送BATVCC_CTL输出高电平:0F0015010115F0
+反馈:0F8015010194F0
+发送查询BAT7.2V_DET电压:0F00140014F0
+反馈:0F801402058093F0
+发送查询BAT_DET状态:0F00160016F0
+反馈:0F8016010297F0
+发送BATVCC_CTL输出低电平:0F0015010014F0
+反馈:
+发送重启:0F00220022F0
+反馈:
+发送启动自动化测试:746573746D6F64652831290D
+反馈:testmode(1)
+	0, 0x00000000
+cmd>
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010284F0
+发送查询ACC状态:0F00050005F0
+反馈:0F8005010184F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010187F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010187F0
+发送查询CSH状态:0F00060006F0
+反馈:0F8006010287F0
+发送加速度传感器返回数据1:0F0007010006F0
+反馈:0F800707011E801200D580D8F0
+发送加速度传感器返回数据2:0F0007010107F0
+反馈:0F800707011E8012C0D6001BF0
+CAN发送:ID:00000182DATA:000007d100000000发送CAN通信接收:0F00200020F0
+反馈:0F80200102A1F0
+CAN发送:ID:00000182DATA:000007d000000000发送CAN通信接收:0F00200020F0
+反馈:0F80200101A1F0
+发送CAN通信发送:0F00210021F0
+反馈:0F80210101A0F0
+发送外部Flash测试:0F00110011F0
+反馈:0F8011010190F0
+发送3G通信自检:0F000B000BF0
+反馈:0F800B01018AF0
+发送 打开网络:AT+NETOPEN
+反馈:
+
+发送 查询2G信号:AT+CSQ
+反馈:
++CSQ: 29,99
+
+OK
+
+发送 查询3G信号:AT^HDRCSQ
+反馈:
+^HDRCSQ: 31
+
+OK
+
+发送 打开网络:AT+NETOPEN
+反馈:
+
+发送 查询网络状态:AT+NETOPEN?
+反馈:
++NETOPEN: 1,1
+
+发送 查询IP:AT+IPADDR
+反馈:
++IPADDR: 114.81.226.54
+
+发送 测试登录:AT+CIPSEND=0,57
+反馈:
+>
+OK
+
++CIPSEND: 0,57,57
+
+
+
+RECV FROM:202.105.139.92:24000
++IPD31
+}"3DU   
+  暻暎)H鮘}
+发送 关闭音频LOOPBACK:AT+CLOOPBACK=1,0
+反馈:
+OK
+
+发送 切换声音通道:AT+CSDVC=1,0
+反馈:
+OK
+
+发送 关闭音频LOOPBACK:AT+CLOOPBACK=1,0
+反馈:
+OK
+
+发送 打开音频LOOPBACK:AT+CLOOPBACK=1,1
+反馈:
+OK
+
+发送 关闭音频LOOPBACK:AT+CLOOPBACK=1,0
+反馈:
+OK
+
+发送 拨号:ATD10000;
+反馈:
+OK
+
+VOICE CALL: BEGIN
+
+VOICE CALL: ANSWERED
+
+发送 挂断:AT+CHUP
+反馈:
+VOICE CALL: END: 000002
+
+发送退出自动化测试:0F00020002F0
+反馈:0F8002010183F0

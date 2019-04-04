@@ -1,0 +1,16 @@
+--SN:100
+--Date and Time:2018-10-10 11:00
+--Tester:Slot1---Ver1.2.0.69
+--OperatorID:
+--CycleTime:3
+--TestResult:
+测试项目	测试名称    	测量值 	下限值	上限值	测试结果
+        	测试工作电流	0.00000	100   	500   	FAIL    
+        	            	       	      	      	        
+
+[测试名称]  	[TestItem ITEM]	[通道]  	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+打开电源    	DOAction       	B+      	1         	        	        	      	        	Done  	0.010000  	      	          	1
+ACC置高     	DOAction       	ACC     	1         	        	        	      	        	Done  	0.012000  	      	          	1
+测试工作电流	Static Current 	GDM-8341	          	100     	500     	ma    	0.00000 	FAIL  	3.446000  	      	          	1
+
+通信信息:

@@ -1,0 +1,12 @@
+--SN:0203443F41521000014
+--Date and Time:2015-2-11 11:13
+--Tester:Slot2
+--OperatorID:
+--CycleTime:0
+--TestResult:
+Pass
+[测试名称]	[TestItem ITEM]	[通道]      	[设置参数]	[下限值]	[上限值]	[单位]	[测量值]	[结果]	[测试时间]	[备注]	[测试项目]	 
+气缸推进  	DOAction       	CylinderCtrl	1         	        	        	      	        	Done  	0.011000  	      	          	1
+气缸退出  	DOAction       	CylinderCtrl	0         	        	        	      	        	Done  	0.018000  	      	          	1
+
+通信信息:
